@@ -1,33 +1,29 @@
-.main-view{
+.modem-issue-view{
     width: 100%;
     /* height: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
-.main-header {
-    width: 100%;
-    text-align: center;
-}
-.main-title {
+.modem-issue-title {
     margin: 0 0 64px 0;
     color: var(--very-dark-blue);
     font-size: 48px;
     /* border: 1px solid red; */
 }
 
-.main-cards-sect {
+.modem-issues-cards-sect {
     width: 1400px;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 48px;
     /* border: 1px solid red; */
 }
 
-.main-card {
+.modem-issue-card {
     width: 433px;
     height: 280px;
     display: flex;
@@ -41,18 +37,19 @@
     box-shadow: 1px 1px 12px 1px var(--shadow);
 }
 
-.main-card:hover {
+.modem-issue-card:hover {
     cursor: pointer;
     background-color: var(--very-light-gray);
     box-shadow: 1px 1px 24px 2px var(--shadow);
 }
 
-.main-card:active {
+.modem-issue-card:active {
     cursor: pointer;
     color: var(--very-light-gray);
     background-color: var(--dark-blue);
     box-shadow: 1px 1px 36px 8px var(--shadow);
 }
+
 
 @media only screen and (max-width: 375px) {
 
