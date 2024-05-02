@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .modem-issue-title {
     margin: 0 0 64px 0;

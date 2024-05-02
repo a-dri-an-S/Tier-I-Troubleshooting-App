@@ -1,7 +1,7 @@
 .app {
   width: 90%;
   height: 100vh;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 5% 5% 0% 5%;
   background-color: var(--very-light-gray);
 }
