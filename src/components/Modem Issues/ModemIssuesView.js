@@ -1,10 +1,11 @@
 import { useState } from "react";
 
 import ModemIssuesCards from "./ModemsIssueCards";
+import ModemOfflineView from "./ModemOfflineView";
 
-import "../../styles/ModemIssuesView.css";
+import "../../styles/Modem Issues/ModemIssuesView.css";
 
-const ModemIssueView = () => {
+const ModemIssuesView = () => {
 
     const [issueChange, setIssueChange] = useState(false);
     const [selectIssueCard, setSelectIssueCard] = useState([false, false, false]);
@@ -23,16 +24,14 @@ const ModemIssueView = () => {
     }
 
     return (
-        <section className="modem-issue-view">
-            <h1 className="modem-issue-title">Modem Issues</h1>
+        <section className="modem-issues-view">
             {
-                issueChange ? 
-                <div>Hi</div> :
-                <ModemIssuesCards handleModemIssueSelect={handleModemIssueSelect}/>
-
+                issueChange ?
+                    <ModemOfflineView /> :
+                    <ModemIssuesCards handleModemIssueSelect={handleModemIssueSelect} />
             }
         </section>
     );
 }
 
-export default ModemIssueView;
+export default ModemIssuesView;

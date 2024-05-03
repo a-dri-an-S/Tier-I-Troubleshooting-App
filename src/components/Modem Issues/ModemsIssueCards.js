@@ -1,6 +1,10 @@
+import "../../styles/Modem Issues/ModemIssueCards.css";
+
 const ModemIssuesCards = ({ handleModemIssueSelect }) => {
     return (
-        <div className="modem-issues-cards-sect">
+        <div className="modem-issue-cards-sect">
+            <h1 className="modem-issue-title">Modem Issues</h1>
+            <div className="modem-issue-cards-cont">
                 <div 
                     className="modem-issue-card"
                     id="0"
@@ -22,6 +26,8 @@ const ModemIssuesCards = ({ handleModemIssueSelect }) => {
                 >
                     <h2 className="modem-issue-card-title">Ethernet Ports Not Working</h2>
                 </div>
+
+            </div>
             </div>
     );
 }

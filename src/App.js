@@ -7,7 +7,7 @@ import './styles/App.css';
 function App() {
 
   // Make sure to change viewChange back to false
-  const [viewChange, setViewChange] = useState(false);
+  const [viewChange, setViewChange] = useState(true);
   const [selectMainCard, setSelectMainCard] = useState([false, false, false, false ,false]);
   
 

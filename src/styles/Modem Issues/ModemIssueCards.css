@@ -1,11 +1,12 @@
-.modem-issue-view{
-    width: 100%;
-    /* height: 100%; */
+.modem-issue-cards-sect {
+    width: 1400px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* border: 1px solid red; */
 }
+
 .modem-issue-title {
     margin: 0 0 64px 0;
     color: var(--very-dark-blue);
@@ -13,8 +14,8 @@
     /* border: 1px solid red; */
 }
 
-.modem-issues-cards-sect {
-    width: 1400px;
+.modem-issue-cards-cont {
+    width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
