@@ -67,7 +67,7 @@ export const qoi = {
         }
     },
     issueB: {
-        issueTitle: 'Equipment (Cable and ODU',
+        issueTitle: 'Equipment (Cable and ODU)',
         troubleshootingSteps: {
             tsA: {
                 tsTitle: "Check cable run",

@@ -36,7 +36,10 @@ function App() {
     <div className="app">
       {
         viewChange ? 
-        <IssueView handleHomeButton={handleHomeButton}/>:
+        <IssueView 
+          handleHomeButton={handleHomeButton}
+          selectMainCard={selectMainCard}
+        />:
         <MainView handleSelectedMainCard={handleSelectedMainCard} />
       }
     </div>

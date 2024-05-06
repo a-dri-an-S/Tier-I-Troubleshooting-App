@@ -22,7 +22,6 @@ export const provisioningFailure = {
                     stepB: ["If modem status light is red, please refer to the modem issues troubleshooting.", "LINK - Modem Issues: Modem Offline"],
                     stepC: ["If modem status light is blue, please have the tech continue with activating the modem."],
                     stepD: ["If modem status light continues to flash white, please refer to Modem Lock troubleshooting.", "LINK - Point and Peak: Modem Lock"],
-
                 }
             },
         }

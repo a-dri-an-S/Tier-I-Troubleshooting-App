@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 
-import ModemIssuesView from './ModemIssues/ModemIssuesView';
+import IssueSelectedView from './IssueSelectedView';
 
 import "../styles/IssueView.css";
 
-const IssueView = ({ handleHomeButton }) => {
+const IssueView = ({ handleHomeButton, selectMainCard }) => {
     return (
         <div className="issue-view">
             <header className="issue-header">
@@ -16,7 +16,7 @@ const IssueView = ({ handleHomeButton }) => {
                     <FontAwesomeIcon icon={faHome}/>
                 </button>
             </header>
-            <ModemIssuesView />
+            <IssueSelectedView selectMainCard={selectMainCard}/>
         </div>
     );
 }
