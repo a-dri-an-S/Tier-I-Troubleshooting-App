@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 import ModemIssuesCards from "./ModemsIssueCards";
-import ModemOfflineView from "./ModemOfflineView";
+import ModemIssuesTSView from "./ModemIssuesTSView";
 
-import "../../styles/Modem Issues/ModemIssuesView.css";
+import "../../styles/ModemIssues/ModemIssuesView.css";
 
 const ModemIssuesView = () => {
 
@@ -27,7 +27,9 @@ const ModemIssuesView = () => {
         <section className="modem-issues-view">
             {
                 issueChange ?
-                    <ModemOfflineView /> :
+                    <ModemIssuesTSView 
+                        selectIssueCard={selectIssueCard}
+                    /> :
                     <ModemIssuesCards handleModemIssueSelect={handleModemIssueSelect} />
             }
         </section>

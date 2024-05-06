@@ -1,4 +1,4 @@
-import "../../styles/Modem Issues/ModemIssueCards.css";
+import "../../styles/ModemIssues/ModemIssueCards.css";
 
 const ModemIssuesCards = ({ handleModemIssueSelect }) => {
     return (

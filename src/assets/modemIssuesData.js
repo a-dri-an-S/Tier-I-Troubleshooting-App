@@ -51,7 +51,7 @@ export const modemIssues = {
                 tsSteps: {
                     stepA: ["Tech can disable bridge mode through modem GUI, but will need a computer or laptop with an ethernet connection"],
                     stepB: ["SB2+ modem GUI access: 192.168.1.1:8080", "Username and Password: admin"],
-                    stepC: ["VWG modem GUI access: 192.168.1.1:8080", "Username: admin", "Password: printed on modem sticker"],
+                    stepC: ["VWG modem GUI access: 192.168.100.1", "Username: admin", "Password: printed on modem sticker"],
                     stepD: ["Go to bridge mode section in modem GUI and disable.", "If disabled, modem will reboot 2 times within a 15 min window."],
 
                 }
@@ -74,7 +74,7 @@ export const modemIssues = {
                 tsSteps: {
                     stepA: ["Tech can check router settings through modem GUI, but will need a computer or laptop with an ethernet connection"],
                     stepB: ["SB2+ modem GUI access: 192.168.1.1:8080", "Username and Password: admin"],
-                    stepC: ["VWG modem GUI access: 192.168.1.1:8080", "Username: admin", "Password: printed on modem sticker"],
+                    stepC: ["VWG modem GUI access: 192.168.100.1", "Username: admin", "Password: printed on modem sticker"],
                     stepD: ["Go to WiFi settings in modem GUI and change SSID broadcast from 'Private' to 'Public'"],
                     stepE: ["If the tech doesn't have a way to access the modem GUI via ethernet, they can factory reset modem by holding 'reset' button for 60 seconds."]
 
@@ -107,7 +107,7 @@ export const modemIssues = {
                     stepB: ["Active Modem: Have the tech try to access a web page on the internet"],
                     stepC: ["Offline/Non-Active Modem: Have the tech try to access the modem GUI"],
                     stepD: ["SB2+ modem GUI access: 192.168.1.1:8080", "Username and Password: admin"],
-                    stepE: ["VWG modem GUI access: 192.168.1.1:8080", "Username: admin", "Password: printed on modem sticker"]
+                    stepE: ["VWG modem GUI access: 192.168.100.1", "Username: admin", "Password: printed on modem sticker"]
                 }
             },
             tsC: {
@@ -117,17 +117,17 @@ export const modemIssues = {
                     stepB: ["Active Modem: Have the tech try to access a web page on the internet"],
                     stepC: ["Offline/Non-Active Modem: Have the tech try to access the modem GUI"],
                     stepD: ["SB2+ modem GUI access: 192.168.1.1:8080", "Username and Password: admin"],
-                    stepE: ["VWG modem GUI access: 192.168.1.1:8080", "Username: admin", "Password: printed on modem sticker"]
+                    stepE: ["VWG modem GUI access: 192.168.100.1", "Username: admin", "Password: printed on modem sticker"]
                 }
             },
             tsD: {
-                tsTitle: "Test ethernet ports with different ethernet device",
+                tsTitle: "Test ethernet ports with different device",
                 tsSteps: {
                     stepA: ["Have the tech use a different device when troubleshooting port connectivity."],
                     stepB: ["Active Modem: Have the tech try to access a web page on the internet"],
                     stepC: ["Offline/Non-Active Modem: Have the tech try to access the modem GUI"],
                     stepD: ["SB2+ modem GUI access: 192.168.1.1:8080", "Username and Password: admin"],
-                    stepE: ["VWG modem GUI access: 192.168.1.1:8080", "Username: admin", "Password: printed on modem sticker"]
+                    stepE: ["VWG modem GUI access: 192.168.100.1", "Username: admin", "Password: printed on modem sticker"]
                 }
             },
         },

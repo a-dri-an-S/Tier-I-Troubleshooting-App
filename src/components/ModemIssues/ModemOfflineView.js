@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import ModemOfflineCards from "./ModemOfflineCards";
+import ModemOfflineTSView from "./ModemOfflineTSView";
 
 const ModemOfflineView = () => {
 
@@ -20,15 +21,23 @@ const ModemOfflineView = () => {
         setSelectTSCard(updatedState);
     }
 
+    function handleBackButton() {
+        setTroubleshootChange(false);
+        setSelectTSCard([false, false, false, false]);
+    }
+
     return (
-        <div className="modem-issue-TS-view">
+        <section className="modem-offline-view">
             {
                 troubleshootChange ?
-                    <div>Hello</div> :
+                    <ModemOfflineTSView
+                        selectTSCard={selectTSCard}
+                        handleBackButton={handleBackButton}
+                    /> :
                     <ModemOfflineCards handleModemOfflineSelect={handleModemOfflineSelect} />
 
             }
-        </div>
+        </section>
     );
 }
 

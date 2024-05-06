@@ -7,7 +7,7 @@ html {
   --dark-gray: hsl(0, 0%, 52%);
   --very-light-gray: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
-  --shadow: hsla(200, 15%, 8%, 0.202);
+  --shadow: hsla(200, 15%, 8%, 0.123);
 }
 
 body {

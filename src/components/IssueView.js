@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 
-import ModemIssuesView from './Modem Issues/ModemIssuesView';
+import ModemIssuesView from './ModemIssues/ModemIssuesView';
 
 import "../styles/IssueView.css";
 
