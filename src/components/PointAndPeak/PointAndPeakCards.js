@@ -8,21 +8,21 @@ const PointAndPeakCards = () => {
                 <div
                     className="pnp-card"
                     id="0"
-                    onClick={{}}
+                    // onClick={{}}
                 >
                     <h2 className="pnp-card-title">No TRIA Tones</h2>
                 </div>
                 <div
                     className="pnp-card"
                     id="1"
-                    onClick={{}}
+                    // onClick={{}}
                 >
                     <h2 className="pnp-card-title">Unable to find the satellite or beam</h2>
                 </div>
                 <div
                     className="pnp-card"
                     id="1"
-                    onClick={{}}
+                    // onClick={{}}
                 >
                     <h2 className="pnp-card-title">Unable to achieve modem lock <br/>(Can't get past network entry)</h2>
                 </div>

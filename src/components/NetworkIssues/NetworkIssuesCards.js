@@ -8,14 +8,14 @@ const NetworkIssuesCards = () => {
                 <div
                     className="network-issue-card"
                     id="0"
-                    onClick={{}}
+                    // onClick={{}}
                 >
                     <h2 className="network-issue-card-title">Slow Speeds</h2>
                 </div>
                 <div
                     className="network-issue-card"
                     id="1"
-                    onClick={{}}
+                    // onClick={{}}
                 >
                     <h2 className="network-issue-card-title">No Internet Connection</h2>
                 </div>

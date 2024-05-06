@@ -9,21 +9,21 @@ const ProvisioningFailureCards = () => {
                 <div
                     className="provisioning-failure-card"
                     id="0"
-                    onClick={{}}
+                    // onClick={{}}
                 >
                     <h2 className="provisioning-failure-card-title">Modem Status Light: Red</h2>
                 </div>
                 <div
                     className="provisioning-failure-card"
                     id="1"
-                    onClick={{}}
+                    // onClick={{}}
                 >
                     <h2 className="provisioning-failure-card-title">Modem Status Light: <br/>Flashing White</h2>
                 </div>
                 <div
                     className="provisioning-failure-card"
                     id="2"
-                    onClick={{}}
+                    // onClick={{}}
                 >
                     <h2 className="provisioning-failure-card-title">Modem Status Light: Blue</h2>
                 </div>
