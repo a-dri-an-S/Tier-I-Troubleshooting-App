@@ -3,7 +3,6 @@ import { useState } from "react";
 import NoWifiCards from "./NoWifiCards";
 import NoWifiTSView from "./NoWifiTSView";
 
-
 const NoWifiView = () => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);

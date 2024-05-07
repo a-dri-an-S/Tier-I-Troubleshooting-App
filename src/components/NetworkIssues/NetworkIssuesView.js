@@ -1,12 +1,35 @@
+import { useState } from "react";
 
 import NetworkIssuesCards from "./NetworkIssuesCards";
+import NetworkIssuesTSView from "./NetworkIssuesTSView";
 
 import "../../styles/NetworkIssues/NetworkIssuesView.css";
 
 const NetworkIssuesView = () => {
+    
+    const [issueChange, setIssueChange] = useState(false);
+    const [selectIssueCard, setSelectIssueCard] = useState([false, false]);
+
+    function handleNetworkIssueSelect(e) {
+        const idx = e.target.id;
+        const updatedState = selectIssueCard.map((el, i) => {
+            if (i === +idx) {
+                return true;
+            } else {
+                return false;
+            }
+        });
+        setIssueChange(true);
+        setSelectIssueCard(updatedState);
+    }
+    
     return (
         <section className="network-issues-view">
-            <NetworkIssuesCards />
+            {
+                issueChange ?
+                    <NetworkIssuesTSView selectIssueCard={selectIssueCard}/> :
+                    <NetworkIssuesCards handleNetworkIssueSelect={handleNetworkIssueSelect}/>
+            }
         </section>
     );
 }

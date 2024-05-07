@@ -74,7 +74,7 @@ export const networkIssues = {
                             tsSteps: {
                                 step1: ["Tech can access the modem GUI and release/renew IP address"],
                                 step2: ["SB2+ modem GUI access: 192.168.1.1:8080", "Username and Password: admin"],
-                                step3: ["VWG modem GUI access: 192.168.1.1:8080", "Username: admin", "Password: printed on modem sticker"],
+                                step3: ["VWG modem GUI access: 192.168.100.1", "Username: admin", "Password: printed on modem sticker"],
                                 step4: ["If this fails, escalate to Tier II for TAC support."]
                             }
                         },
