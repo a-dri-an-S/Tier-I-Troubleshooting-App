@@ -3,7 +3,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 
 import SwapPowerSupply from "../TroubleshootingCards/SwapPowerSupply";
-import CheckPowerSource from "../TroubleshootingCards/CheckPowerSource";
+import CheckPowerSource1 from "../TroubleshootingCards/CheckPowerSource1";
 import SwapTRIA from "../TroubleshootingCards/SwapTRIA";
 import SwapModem from "../TroubleshootingCards/SwapModem";
 
@@ -16,7 +16,7 @@ const ModemOfflineTSView = ({ selectTSCard, handleBackButton }) => {
         <div className="modem-offline-ts-view">
             {
                 (selectTSCard[0] && <SwapPowerSupply />) ||
-                (selectTSCard[1] && <CheckPowerSource />) ||
+                (selectTSCard[1] && <CheckPowerSource1 />) ||
                 (selectTSCard[2] && <SwapTRIA />) ||
                 (selectTSCard[3] && <SwapModem />)
             }

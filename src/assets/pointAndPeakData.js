@@ -65,7 +65,7 @@ export const pointAndPeak = {
                 }
             },
             tsE: {
-                tsTitle: "Check for a mast plumb",
+                tsTitle: "Check for a plumb mast",
                 tsSteps: {
                     stepA: ["If the mast is not plumb (straight up and down), have the tech 'straighten' the mast on the mount"]
                 }
@@ -86,7 +86,11 @@ export const pointAndPeak = {
             },
             tsI: {
                 tsTitle: "Check for correct beam assignment",
-                tsSteps: ["Confirm with the tech the address is correct and escalate to Tier II to check if beam assigned is correct.", "If Tier II finds a better beam, have the tech point to that beam.", "If tech is able to find the signal, have the tech point and peak to get the modem online.", "Tier II will request a beam reassignment to the new beam", "Only check if its a new install or if the account has been active for less than a year", "TECH CANNOT ACTIVATE MODEM UNTIL THE BEAM IS REASSIGNED. PLEASE WAIT FOR TIER II TO CONFIRM BEAM REASSIGNMENT BEFORE TECH ACTIVATES THE MODEM."]
+                tsSteps: {
+                    stepA: ["Confirm with the tech the address is correct and escalate to Tier II to check if beam assigned is correct.", "If Tier II finds a better beam, have the tech point to that beam.", "If tech is able to find the signal, have the tech point and peak to get the modem online.", "Tier II will request a beam reassignment to the new beam"],
+                    stepB: ["Only check if its a new install or if the account has been active for less than a year."],
+                    stepC: ["Check the connectors", "Please wait for Tier II to confirm beam reassignment before the tech activates the modem."]
+                }
             },
             tsJ: {
                 tsTitle: "Check cable run",
@@ -106,7 +110,8 @@ export const pointAndPeak = {
             tsA: {
                 tsTitle: "Check for outages",
                 tsSteps: {
-                    stepA: ["Check the outage board for any outages posted for the assigned beam.", "Ask the tech about the weather on site. If there are weather issues preventing the tech from achieving modem lock, have the tech wait until weather clears or reschedule."]
+                    stepA: ["Check the outage board for any outages posted for the assigned beam."],
+                    steB: ["Ask the tech about the weather on site.", "If there are weather issues preventing the tech from achieving modem lock, have the tech wait until weather clears or reschedule."]
                 }
             },
             tsB: {
@@ -137,7 +142,7 @@ export const pointAndPeak = {
                 }
             },
             tsF: {
-                tsTitle: "Check for a mast plumb",
+                tsTitle: "Check for a plumb mast",
                 tsSteps: {
                     stepA: ["If the mast is not plumb (straight up and down), have the tech 'straighten' the mast on the mount"]
                 }
