@@ -6,10 +6,9 @@ import './styles/App.css';
 
 function App() {
 
-  // Make sure to change viewChange back to false
   const [viewChange, setViewChange] = useState(false);
-  const [selectMainCard, setSelectMainCard] = useState([false, false, false, false ,false]);
-  
+  const [selectMainCard, setSelectMainCard] = useState([false, false, false, false, false]);
+
 
   function handleSelectedMainCard(e) {
     const idx = e.target.id;
@@ -26,21 +25,19 @@ function App() {
   }
 
   function handleHomeButton() {
-    setSelectMainCard([false, false, false, false ,false]);
+    setSelectMainCard([false, false, false, false, false]);
     setViewChange(false);
   }
-
-
 
   return (
     <div className="app">
       {
-        viewChange ? 
-        <IssueView 
-          handleHomeButton={handleHomeButton}
-          selectMainCard={selectMainCard}
-        />:
-        <MainView handleSelectedMainCard={handleSelectedMainCard} />
+        viewChange ?
+          <IssueView
+            handleHomeButton={handleHomeButton}
+            selectMainCard={selectMainCard}
+          /> :
+          <MainView handleSelectedMainCard={handleSelectedMainCard} />
       }
     </div>
   );

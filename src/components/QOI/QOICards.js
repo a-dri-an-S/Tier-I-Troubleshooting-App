@@ -1,6 +1,6 @@
 import "../../styles/QOI/QOICards.css";
 
-const QOICards = () => {
+const QOICards = ({ handleQOISelect }) => {
     return (
         <div className="qoi-cards-sect">
             <h1 className="qoi-title">Quality of Install(QOI)</h1>
@@ -8,28 +8,28 @@ const QOICards = () => {
                 <div
                     className="qoi-card"
                     id="0"
-                    // onClick={{}}
+                    onClick={(e) => handleQOISelect(e)}
                 >
                     <h2 className="qoi-card-title">Antenna Pointing</h2>
                 </div>
                 <div
                     className="qoi-card"
                     id="1"
-                    // onClick={{}}
+                    onClick={(e) => handleQOISelect(e)}
                 >
                     <h2 className="qoi-card-title">Equipment (Cable and ODU)</h2>
                 </div>
                 <div
                     className="qoi-card"
                     id="2"
-                    // onClick={{}}
+                    onClick={(e) => handleQOISelect(e)}
                 >
                     <h2 className="qoi-card-title">Software</h2>
                 </div>
                 <div
                     className="qoi-card"
-                    id="2"
-                    // onClick={{}}
+                    id="3"
+                    onClick={(e) => handleQOISelect(e)}
                 >
                     <h2 className="qoi-card-title">Installed Devices</h2>
                 </div>
