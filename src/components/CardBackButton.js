@@ -1,17 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
-import "../../styles/TroubleshootCard.css"
+import "../styles/CardsBackButton.css";
 
-const TSCardBackButton = ({ handleBackButton }) => {
+const CardBackButton = ({ handleCardsBackButton }) => {
     return (
         <button
-            className="ts-card-back-btn"
-            onClick={() => handleBackButton()}
+            className="cards-back-btn"
+            onClick={() => handleCardsBackButton()}
         >
             <FontAwesomeIcon icon={faArrowLeft} />
         </button>
     );
 }
 
-export default TSCardBackButton;
+export default CardBackButton;

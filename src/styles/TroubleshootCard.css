@@ -36,7 +36,7 @@
     /* border: 1px solid red; */
 }
 
-.back-btn-ts-card {
+.ts-card-back-btn {
     position: absolute;
     bottom: 12px;
     right:360px;
@@ -48,17 +48,17 @@
     border: none;
     /* border: 1px solid red; */
 }
-.back-btn-ts-card:hover {
+.ts-card-back-btn:hover {
     cursor: pointer;
     color: var(--very-dark-blue-light-mode-text);
     font-size: 36px;
 }
-.back-btn-ts-card:active {
+.ts-card-back-btn:active {
     cursor: pointer;
     color: var(--very-dark-blue-light-mode-text);
     font-size: 36px;
 }
-.back-btn-ts-card:active {
+.ts-card-back-btn:active {
     font-size: 40px;
 }
 

@@ -3,7 +3,7 @@ import { useState } from "react";
 import EthernetPortCards from "./EthernetPortCards";
 import EthernetPortTSView from "./EthernetPortTSView";
 
-const EthernetPortView = () => {
+const EthernetPortView = ({ handleCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false, false, false, false]);
@@ -34,7 +34,10 @@ const EthernetPortView = () => {
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
                     /> :
-                    <EthernetPortCards handleEthernetPortSelect={handleEthernetPortSelect} />
+                    <EthernetPortCards
+                        handleEthernetPortSelect={handleEthernetPortSelect}
+                        handleCardsBackButton={handleCardsBackButton}
+                    />
             }
         </section>
     );

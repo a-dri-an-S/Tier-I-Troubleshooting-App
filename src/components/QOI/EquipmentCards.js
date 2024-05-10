@@ -1,6 +1,8 @@
+import CardBackButton from "../CardBackButton";
+
 import "../../styles/QOI/EquipmentCards.css";
 
-const EquipmentCards = ({ handleEquipmentSelect }) => {
+const EquipmentCards = ({ handleEquipmentSelect, handleCardsBackButton }) => {
     return (
         <div className="equip-cards-sect">
             <h1 className="modem-offline-cards-title">Equipment (Cable and ODU)</h1>
@@ -34,7 +36,7 @@ const EquipmentCards = ({ handleEquipmentSelect }) => {
                     <h2 className="equip-card-title">Replace the Cable</h2>
                 </div>
             </div>
-
+            <CardBackButton handleCardsBackButton={handleCardsBackButton}/>
         </div>
     );
 }

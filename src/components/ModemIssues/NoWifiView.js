@@ -3,7 +3,7 @@ import { useState } from "react";
 import NoWifiCards from "./NoWifiCards";
 import NoWifiTSView from "./NoWifiTSView";
 
-const NoWifiView = () => {
+const NoWifiView = ({ handleCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false, false, false, false]);
@@ -35,7 +35,10 @@ const NoWifiView = () => {
                     selectTSCard={selectTSCard}
                     handleBackButton={handleBackButton}
                 />:
-                <NoWifiCards handleNoWifiSelect={handleNoWifiSelect}/>
+                <NoWifiCards 
+                    handleNoWifiSelect={handleNoWifiSelect}
+                    handleCardsBackButton={handleCardsBackButton}
+                />
             }
         </section>
     );

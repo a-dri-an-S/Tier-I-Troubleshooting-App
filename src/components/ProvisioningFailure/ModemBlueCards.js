@@ -1,6 +1,8 @@
+import CardBackButton from "../CardBackButton";
+
 import "../../styles/ProvisioningFailure/ModemBlueCards.css";
 
-const ModemBlueCards = ({ handleModemBlueSelect }) => {
+const ModemBlueCards = ({ handleModemBlueSelect, handleCardsBackButton }) => {
     return (
         <div className="modem-blue-cards-sect">
             <h1 className="modem-blue-cards-title">Modem Status Light: Blue</h1>
@@ -34,7 +36,7 @@ const ModemBlueCards = ({ handleModemBlueSelect }) => {
                     <h2 className="modem-blue-card-title">VTT Activation - Other Issues</h2>
                 </div>
             </div>
-
+            <CardBackButton handleCardsBackButton={handleCardsBackButton} />
         </div>
     );
 }

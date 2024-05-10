@@ -3,7 +3,7 @@ import { useState } from "react";
 import ModemOfflineCards from "./ModemOfflineCards";
 import ModemOfflineTSView from "./ModemOfflineTSView";
 
-const ModemOfflineView = () => {
+const ModemOfflineView = ({ handleCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false, false, false, false]);
@@ -34,7 +34,10 @@ const ModemOfflineView = () => {
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
                     /> :
-                    <ModemOfflineCards handleModemOfflineSelect={handleModemOfflineSelect} />
+                    <ModemOfflineCards 
+                        handleModemOfflineSelect={handleModemOfflineSelect} 
+                        handleCardsBackButton={handleCardsBackButton}
+                    />
             }
         </section>
     );

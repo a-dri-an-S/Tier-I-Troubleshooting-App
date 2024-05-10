@@ -3,7 +3,7 @@ import { useState } from "react";
 import ModemFlashingWhiteCards from "./ModemFlashingWhiteCards";
 import ModemFlashingWhiteTSView from "./ModemFlashingWhiteTSView";
 
-const ModemFlashingWhiteView = () => {
+const ModemFlashingWhiteView = ({ handleCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false]);
@@ -34,7 +34,10 @@ const ModemFlashingWhiteView = () => {
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
                     /> :
-                    <ModemFlashingWhiteCards handleModemFlashingWhiteSelect={handleModemFlashingWhiteSelect} />
+                    <ModemFlashingWhiteCards
+                        handleModemFlashingWhiteSelect={handleModemFlashingWhiteSelect}
+                        handleCardsBackButton={handleCardsBackButton}
+                    />
             }
         </section>
     );

@@ -3,7 +3,7 @@ import { useState } from "react";
 import EquipmentCards from "./EquipmentCards";
 import EquipmentTSView from "./EquipmentTSView";
 
-const EquipmentView = () => {
+const EquipmentView = ({ handleCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false, false, false, false]);
@@ -34,7 +34,10 @@ const EquipmentView = () => {
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
                     /> :
-                    <EquipmentCards handleEquipmentSelect={handleEquipmentSelect}/>
+                    <EquipmentCards 
+                        handleEquipmentSelect={handleEquipmentSelect}
+                        handleCardsBackButton={handleCardsBackButton}
+                    />
             }
         </section>
     );

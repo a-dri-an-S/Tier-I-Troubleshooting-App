@@ -3,7 +3,7 @@ import { useState } from "react";
 import InstalledDeviceCards from "./InstalledDeviceCards";
 import InstalledDeviceTSView from "./InstalledDeviceTSView";
 
-const InstalledDeviceView = () => {
+const InstalledDeviceView = ({ handleCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false]);
@@ -34,7 +34,10 @@ const InstalledDeviceView = () => {
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
                     /> :
-                    <InstalledDeviceCards handleInvalidDeviceSelect={handleInvalidDeviceSelect} />
+                    <InstalledDeviceCards 
+                        handleInvalidDeviceSelect={handleInvalidDeviceSelect} 
+                        handleCardsBackButton={handleCardsBackButton}
+                    />
             }
         </section>
     );

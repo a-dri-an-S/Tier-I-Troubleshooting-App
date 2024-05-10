@@ -4,7 +4,7 @@ import SoftwareCards from "./SoftwareCards";
 import SoftwareTSView from "./SoftwareTSView";
 import { faLessThanEqual } from "@fortawesome/free-solid-svg-icons/faLessThanEqual";
 
-const SoftwareView = () => {
+const SoftwareView = ({ handleCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([faLessThanEqual]);
@@ -35,7 +35,10 @@ const SoftwareView = () => {
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
                     /> :
-                    <SoftwareCards handleSoftwareSelect={handleSoftwareSelect} />
+                    <SoftwareCards 
+                        handleSoftwareSelect={handleSoftwareSelect} 
+                        handleCardsBackButton={handleCardsBackButton}
+                    />
             }
         </section>
     );

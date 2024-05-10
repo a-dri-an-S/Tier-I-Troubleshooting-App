@@ -1,6 +1,8 @@
+import CardBackButton from "../CardBackButton";
+
 import "../../styles/QOI/AntennaPointingCards.css";
 
-const AntennaPointingCards = ({ handleAntennaPointingSelect }) => {
+const AntennaPointingCards = ({ handleAntennaPointingSelect, handleCardsBackButton }) => {
     return (
         <div className="antenna-pointing-cards-sect">
             <h1 className="antenna-pointing-cards-title">Antenna Pointing</h1>
@@ -76,7 +78,7 @@ const AntennaPointingCards = ({ handleAntennaPointingSelect }) => {
                     <h2 className="antenna-pointing-card-title">Check the Reflector</h2>
                 </div>
             </div>
-
+            <CardBackButton handleCardsBackButton={handleCardsBackButton} />
         </div>
     );
 }

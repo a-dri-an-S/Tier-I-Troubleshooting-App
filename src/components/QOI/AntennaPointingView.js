@@ -3,7 +3,7 @@ import { useState } from "react";
 import AntennaPointingCards from "./AntennaPointingCards";
 import AntennaPointingTSView from "./AntennaPointingTSView";
 
-const AntennaPointingView = () => {
+const AntennaPointingView = ({ handleCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false, false, false, false, false, false, false, false, false, false]);
@@ -34,7 +34,10 @@ const AntennaPointingView = () => {
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
                     /> :
-                    <AntennaPointingCards handleAntennaPointingSelect={handleAntennaPointingSelect} />
+                    <AntennaPointingCards 
+                        handleAntennaPointingSelect={handleAntennaPointingSelect} 
+                        handleCardsBackButton={handleCardsBackButton}
+                    />
             }
         </section>
     );

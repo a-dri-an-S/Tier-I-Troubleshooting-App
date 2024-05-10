@@ -23,12 +23,20 @@ const PointAndPeakView = () => {
         setSelectIssueCard(updatedState);
     }
 
+    function handleCardsBackButton() {
+        setIssueChange(false);
+        setSelectIssueCard([false, false, false])
+    }
+
 
     return (
         <section className="pnp-view">
             {
                 issueChange ?
-                    <PointAndPeakTSView selectIssueCard={selectIssueCard}/> :
+                    <PointAndPeakTSView
+                        selectIssueCard={selectIssueCard}
+                        handleCardsBackButton={handleCardsBackButton}
+                    /> :
                     <PointAndPeakCards handlePointAndPeakSelect={handlePointAndPeakSelect} />
             }
         </section>

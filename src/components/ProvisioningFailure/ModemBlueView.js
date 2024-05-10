@@ -3,7 +3,7 @@ import { useState } from "react";
 import ModemBlueCards from "./ModemBlueCards";
 import ModemBlueTSView from "./ModemBlueTSView";
 
-const ModemBlueView = () => {
+const ModemBlueView = ({ handleCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false, false, false, false]);
@@ -34,7 +34,10 @@ const ModemBlueView = () => {
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
                     /> :
-                    <ModemBlueCards handleModemBlueSelect={handleModemBlueSelect} />
+                    <ModemBlueCards
+                        handleModemBlueSelect={handleModemBlueSelect}
+                        handleCardsBackButton={handleCardsBackButton}
+                    />
             }
         </section>
     );

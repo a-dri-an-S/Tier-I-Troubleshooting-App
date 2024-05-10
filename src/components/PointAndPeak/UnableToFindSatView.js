@@ -3,7 +3,7 @@ import { useState } from "react";
 import UnableToFindSatCards from "./UnableToFindSatCards";
 import UnableToFindSatTSView from "./UnableToFindSatTSView";
 
-const UnableToFindSatView = () => {
+const UnableToFindSatView = ({ handleCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false, false, false, false, false, false, false, false, false, false]);
@@ -35,7 +35,10 @@ const UnableToFindSatView = () => {
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
                     /> :
-                    <UnableToFindSatCards handleUnableToFindSatSelect={handleUnableToFindSatSelect} />
+                    <UnableToFindSatCards 
+                        handleUnableToFindSatSelect={handleUnableToFindSatSelect} 
+                        handleCardsBackButton={handleCardsBackButton}
+                    />
             }
         </div>
     );

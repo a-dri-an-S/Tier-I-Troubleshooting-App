@@ -3,7 +3,7 @@ import { useState } from "react";
 import ModemLockCards from "./ModemLockCards";
 import ModemLockTSView from "./ModemLockTSView";
 
-const ModemLockView = () => {
+const ModemLockView = ({ handleCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false, false, false, false, false, false, false, false, false, false, false]);
@@ -34,7 +34,10 @@ const ModemLockView = () => {
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
                     /> :
-                    <ModemLockCards handleModemLockSelect={handleModemLockSelect} />
+                    <ModemLockCards 
+                        handleModemLockSelect={handleModemLockSelect} 
+                        handleCardsBackButton={handleCardsBackButton}
+                    />
             }
         </div>
     );

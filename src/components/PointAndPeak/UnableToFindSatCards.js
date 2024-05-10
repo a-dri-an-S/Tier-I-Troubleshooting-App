@@ -1,6 +1,8 @@
+import CardBackButton from "../CardBackButton";
+
 import "../../styles/PointAndPeak/UnableToFindSatCards.css";
 
-const UnableToFindSatCards = ({ handleUnableToFindSatSelect }) => {
+const UnableToFindSatCards = ({ handleUnableToFindSatSelect, handleCardsBackButton }) => {
     return (
         <div className="unable-to-find-sat-cards-sect">
             <h1 className="unable-to-find-sat-cards-title">Unable to Find the Satellite or Beam</h1>
@@ -76,7 +78,7 @@ const UnableToFindSatCards = ({ handleUnableToFindSatSelect }) => {
                     <h2 className="unable-to-find-sat-card-title">Check Cable Run</h2>
                 </div>
             </div>
-
+            <CardBackButton handleCardsBackButton={handleCardsBackButton} />
         </div>
     );
 }

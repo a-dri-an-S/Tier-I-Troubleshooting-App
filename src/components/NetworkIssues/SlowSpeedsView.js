@@ -3,7 +3,7 @@ import { useState } from "react";
 import SlowSpeedsCards from "./SlowSpeedsCards";
 import SlowSpeedsTSView from "./SlowSpeedsTSView";
 
-const SlowSpeedsView = () => {
+const SlowSpeedsView = ({ handleCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false, false, false]);
@@ -34,7 +34,10 @@ const SlowSpeedsView = () => {
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
                     /> :
-                    <SlowSpeedsCards handleSlowSpeedsSelect={handleSlowSpeedsSelect} />
+                    <SlowSpeedsCards 
+                        handleSlowSpeedsSelect={handleSlowSpeedsSelect} 
+                        handleCardsBackButton={handleCardsBackButton}
+                    />
             }
         </div>
     );

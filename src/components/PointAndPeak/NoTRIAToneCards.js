@@ -1,6 +1,8 @@
+import CardBackButton from "../CardBackButton";
+
 import "../../styles/PointAndPeak/NoTRIAToneCards.css";
 
-const NoTRIAToneCards = ({ handleNoTRIATonesSelect }) => {
+const NoTRIAToneCards = ({ handleNoTRIATonesSelect, handleCardsBackButton }) => {
     return (
         <div className="no-tria-tone-cards-sect">
             <h1 className="no-tria-tone-cards-title">No TRIA Tones</h1>
@@ -34,7 +36,7 @@ const NoTRIAToneCards = ({ handleNoTRIATonesSelect }) => {
                     <h2 className="no-tria-tone-card-title">Check the Cable Run</h2>
                 </div>
             </div>
-
+            <CardBackButton handleCardsBackButton={handleCardsBackButton}/>
         </div>
     );
 }

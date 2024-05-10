@@ -1,6 +1,8 @@
+import CardBackButton from "../CardBackButton";
+
 import "../../styles/NetworkIssues/SlowSpeedsCards.css";
 
-const SlowSpeedsCards = ({ handleSlowSpeedsSelect }) => {
+const SlowSpeedsCards = ({ handleSlowSpeedsSelect, handleCardsBackButton }) => {
     return (
         <div className="slow-speeds-cards-sect">
             <h1 className="slow-speeds-cards-title">Slow Speeds</h1>
@@ -27,7 +29,7 @@ const SlowSpeedsCards = ({ handleSlowSpeedsSelect }) => {
                     <h2 className="slow-speeds-card-title">Run a Speed Test</h2>
                 </div>
             </div>
-
+            <CardBackButton handleCardsBackButton={handleCardsBackButton}/>
         </div>
     );
 }

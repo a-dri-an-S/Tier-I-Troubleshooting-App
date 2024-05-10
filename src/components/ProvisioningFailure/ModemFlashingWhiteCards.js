@@ -1,6 +1,8 @@
+import CardBackButton from "../CardBackButton";
+
 import "../../styles/ProvisioningFailure/ModemFlashingWhiteCards.css"
 
-const ModemFlashingWhiteCards = ({ handleModemFlashingWhiteSelect }) => {
+const ModemFlashingWhiteCards = ({ handleModemFlashingWhiteSelect, handleCardsBackButton }) => {
     return (
         <div className="modem-flashing-white-cards-sect">
             <h1 className="modem-flashing-white-cards-title">Modem Status Light: Flashing White</h1>
@@ -13,6 +15,7 @@ const ModemFlashingWhiteCards = ({ handleModemFlashingWhiteSelect }) => {
                     <h2 className="modem-flashing-white-card-title">Point And Peak</h2>
                 </div>
             </div>
+            <CardBackButton handleCardsBackButton={handleCardsBackButton}/>
         </div>
     );
 }

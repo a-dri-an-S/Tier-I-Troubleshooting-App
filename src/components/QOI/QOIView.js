@@ -21,11 +21,19 @@ const QOIView = () => {
         setSelectIssueCard(updatedState);
     }
 
+    function handleCardsBackButton () {
+        setIssueChange(false);
+        setSelectIssueCard([false, false, false, false])
+    }
+
     return (
         <section className="qoi-view">
             {
                 issueChange ?
-                    <QOITSView selectIssueCard={selectIssueCard}/> :
+                    <QOITSView 
+                        selectIssueCard={selectIssueCard}
+                        handleCardsBackButton={handleCardsBackButton}
+                    /> :
                     <QOICards handleQOISelect={handleQOISelect}/>
             }
         </section>

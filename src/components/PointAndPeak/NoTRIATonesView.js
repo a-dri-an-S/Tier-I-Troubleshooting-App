@@ -3,7 +3,7 @@ import { useState } from "react";
 import NoTRIAToneCards from "./NoTRIAToneCards";
 import NoTRIATonesTSView from "./NoTRIATonesTSView";
 
-const NoTRIATones = () => {
+const NoTRIATones = ({ handleCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false, false, false, false]);
@@ -34,7 +34,10 @@ const NoTRIATones = () => {
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
                     /> :
-                    <NoTRIAToneCards handleNoTRIATonesSelect={handleNoTRIATonesSelect} />
+                    <NoTRIAToneCards 
+                        handleNoTRIATonesSelect={handleNoTRIATonesSelect} 
+                        handleCardsBackButton={handleCardsBackButton}
+                    />
             }
         </div>
     );

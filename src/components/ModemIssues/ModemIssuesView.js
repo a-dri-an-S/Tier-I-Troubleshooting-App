@@ -23,12 +23,18 @@ const ModemIssuesView = () => {
         setSelectIssueCard(updatedState);
     }
 
+    function handleCardsBackButton () {
+        setIssueChange(false);
+        setSelectIssueCard([false, false, false])
+    }
+
     return (
         <section className="modem-issues-view">
             {
                 issueChange ?
                     <ModemIssuesTSView 
                         selectIssueCard={selectIssueCard}
+                        handleCardsBackButton={handleCardsBackButton}
                     /> :
                     <ModemIssuesCards handleModemIssueSelect={handleModemIssueSelect} />
             }

@@ -22,12 +22,20 @@ const NetworkIssuesView = () => {
         setIssueChange(true);
         setSelectIssueCard(updatedState);
     }
+
+    function handleCardsBackButton () {
+        setIssueChange(false);
+        setSelectIssueCard([false, false, false])
+    }
     
     return (
         <section className="network-issues-view">
             {
                 issueChange ?
-                    <NetworkIssuesTSView selectIssueCard={selectIssueCard}/> :
+                    <NetworkIssuesTSView 
+                        selectIssueCard={selectIssueCard}
+                        handleCardsBackButton={handleCardsBackButton}
+                    /> :
                     <NetworkIssuesCards handleNetworkIssueSelect={handleNetworkIssueSelect}/>
             }
         </section>

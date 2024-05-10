@@ -3,7 +3,7 @@ import { useState } from "react";
 import NoInternetConnectionCards from "./NoInternetConnectionCards";
 import NoInternetConnectionTSView from "./NoInternetConnectionTSView";
 
-const NoInternetConnectionView = () => {
+const NoInternetConnectionView = ({ handleCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false, false]);
@@ -34,7 +34,10 @@ const NoInternetConnectionView = () => {
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
                     /> :
-                    <NoInternetConnectionCards handleNoInternetConnectionSelect={handleNoInternetConnectionSelect} />
+                    <NoInternetConnectionCards  
+                        handleNoInternetConnectionSelect={handleNoInternetConnectionSelect} 
+                        handleCardsBackButton={handleCardsBackButton}
+                    />
             }
 
         </div>

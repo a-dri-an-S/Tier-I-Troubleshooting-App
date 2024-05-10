@@ -1,6 +1,8 @@
+import CardBackButton from "../CardBackButton";
+
 import "../../styles/PointAndPeak/ModemLockCards.css";
 
-const ModemLockCards = ({ handleModemLockSelect }) => {
+const ModemLockCards = ({ handleModemLockSelect, handleCardsBackButton }) => {
     return (
         <div className="modem-lock-cards-sect">
             <h1 className="modem-lock-cards-title">Unable to Achieve Modem Lock</h1>
@@ -84,7 +86,7 @@ const ModemLockCards = ({ handleModemLockSelect }) => {
                     <h2 className="modem-lock-card-title">Check Cable Run</h2>
                 </div>
             </div>
-
+            <CardBackButton handleCardsBackButton={handleCardsBackButton} />
         </div>
     );
 }
