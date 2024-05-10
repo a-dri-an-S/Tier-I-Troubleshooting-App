@@ -1,6 +1,8 @@
 import "../../styles/TroubleshootCard.css"
 
-const VTTActivationConnection = () => {
+import TSCardBackButton from "./TSCardBackButton";
+
+const VTTActivationConnection = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">VTT Activation - Connection Issues</h1>
@@ -21,6 +23,7 @@ const VTTActivationConnection = () => {
                     </li>
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }

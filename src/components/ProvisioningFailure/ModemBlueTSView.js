@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-
 import CheckForOutages2 from "../TroubleshootingCards/CheckForOutages2";
 import CheckCRMErrors from "../TroubleshootingCards/CheckCRMErrors";
 import VTTActivationConnection from "../TroubleshootingCards/VTTActivationConnection";
@@ -12,17 +9,11 @@ const ModemBlueTSView = ({ selectTSCard, handleBackButton }) => {
     return (
         <div className="modem-blue-ts-view">
             {
-                (selectTSCard[0] && <CheckForOutages2 />) ||
-                (selectTSCard[1] && <CheckCRMErrors />) ||
-                (selectTSCard[2] && <VTTActivationConnection />) ||
-                (selectTSCard[3] && <VTTActivationOther handleBackButton={handleBackButton}/>)
+                (selectTSCard[0] && <CheckForOutages2 handleBackButton={handleBackButton} />) ||
+                (selectTSCard[1] && <CheckCRMErrors handleBackButton={handleBackButton} />) ||
+                (selectTSCard[2] && <VTTActivationConnection handleBackButton={handleBackButton} />) ||
+                (selectTSCard[3] && <VTTActivationOther handleBackButton={handleBackButton} />)
             }
-            <button
-                className="back-btn"
-                onClick={() => handleBackButton()}
-            >
-                <FontAwesomeIcon icon={faArrowLeft} />
-            </button>
         </div>
     );
 }

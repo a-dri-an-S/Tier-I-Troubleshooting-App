@@ -1,7 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-
 import "../../styles/TroubleshootCard.css"
+
+import TSCardBackButton from "./TSCardBackButton";
 
 const VTTActivationOther = ({ handleBackButton }) => {
     return (
@@ -20,12 +19,7 @@ const VTTActivationOther = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            {/* <button
-                className="back-btn-ts-card"
-                onClick={() => handleBackButton()}
-            >
-                <FontAwesomeIcon icon={faArrowLeft} />
-            </button> */}
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }
