@@ -1,14 +1,14 @@
 import { useState } from "react";
 
-import ModemOfflineCards from "./ModemOfflineCards";
-import ModemOfflineTSView from "./ModemOfflineTSView";
+import ModemBlueCards from "./ModemBlueCards";
+import ModemBlueTSView from "./ModemBlueTSView";
 
-const ModemOfflineView = () => {
+const ModemBlueView = () => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false, false, false, false]);
 
-    function handleModemOfflineSelect(e) {
+    function handleModemBlueSelect(e) {
         const idx = e.target.id;
         const updatedState = selectTSCard.map((el, i) => {
             if (i === +idx) {
@@ -27,17 +27,17 @@ const ModemOfflineView = () => {
     }
 
     return (
-        <section className="modem-offline-view">
+        <section className="modem-blue-view">
             {
                 troubleshootChange ?
-                    <ModemOfflineTSView
+                    <ModemBlueTSView
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
                     /> :
-                    <ModemOfflineCards handleModemOfflineSelect={handleModemOfflineSelect} />
+                    <ModemBlueCards handleModemBlueSelect={handleModemBlueSelect} />
             }
         </section>
     );
 }
 
-export default ModemOfflineView;
+export default ModemBlueView;

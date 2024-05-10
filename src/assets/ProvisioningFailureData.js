@@ -4,11 +4,10 @@ export const provisioningFailure = {
         issueTitle: 'Modem Status Light: Red',
         troubleshootingSteps: {
             tsA: {
-                tsTitle: "Check beam modem is on",
-                tsSteps: {
-                    stepA: ["If modem status light is red, please refer to the modem issues troubleshooting", "LINK - Modem Issues: Modem Offline"],
-
-                }
+                tsTitle: "LINK - Modem Issues: Modem Offline",
+                // tsSteps: {
+                //     stepA: ["If modem status light is red, please refer to the modem issues troubleshooting", "LINK - Modem Issues: Modem Offline"],
+                // }
             },
         }
     },
@@ -30,7 +29,7 @@ export const provisioningFailure = {
         issueTitle: 'Modem Status Light: Blue',
         troubleshootingSteps: {
             tsA: {
-                tsTitle: "Check for system or network outages",
+                tsTitle: "Check for Outages",
                 tsSteps: {
                     stepA: ["Check the outage board for any beam outages or impairments"],
                     stepB: ["If there are outages or impairments, escalate to Tier II for further assistance."],
@@ -44,17 +43,16 @@ export const provisioningFailure = {
                 }
             },
             tsC: {
-                tsTitle: "VTT activation - connection issues",
+                tsTitle: "VTT Activation - Connection Issues",
                 tsSteps: {
                     stepA: ["Disconnect from the modem's WiFi and log out of app."],
                     stepB: ["Reconnect to the modem's WiFi and log back into the app."],
                     stepC: ["Select the Work Order or use the Service Activation tab and retry activation."],
-                    stepD: ["Select the Work Order or use the Service Activation tab and retry activation."],
-                    stepE: ["If issues continue, uninstall/reinstall app."]
+                    stepD: ["If issues continue, uninstall/reinstall app."]
                 }
             },
             tsD: {
-                tsTitle: "VTT activation - other issues",
+                tsTitle: "VTT activation - Other Issues",
                 tsSteps: {
                     stepA: ["Logout and log back into app."],
                     stepB: ["Uninstall/reinstall app."],

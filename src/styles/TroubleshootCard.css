@@ -1,6 +1,7 @@
 .troubleshoot-sect {
     width: 1400px;
     height: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,6 +34,32 @@
 .troubleshoot-list-item {
     margin: 0 0 12px 0;
     /* border: 1px solid red; */
+}
+
+.back-btn-ts-card {
+    position: absolute;
+    bottom: 12px;
+    right:360px;
+    width: 48px;
+    height: 48px;
+    color: var(--very-dark-blue);
+    font-size: 34px;
+    background-color: transparent;
+    border: none;
+    /* border: 1px solid red; */
+}
+.back-btn-ts-card:hover {
+    cursor: pointer;
+    color: var(--very-dark-blue-light-mode-text);
+    font-size: 36px;
+}
+.back-btn-ts-card:active {
+    cursor: pointer;
+    color: var(--very-dark-blue-light-mode-text);
+    font-size: 36px;
+}
+.back-btn-ts-card:active {
+    font-size: 40px;
 }
 
 @media only screen and (max-width: 375px) {

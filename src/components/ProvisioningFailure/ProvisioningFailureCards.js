@@ -1,7 +1,7 @@
 import "../../styles/ProvisioningFailure/ProvisioningFailureCards.css";
 
 
-const ProvisioningFailureCards = () => {
+const ProvisioningFailureCards = ({ handleProvisioningFailureSelect }) => {
     return (
         <div className="provisioning-failure-cards-sect">
             <h1 className="provisioning-failure-title">Provisioning Failure</h1>
@@ -9,21 +9,21 @@ const ProvisioningFailureCards = () => {
                 <div
                     className="provisioning-failure-card"
                     id="0"
-                    // onClick={{}}
+                    onClick={(e) => handleProvisioningFailureSelect(e)}
                 >
                     <h2 className="provisioning-failure-card-title">Modem Status Light: Red</h2>
                 </div>
                 <div
                     className="provisioning-failure-card"
                     id="1"
-                    // onClick={{}}
+                    onClick={(e) => handleProvisioningFailureSelect(e)}
                 >
                     <h2 className="provisioning-failure-card-title">Modem Status Light: <br/>Flashing White</h2>
                 </div>
                 <div
                     className="provisioning-failure-card"
                     id="2"
-                    // onClick={{}}
+                    onClick={(e) => handleProvisioningFailureSelect(e)}
                 >
                     <h2 className="provisioning-failure-card-title">Modem Status Light: Blue</h2>
                 </div>

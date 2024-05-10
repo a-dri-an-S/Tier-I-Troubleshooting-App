@@ -1,14 +1,14 @@
 import { useState } from "react";
 
-import ModemOfflineCards from "./ModemOfflineCards";
-import ModemOfflineTSView from "./ModemOfflineTSView";
+import ModemFlashingWhiteCards from "./ModemFlashingWhiteCards";
+import ModemFlashingWhiteTSView from "./ModemFlashingWhiteTSView";
 
-const ModemOfflineView = () => {
+const ModemFlashingWhiteView = () => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
-    const [selectTSCard, setSelectTSCard] = useState([false, false, false, false]);
+    const [selectTSCard, setSelectTSCard] = useState([false]);
 
-    function handleModemOfflineSelect(e) {
+    function handleModemFlashingWhiteSelect(e) {
         const idx = e.target.id;
         const updatedState = selectTSCard.map((el, i) => {
             if (i === +idx) {
@@ -23,21 +23,21 @@ const ModemOfflineView = () => {
 
     function handleBackButton() {
         setTroubleshootChange(false);
-        setSelectTSCard([false, false, false, false]);
+        setSelectTSCard([false]);
     }
 
     return (
-        <section className="modem-offline-view">
+        <section className="modem-flashing-white-view">
             {
                 troubleshootChange ?
-                    <ModemOfflineTSView
+                    <ModemFlashingWhiteTSView
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
                     /> :
-                    <ModemOfflineCards handleModemOfflineSelect={handleModemOfflineSelect} />
+                    <ModemFlashingWhiteCards handleModemFlashingWhiteSelect={handleModemFlashingWhiteSelect} />
             }
         </section>
     );
 }
 
-export default ModemOfflineView;
+export default ModemFlashingWhiteView;
