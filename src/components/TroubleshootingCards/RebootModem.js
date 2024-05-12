@@ -1,7 +1,8 @@
+import TSCardBackButton from "./TSCardBackButton";
+
 import "../../styles/TroubleshootCard.css"
 
-
-const RebootModem = () => {
+const RebootModem = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Reboot Modem</h1>
@@ -12,6 +13,7 @@ const RebootModem = () => {
                     </li>
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }

@@ -1,6 +1,8 @@
-import "../../styles/TroubleshootCard.css"
+import TSCardBackButton from "./TSCardBackButton";
 
-const CheckGround = () => {
+import "../../styles/TroubleshootCard.css";
+
+const CheckGround = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check the Ground</h1>
@@ -28,6 +30,7 @@ const CheckGround = () => {
                     </li>
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }

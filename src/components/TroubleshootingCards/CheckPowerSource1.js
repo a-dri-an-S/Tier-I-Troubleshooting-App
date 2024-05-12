@@ -1,6 +1,8 @@
 import "../../styles/TroubleshootCard.css"
 
-const CheckPowerSource = () => {
+import TSCardBackButton from "./TSCardBackButton";
+
+const CheckPowerSource = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check the Power Source</h1>
@@ -33,6 +35,7 @@ const CheckPowerSource = () => {
                     </li>
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }

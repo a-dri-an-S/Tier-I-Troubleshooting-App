@@ -1,4 +1,8 @@
-const DisableBridgeModeESVT = () => {
+import TSCardBackButton from "./TSCardBackButton";
+
+import "../../styles/TroubleshootCard.css"
+
+const DisableBridgeModeESVT = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
         <h1 className="troubleshoot-title">Disable Bridge Mode through ESVT</h1>
@@ -18,6 +22,7 @@ const DisableBridgeModeESVT = () => {
                 </li>
             </ul>
         </div>
+        <TSCardBackButton handleBackButton={handleBackButton} />
     </div>
     );
 }

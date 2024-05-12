@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-
 import DisableBridgeModeModemGUI from "../TroubleshootingCards/DisableBridgeModeModemGUI";
 import ViasatShieldPremium from "../TroubleshootingCards/ViasatSheildPremium";
 import CheckWifiSSID from "../TroubleshootingCards/CheckWifiSSID";
@@ -13,17 +10,11 @@ const NoWifiTSView = ({ selectTSCard, handleBackButton }) => {
     return (
         <div className="no-wifi-ts-view">
             {
-                (selectTSCard[0] && <DisableBridgeModeModemGUI />) || 
-                (selectTSCard[1] && <ViasatShieldPremium />) ||
-                (selectTSCard[2] && <CheckWifiSSID />) ||
-                (selectTSCard[3] && <DisableBridgeModeESVT />)
+                (selectTSCard[0] && <DisableBridgeModeModemGUI handleBackButton={handleBackButton}/>) || 
+                (selectTSCard[1] && <ViasatShieldPremium handleBackButton={handleBackButton}/>) ||
+                (selectTSCard[2] && <CheckWifiSSID handleBackButton={handleBackButton}/>) ||
+                (selectTSCard[3] && <DisableBridgeModeESVT handleBackButton={handleBackButton}/>)
             }
-            <button
-                className="back-btn"
-                onClick={() => handleBackButton()}
-            >
-                <FontAwesomeIcon icon={faArrowLeft}/>
-            </button>
         </div>
     );
 }

@@ -26,6 +26,11 @@ const SlowSpeedsView = ({ handleCardsBackButton }) => {
         setSelectTSCard([false, false, false]);
     }
 
+    function handleTSCardsBackButton () {
+        setTroubleshootChange(false);
+        setSelectTSCard([false, false, false])
+    }
+
     return (
         <div className="slow-speeds-view">
             {
@@ -33,6 +38,7 @@ const SlowSpeedsView = ({ handleCardsBackButton }) => {
                     <SlowSpeedsTSView
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
+                        handleTSCardsBackButton={handleTSCardsBackButton}
                     /> :
                     <SlowSpeedsCards 
                         handleSlowSpeedsSelect={handleSlowSpeedsSelect} 

@@ -1,6 +1,8 @@
+import TSCardBackButton from "./TSCardBackButton";
+
 import "../../styles/TroubleshootCard.css"
 
-const CheckForOutages = () => {
+const CheckForOutages = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check for Outages</h1>
@@ -17,6 +19,7 @@ const CheckForOutages = () => {
                     </li>
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }

@@ -1,6 +1,8 @@
+import TSCardBackButton from "./TSCardBackButton";
+
 import "../../styles/TroubleshootCard.css"
 
-const CheckReflector = () => {
+const CheckReflector = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check Reflector</h1>
@@ -14,6 +16,7 @@ const CheckReflector = () => {
                     </li>
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }

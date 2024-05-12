@@ -1,6 +1,8 @@
+import TSCardBackButton from "./TSCardBackButton";
+
 import "../../styles/TroubleshootCard.css"
 
-const CheckCableRun = () => {
+const CheckCableRun = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check the Cable Run</h1>
@@ -35,6 +37,7 @@ const CheckCableRun = () => {
 
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }

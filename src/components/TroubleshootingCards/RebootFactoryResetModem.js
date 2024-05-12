@@ -1,7 +1,8 @@
+import TSCardBackButton from "./TSCardBackButton";
+
 import "../../styles/TroubleshootCard.css"
 
-
-const RebootFactoryResetModem = () => {
+const RebootFactoryResetModem = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Reboot or Factory Reset Modem</h1>
@@ -15,6 +16,8 @@ const RebootFactoryResetModem = () => {
                     </li>
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
+
         </div>
     );
 }

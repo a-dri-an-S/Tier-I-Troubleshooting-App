@@ -1,6 +1,8 @@
+import TSCardBackButton from "./TSCardBackButton";
+
 import "../../styles/TroubleshootCard.css"
 
-const SwapTRIA = () => {
+const SwapTRIA = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
         <h1 className="troubleshoot-title">Swap TRIA</h1>
@@ -25,6 +27,7 @@ const SwapTRIA = () => {
                     If modem status light continues red, please continue with 'Modem Offline' troubleshooting steps.
                 </li>
             </ul>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     </div>
     );

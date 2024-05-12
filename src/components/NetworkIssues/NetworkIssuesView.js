@@ -36,7 +36,9 @@ const NetworkIssuesView = () => {
                         selectIssueCard={selectIssueCard}
                         handleCardsBackButton={handleCardsBackButton}
                     /> :
-                    <NetworkIssuesCards handleNetworkIssueSelect={handleNetworkIssueSelect}/>
+                    <NetworkIssuesCards 
+                        handleNetworkIssueSelect={handleNetworkIssueSelect}
+                    />
             }
         </section>
     );

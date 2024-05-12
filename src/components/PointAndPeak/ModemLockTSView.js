@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-
 import CheckForOutages from "../TroubleshootingCards/CheckForOutages";
 import CheckModemKey from "../TroubleshootingCards/CheckModemKey";
 import CheckPowerSource2 from "../TroubleshootingCards/CheckPowerSource2";
@@ -19,24 +16,18 @@ const ModemLockTSView = ({ selectTSCard, handleBackButton }) => {
     return (
         <div className="modem-lock-ts-view">
             {
-                (selectTSCard[0] && <CheckForOutages />) ||
-                (selectTSCard[1] && <CheckModemKey />) ||
-                (selectTSCard[2] && <CheckPowerSource2 />) ||
-                (selectTSCard[3] && <CheckElAzSkew />) ||
-                (selectTSCard[4] && <CheckLOS />) ||
-                (selectTSCard[5] && <CheckForPlumbMast />) ||
-                (selectTSCard[6] && <SwapTRIA2 />) ||
-                (selectTSCard[7] && <SwapModem2 />) ||
-                (selectTSCard[8] && <CheckReflector />) ||
-                (selectTSCard[9] && <CheckForCorrectBeam />) ||
-                (selectTSCard[10] && <CheckCableRun />)
+                (selectTSCard[0] && <CheckForOutages handleBackButton={handleBackButton} />) ||
+                (selectTSCard[1] && <CheckModemKey handleBackButton={handleBackButton} />) ||
+                (selectTSCard[2] && <CheckPowerSource2 handleBackButton={handleBackButton} />) ||
+                (selectTSCard[3] && <CheckElAzSkew handleBackButton={handleBackButton} />) ||
+                (selectTSCard[4] && <CheckLOS handleBackButton={handleBackButton} />) ||
+                (selectTSCard[5] && <CheckForPlumbMast handleBackButton={handleBackButton} />) ||
+                (selectTSCard[6] && <SwapTRIA2 handleBackButton={handleBackButton} />) ||
+                (selectTSCard[7] && <SwapModem2 handleBackButton={handleBackButton} />) ||
+                (selectTSCard[8] && <CheckReflector handleBackButton={handleBackButton} />) ||
+                (selectTSCard[9] && <CheckForCorrectBeam handleBackButton={handleBackButton} />) ||
+                (selectTSCard[10] && <CheckCableRun handleBackButton={handleBackButton} />)
             }
-            <button
-                className="back-btn"
-                onClick={() => handleBackButton()}
-            >
-                <FontAwesomeIcon icon={faArrowLeft} />
-            </button>
         </div>
     );
 }

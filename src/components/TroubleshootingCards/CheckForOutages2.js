@@ -1,6 +1,6 @@
-import "../../styles/TroubleshootCard.css"
-
 import TSCardBackButton from "./TSCardBackButton";
+
+import "../../styles/TroubleshootCard.css";
 
 const CheckForOutages2 = ({ handleBackButton }) => {
     return (

@@ -1,4 +1,8 @@
-const CheckForPlumbMast = () => {
+import TSCardBackButton from "./TSCardBackButton";
+
+import "../../styles/TroubleshootCard.css"
+
+const CheckForPlumbMast = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check for a Plumb Mast</h1>
@@ -10,6 +14,7 @@ const CheckForPlumbMast = () => {
 
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }

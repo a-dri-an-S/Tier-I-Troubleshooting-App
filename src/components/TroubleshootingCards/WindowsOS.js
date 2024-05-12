@@ -1,6 +1,8 @@
+import TSCardBackButton from "./TSCardBackButton";
+
 import "../../styles/TroubleshootCard.css"
 
-const WindowsOS = () => {
+const WindowsOS = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Windows OS</h1>
@@ -21,7 +23,7 @@ const WindowsOS = () => {
                     <li className="troubleshoot-list-item">
                         If this fails, escalate to Tier II for TAC support.
                     </li>
-
+                    <TSCardBackButton handleBackButton={handleBackButton} />
                 </ul>
             </div>
         </div>

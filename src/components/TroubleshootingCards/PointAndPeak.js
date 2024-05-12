@@ -1,6 +1,8 @@
-import "../../styles/TroubleshootCard.css"
+import TSCardBackButton from "./TSCardBackButton";
 
-const PointAndPeak = () => {
+import "../../styles/TroubleshootCard.css";
+
+const PointAndPeak = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
         <h1 className="troubleshoot-title">Point and Peak</h1>
@@ -11,6 +13,7 @@ const PointAndPeak = () => {
                 </li>
             </ul>
         </div>
+        <TSCardBackButton handleBackButton={handleBackButton} />
     </div>
     );
 }

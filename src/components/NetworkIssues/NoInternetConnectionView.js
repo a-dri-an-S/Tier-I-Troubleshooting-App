@@ -26,6 +26,11 @@ const NoInternetConnectionView = ({ handleCardsBackButton }) => {
         setSelectTSCard([false, false]);
     }
 
+    function handleTSCardsBackButton () {
+        setTroubleshootChange(false);
+        setSelectTSCard([false, false])
+    }
+
     return (
         <div className="no-internet-connection-view">
             {
@@ -33,6 +38,7 @@ const NoInternetConnectionView = ({ handleCardsBackButton }) => {
                     <NoInternetConnectionTSView
                         selectTSCard={selectTSCard}
                         handleBackButton={handleBackButton}
+                        handleTSCardsBackButton={handleTSCardsBackButton}
                     /> :
                     <NoInternetConnectionCards  
                         handleNoInternetConnectionSelect={handleNoInternetConnectionSelect} 

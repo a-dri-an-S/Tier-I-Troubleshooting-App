@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-
 import CheckBeamOnModem from "../TroubleshootingCards/CheckBeamOnModem";
 import CheckForOutages from "../TroubleshootingCards/CheckForOutages";
 import CheckPowerSource2 from "../TroubleshootingCards/CheckPowerSource2";
@@ -18,23 +15,17 @@ const AntennaPointingTSView = ({ selectTSCard, handleBackButton }) => {
     return (
         <div className="antenna-pointing-ts-view">
             {
-                (selectTSCard[0] && <CheckBeamOnModem />) ||
-                (selectTSCard[1] && <CheckForOutages />) ||
-                (selectTSCard[2] && <CheckPowerSource2 />) ||
-                (selectTSCard[3] && <CheckLOS />) ||
-                (selectTSCard[4] && <PointAndPeak />) || 
-                (selectTSCard[5] && <CheckForCorrectBeam />) ||
-                (selectTSCard[6] && <SwapTRIA2 />) ||
-                (selectTSCard[7] && <SwapModem2 />) ||
-                (selectTSCard[8] && <CheckCableRun />) || 
-                (selectTSCard[9] && <CheckReflector />) 
+                (selectTSCard[0] && <CheckBeamOnModem handleBackButton={handleBackButton} />) ||
+                (selectTSCard[1] && <CheckForOutages handleBackButton={handleBackButton} />) ||
+                (selectTSCard[2] && <CheckPowerSource2 handleBackButton={handleBackButton} />) ||
+                (selectTSCard[3] && <CheckLOS handleBackButton={handleBackButton} />) ||
+                (selectTSCard[4] && <PointAndPeak handleBackButton={handleBackButton} />) ||
+                (selectTSCard[5] && <CheckForCorrectBeam handleBackButton={handleBackButton} />) ||
+                (selectTSCard[6] && <SwapTRIA2 handleBackButton={handleBackButton} />) ||
+                (selectTSCard[7] && <SwapModem2 handleBackButton={handleBackButton} />) ||
+                (selectTSCard[8] && <CheckCableRun handleBackButton={handleBackButton} />) ||
+                (selectTSCard[9] && <CheckReflector handleBackButton={handleBackButton} />)
             }
-            <button
-                className="back-btn"
-                onClick={() => handleBackButton()}
-            >
-                <FontAwesomeIcon icon={faArrowLeft} />
-            </button>
         </div>
     );
 }

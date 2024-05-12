@@ -3,7 +3,7 @@ import { useState } from "react";
 import ReleaseRenewIPCards from "./ReleaseRenewIPCards";
 import ReleaseRenewIPTSView from "./ReleaseRenewIPTSView";
 
-const ReleaseRenewIPView = () => {
+const ReleaseRenewIPView = ({ handleTSCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false, false, false]);
@@ -21,18 +21,23 @@ const ReleaseRenewIPView = () => {
         setSelectTSCard(updatedState);
     }
 
-    // function handleBackButton() {
-    //     setTroubleshootChange(false);
-    //     setSelectTSCard([false, false, false]);
-    // }
-
+    function handleBackButton() {
+        setTroubleshootChange(false);
+        setSelectTSCard([false, false, false]);
+    }
 
     return (
         <div className="release-renew-ip-view">
             {
                 troubleshootChange ?
-                    <ReleaseRenewIPTSView selectTSCard={selectTSCard}/> :
-                    <ReleaseRenewIPCards handleReleaseRenewIPSelect={handleReleaseRenewIPSelect} />
+                    <ReleaseRenewIPTSView 
+                        selectTSCard={selectTSCard}
+                        handleBackButton={handleBackButton}
+                    /> :
+                    <ReleaseRenewIPCards 
+                        handleReleaseRenewIPSelect={handleReleaseRenewIPSelect}
+                        handleTSCardsBackButton={handleTSCardsBackButton}
+                    />
             }
         </div>
     );

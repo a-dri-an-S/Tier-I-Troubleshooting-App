@@ -1,7 +1,8 @@
-import "../../styles/TroubleshootCard.css"
+import TSCardBackButton from "./TSCardBackButton";
 
+import "../../styles/TroubleshootCard.css";
 
-const ReplaceCable = () => {
+const ReplaceCable = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Replace the Cable</h1>
@@ -13,6 +14,7 @@ const ReplaceCable = () => {
 
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }

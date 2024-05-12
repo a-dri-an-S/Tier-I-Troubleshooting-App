@@ -1,13 +1,15 @@
+import TSCardBackButton from "./TSCardBackButton";
+
 import "../../styles/TroubleshootCard.css"
 
-const SpeedTestAdvertised = () => {
+const SpeedTestAdvertised = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Speed Test Return's Advertised Speeds</h1>
             <div className="troubleshoot-card">
                 <ul className="troubleshoot-list">
                     <li className="troubleshoot-list-item">
-                        If speed test returns advertised speeds, check if the slow speeds are over Wi-Fi or ethernet connection. 
+                        If speed test returns advertised speeds, check if the slow speeds are over Wi-Fi or ethernet connection.
                     </li>
                     <li className="troubleshoot-list-item">
                         WiFi: If speeds are slow over WiFi, get device connected in closer proximity to modem.
@@ -23,6 +25,7 @@ const SpeedTestAdvertised = () => {
                     </li>
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }

@@ -1,6 +1,8 @@
-import "../../styles/TroubleshootCard.css"
+import TSCardBackButton from "./TSCardBackButton";
 
-const PowerCycleModem = () => {
+import "../../styles/TroubleshootCard.css";
+
+const PowerCycleModem = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Power Cycle Modem</h1>
@@ -14,6 +16,7 @@ const PowerCycleModem = () => {
                     </li>
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }

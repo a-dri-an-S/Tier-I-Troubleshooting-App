@@ -1,4 +1,8 @@
-const CheckWifiSSID = () => {
+import TSCardBackButton from "./TSCardBackButton";
+
+import "../../styles/TroubleshootCard.css"
+
+const CheckWifiSSID = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
         <h1 className="troubleshoot-title">Check if WiFi SSID is set to Private</h1>
@@ -31,6 +35,7 @@ const CheckWifiSSID = () => {
                 </li>
             </ul>
         </div>
+        <TSCardBackButton handleBackButton={handleBackButton} />
     </div>
     );
 }

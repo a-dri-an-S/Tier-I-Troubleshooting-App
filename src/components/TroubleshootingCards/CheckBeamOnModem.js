@@ -1,6 +1,8 @@
-import "../../styles/TroubleshootCard.css"
+import TSCardBackButton from "./TSCardBackButton";
 
-const CheckBeamOnModem = () => {
+import "../../styles/TroubleshootCard.css";
+
+const CheckBeamOnModem = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check for Correct Beam Assignment</h1>
@@ -15,6 +17,7 @@ const CheckBeamOnModem = () => {
                     </li>
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }

@@ -1,4 +1,8 @@
-const TestEthernetPorts = () => {
+import TSCardBackButton from "./TSCardBackButton";
+
+import "../../styles/TroubleshootCard.css"
+
+const TestEthernetPorts = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Test all ethernet ports</h1>
@@ -28,6 +32,7 @@ const TestEthernetPorts = () => {
                     </li>
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }

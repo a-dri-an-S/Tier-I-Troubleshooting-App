@@ -3,7 +3,7 @@ import { useState } from "react";
 import SpeedTestCards from "./SpeedTestCards";
 import SpeedTestTSView from "./SpeedTestTSView";
 
-const SpeedTestView = () => {
+const SpeedTestView = ({ handleTSCardsBackButton }) => {
 
     const [troubleshootChange, setTroubleshootChange] = useState(false);
     const [selectTSCard, setSelectTSCard] = useState([false, false, false]);
@@ -21,17 +21,23 @@ const SpeedTestView = () => {
         setSelectTSCard(updatedState);
     }
 
-    // function handleBackButton() {
-    //     setTroubleshootChange(false);
-    //     setSelectTSCard([false, false, false]);
-    // }
+    function handleBackButton() {
+        setTroubleshootChange(false);
+        setSelectTSCard([false, false, false]);
+    }
 
     return (
         <div className="speed-test-view">
             {
                 troubleshootChange ?
-                    <SpeedTestTSView selectTSCard={selectTSCard}/> :
-                    <SpeedTestCards handleSpeedTestSelect={handleSpeedTestSelect}/>
+                    <SpeedTestTSView 
+                        selectTSCard={selectTSCard} 
+                        handleBackButton={handleBackButton}
+                    /> :
+                    <SpeedTestCards 
+                        handleSpeedTestSelect={handleSpeedTestSelect} 
+                        handleTSCardsBackButton={handleTSCardsBackButton}
+                    />
             }
         </div>
     );

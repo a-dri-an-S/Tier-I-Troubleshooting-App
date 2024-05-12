@@ -1,4 +1,8 @@
-const CheckLOS = () => {
+import TSCardBackButton from "./TSCardBackButton";
+
+import "../../styles/TroubleshootCard.css"
+
+const CheckLOS = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check Line of Sight(LOS)</h1>
@@ -12,9 +16,9 @@ const CheckLOS = () => {
                             <li className="troubleshoot-list-item-item">If its a service call work order, check the original install work order uploaded photos or have the tech upload one.</li>
                         </ul>
                     </li>
-
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }

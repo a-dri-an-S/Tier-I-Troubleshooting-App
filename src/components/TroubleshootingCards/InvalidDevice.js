@@ -1,6 +1,8 @@
-import "../../styles/TroubleshootCard.css"
+import TSCardBackButton from "./TSCardBackButton";
 
-const InvalidDevice = () => {
+import "../../styles/TroubleshootCard.css";
+
+const InvalidDevice = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Invalid Device</h1>
@@ -25,6 +27,7 @@ const InvalidDevice = () => {
                     </li>
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }
