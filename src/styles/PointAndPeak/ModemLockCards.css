@@ -60,15 +60,63 @@
 }
 
 @media only screen and (min-width: 375px) {
-
+    .modem-lock-cards-sect {
+        width: 350px;
+        height: 100%;
+    }
+    .modem-lock-cards-title {
+        margin: 96px 0px 0px 0;
+        width: 300px;
+        font-size: 32px;
+    }
+    .modem-lock-cards-cont {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .modem-lock-card {
+        margin: 0 0 24px 0;
+        width: 280px;
+        height: 182px;
+        border-radius: 12px;
+    }
+    .modem-lock-card-title {
+        width: 220px;
+        font-size: 18px;
+    }
 }
-
-@media only screen and (min-width: 600px) {
-
-}
-
 @media only screen and (min-width: 768px) {
-
+    .modem-lock-cards-sect {
+        position: relative;
+        width: 624px;
+        height: 100%;
+    }
+    .modem-lock-cards-title {
+        margin: 64px 0px 48px 0;
+        width: 600px;
+        font-size: 38px;
+    }
+    .modem-lock-cards-cont {
+        margin: 0 0 24px 0;
+        width: 624px;
+        height: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 24px;
+    }
+    .modem-lock-card {
+        margin: 0px;
+        width: 300px;
+        height: 195px;
+        border-radius: 12px;
+    }
+    .modem-lock-card-title {
+        width: 220px;
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 992px) {

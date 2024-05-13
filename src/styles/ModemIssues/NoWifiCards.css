@@ -62,13 +62,35 @@
 }
 
 @media only screen and (min-width: 375px) {
-
+    .no-wifi-cards-sect {
+        width: 624px;
+        height: 100vh;
+    }
+    .no-wifi-cards-title {
+        margin: 64px 0px 48px 0;
+        width: 600px;
+        font-size: 38px;
+    }
+    .no-wifi-cards-cont {
+        margin: 0 0 24px 0;
+        width: 624px;
+        height: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 24px;
+    }
+    .no-wifi-card {
+        margin: 0px;
+        width: 300px;
+        height: 195px;
+        border-radius: 12px;
+    }
+    .no-wifi-card-title {
+        width: 220px;
+        font-size: 20px;
+    }
 }
-
-@media only screen and (min-width: 600px) {
-
-}
-
 @media only screen and (min-width: 768px) {
 
 }

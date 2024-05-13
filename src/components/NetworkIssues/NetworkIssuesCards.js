@@ -3,7 +3,7 @@ import "../../styles/NetworkIssues/NetworkIssueCards.css";
 const NetworkIssuesCards = ({ handleNetworkIssueSelect }) => {
     return (
         <div className="network-issue-cards-sect">
-            <h1 className="network-issue-title">Network Issues</h1>
+            <h1 className="network-issue-cards-title">Network Issues</h1>
             <div className="network-issue-cards-cont">
                 <div
                     className="network-issue-card"

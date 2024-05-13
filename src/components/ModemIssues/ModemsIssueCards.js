@@ -3,7 +3,7 @@ import "../../styles/ModemIssues/ModemIssueCards.css";
 const ModemIssuesCards = ({ handleModemIssueSelect }) => {
     return (
         <div className="modem-issue-cards-sect">
-            <h1 className="modem-issue-title">Modem Issues</h1>
+            <h1 className="modem-issue-cards-title">Modem Issues</h1>
             <div className="modem-issue-cards-cont">
                 <div
                     className="modem-issue-card"

@@ -24,15 +24,35 @@
 }
 
 @media only screen and (min-width: 375px) {
-
+    .cards-back-btn {
+        margin: 12px 0 24px 0;
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
+    }
+    .cards-back-btn:hover {
+        font-size: 26px;
+    }
+    .cards-back-btn:active {
+        font-size: 28px;
+    }
 }
-
-@media only screen and (min-width: 600px) {
-
-}
-
 @media only screen and (min-width: 768px) {
-
+    .cards-back-btn {
+        margin: 0px;
+        position: absolute;
+        bottom:24px;
+        right: 24px;
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
+    }
+    .cards-back-btn:hover {
+        font-size: 26px;
+    }
+    .cards-back-btn:active {
+        font-size: 28px;
+    }
 }
 
 @media only screen and (min-width: 992px) {

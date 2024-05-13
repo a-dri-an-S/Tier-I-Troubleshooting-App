@@ -5,13 +5,10 @@
 }
 
 @media only screen and (min-width: 375px) {
-
+    .modem-offline-ts-view {
+        width: 100%;
+    }
 }
-
-@media only screen and (min-width: 600px) {
-
-}
-
 @media only screen and (min-width: 768px) {
 
 }
