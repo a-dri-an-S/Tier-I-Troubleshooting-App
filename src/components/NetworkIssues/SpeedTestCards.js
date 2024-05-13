@@ -6,7 +6,7 @@ const RunASpeedTest = ({ handleSpeedTestSelect, handleTSCardsBackButton }) => {
     return (
         <div className="speed-test-cards-sect">
             <h1 className="speed-test-cards-title">Run A Speed Test</h1>
-            <li className="speed-test-title-desc">Run a speed test in ESVT to confirm speed issues</li>
+            <p className="speed-test-title-desc">Run a speed test in ESVT to confirm speed issues</p>
             <div className="speed-test-cards-cont">
                 <div
                     className="speed-test-card"

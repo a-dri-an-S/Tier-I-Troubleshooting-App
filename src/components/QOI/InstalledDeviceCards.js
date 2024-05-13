@@ -4,15 +4,15 @@ import "../../styles/QOI/InvalidDeviceCards.css";
 
 const InstalledDeviceCards = ({ handleInvalidDeviceSelect, handleCardsBackButton }) => {
     return (
-        <div className="modem-offline-cards-sect">
-            <h1 className="modem-offline-cards-title">Installed Devices</h1>
-            <div className="modem-offline-cards-cont">
+        <div className="invalid-device-cards-sect">
+            <h1 className="invalid-device-cards-title">Installed Devices</h1>
+            <div className="invalid-device-cards-cont">
                 <div
-                    className="modem-offline-card"
+                    className="invalid-device-card"
                     id="0"
                     onClick={(e) => handleInvalidDeviceSelect(e)}
                 >
-                    <h2 className="modem-offline-card-title">Invalid Device</h2>
+                    <h2 className="invalid-device-card-title">Invalid Device</h2>
                 </div>
             </div>
             <CardBackButton handleCardsBackButton={handleCardsBackButton} />

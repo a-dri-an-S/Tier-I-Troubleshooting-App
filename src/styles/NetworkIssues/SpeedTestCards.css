@@ -1,38 +1,17 @@
 .speed-test-cards-sect {
-    width: 1400px;
-    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
 }
-
 .speed-test-cards-title {
-    margin: 0 0 12px 0;
+    text-align: center;
     color: var(--very-dark-blue);
-    font-size: 48px;
-    /* border: 1px solid red; */
 }
-
 .speed-test-title-desc {
-    margin: 0 0 48px 0;
     color: var(--very-dark-blue);
-    font-size: 20px;
 }
-
-.speed-test-cards-cont {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 48px;
-    /* border: 1px solid red; */
-}
-
 .speed-test-card {
-    width: 433px;
-    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,16 +19,13 @@
     color: var(--dark-blue);
     background-color: var(--white);
     border: none;
-    border-radius: 24px;
     box-shadow: 1px 1px 12px 1px var(--shadow);
 }
-
 .speed-test-card:hover {
     cursor: pointer;
     background-color: var(--very-light-gray);
     box-shadow: 1px 1px 24px 2px var(--shadow);
 }
-
 .speed-test-card:active {
     cursor: pointer;
     color: var(--very-light-gray);
@@ -57,10 +33,38 @@
     box-shadow: 1px 1px 36px 8px var(--shadow);
 }
 
-
-
 @media only screen and (max-width: 375px) {
-
+    .speed-test-cards-sect {
+        width: 350px;
+        height: 100%;
+    }
+    .speed-test-cards-title {
+        margin: 96px 0px 12px 0;
+        width: 300px;
+        font-size: 32px;
+    }
+    .speed-test-title-desc {
+        margin: 0 0 24px 0;
+        font-size: 14px;
+        text-align: center;
+    }
+    .speed-test-cards-cont {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .speed-test-card {
+        margin: 0 0 24px 0;
+        width: 280px;
+        height: 182px;
+        border-radius: 12px;
+    }
+    .speed-test-card-title {
+        width: 220px;
+        font-size: 18px;
+    }
 }
 
 @media only screen and (min-width: 375px) {

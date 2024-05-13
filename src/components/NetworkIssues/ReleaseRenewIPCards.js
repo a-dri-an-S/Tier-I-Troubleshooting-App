@@ -6,7 +6,7 @@ const ReleaseRenewIPCards = ({ handleReleaseRenewIPSelect, handleTSCardsBackButt
     return (
         <div className="release-renew-ip-cards-sect">
             <h1 className="release-renew-ip-cards-title">Release/Renew IP Address</h1>
-            <li className="release-renew-ip-title-desc">Release and renew IP address with one of the following methods:</li>
+            <p className="release-renew-ip-title-desc">Release and renew IP address with one of the following methods:</p>
             <div className="release-renew-ip-cards-cont">
                 <div
                     className="release-renew-ip-card"

@@ -23,16 +23,19 @@ const ProvisioningFailureView = () => {
         setSelectIssueCard(updatedState);
     }
 
-    function handleCardsBackButton () {
+    function handleCardsBackButton() {
         setIssueChange(false);
         setSelectIssueCard([false, false, false])
     }
+
+
 
     return (
         <section className="provisioning-failure-view">
             {
                 issueChange ?
                     <ProvisioningFailureTSView
+                        issueChange={issueChange}
                         selectIssueCard={selectIssueCard}
                         handleCardsBackButton={handleCardsBackButton}
                     /> :
@@ -42,4 +45,4 @@ const ProvisioningFailureView = () => {
     );
 }
 
-export default ProvisioningFailureView;
+export default ProvisioningFailureView; 

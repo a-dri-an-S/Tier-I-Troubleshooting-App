@@ -1,35 +1,7 @@
-.modem-flashing-white-ts-view {
-    width: 100%;
-    /* border: 1px solid red; */
-}
-
-.back-btn {
-    position: absolute;
-    right: 84px;
-    width: 48px;
-    height: 48px;
-    color: var(--very-dark-blue);
-    font-size: 34px;
-    background-color: transparent;
-    border: none;
-    border: 1px solid red;
-}
-.back-btn:hover {
-    cursor: pointer;
-    color: var(--very-dark-blue-light-mode-text);
-    font-size: 36px;
-}
-.back-btn:active {
-    cursor: pointer;
-    color: var(--very-dark-blue-light-mode-text);
-    font-size: 36px;
-}
-.back-btn:active {
-    font-size: 40px;
-}
-
 @media only screen and (max-width: 375px) {
-
+    .modem-flashing-white-ts-view {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 375px) {

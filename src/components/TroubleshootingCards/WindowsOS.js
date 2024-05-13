@@ -23,9 +23,10 @@ const WindowsOS = ({ handleBackButton }) => {
                     <li className="troubleshoot-list-item">
                         If this fails, escalate to Tier II for TAC support.
                     </li>
-                    <TSCardBackButton handleBackButton={handleBackButton} />
+                    
                 </ul>
             </div>
+            <TSCardBackButton handleBackButton={handleBackButton} />
         </div>
     );
 }

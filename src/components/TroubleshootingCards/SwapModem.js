@@ -26,7 +26,6 @@ const SwapModem = ({ handleBackButton }) => {
             </ul>
         </div>
         <TSCardBackButton handleBackButton={handleBackButton} />
-
     </div>
     );
 }
