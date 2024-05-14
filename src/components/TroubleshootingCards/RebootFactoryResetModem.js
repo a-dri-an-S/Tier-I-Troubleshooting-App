@@ -14,6 +14,12 @@ const RebootFactoryResetModem = ({ handleBackButton }) => {
                     <li className="troubleshoot-list-item">
                         Factory reset modem by holding down the reset button on the back of the modem for 60 seconds.
                     </li>
+                    <li className="troubleshoot-list-item">
+                        If a factory reset does not fix the issue, please move on to the other troubleshooting steps for 'No Internet Connection'.
+                    </li>
+                    <li className="troubleshoot-list-item">
+                        If all other troubleshooting steps have been tried, please swap modem.
+                    </li>
                 </ul>
             </div>
             <TSCardBackButton handleBackButton={handleBackButton} />

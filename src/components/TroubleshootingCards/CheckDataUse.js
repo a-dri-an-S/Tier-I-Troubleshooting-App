@@ -20,6 +20,9 @@ const CheckDataUse = ({ handleBackButton }) => {
                         <li className="troubleshoot-list-item-item">If on an Unleashed Plan and over the data limit, the customer will have to use less data until their data use trends below 850gb.</li>
                     </ul>
                 </li>
+                <li className="troubleshoot-list-item">
+                    If the customer is under their Data Allowance (DAP), please move on to the other troubleshooting steps for 'Slow Speeds'.
+                </li>
             </ul>
         </div>
         <TSCardBackButton handleBackButton={handleBackButton} />
