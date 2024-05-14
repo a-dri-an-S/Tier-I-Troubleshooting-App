@@ -117,11 +117,35 @@
         font-size: 20px;
     }
 }
-
-@media only screen and (min-width: 992px) {
-
-}
-
 @media only screen and (min-width: 1200px) {
-
+    .slow-speeds-cards-sect {
+        display: flex;
+        justify-content: flex-start;
+        width: 624px;
+        height: 100vh;
+    }
+    .slow-speeds-cards-title {
+        margin: 164px 0px 48px 0;
+        width: 900px;
+        font-size: 46px;
+    }
+    .slow-speeds-cards-cont {
+        margin: 0;
+        width: 1144px;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        grid-template-rows: repeat(2, 234px);
+        gap: 32px;
+    }
+    .slow-speeds-card {
+        margin: 0 0 0px 0;
+        width: 360px;
+        height: 234px;
+        border-radius: 12px;
+    }
+    .slow-speeds-card-title {
+        width: 220px;
+        font-size: 24px;
+    }
 }

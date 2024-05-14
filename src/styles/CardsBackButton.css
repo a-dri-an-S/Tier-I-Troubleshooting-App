@@ -54,11 +54,17 @@
         font-size: 28px;
     }
 }
-
-@media only screen and (min-width: 992px) {
-
-}
-
 @media only screen and (min-width: 1200px) {
-
+    .cards-back-btn {
+        margin: 0px;
+        width: 48px;
+        height: 48px;
+        font-size: 32px;
+    }
+    .cards-back-btn:hover {
+        font-size: 34px;
+    }
+    .cards-back-btn:active {
+        font-size: 36px;
+    }
 }

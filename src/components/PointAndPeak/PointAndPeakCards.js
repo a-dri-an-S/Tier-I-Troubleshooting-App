@@ -3,7 +3,7 @@ import "../../styles/PointAndPeak/PointAndPeakCards.css"
 const PointAndPeakCards = ({ handlePointAndPeakSelect }) => {
     return (
         <div className="pnp-cards-sect">
-            <h1 className="pnp-title">Point and Peak</h1>
+            <h1 className="pnp-cards-title">Point and Peak</h1>
             <div className="pnp-cards-cont">
                 <div
                     className="pnp-card"

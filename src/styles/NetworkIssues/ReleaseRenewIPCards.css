@@ -107,9 +107,13 @@
         height: 100vh;
     }
     .release-renew-ip-cards-title {
-        margin: 64px 0px 48px 0;
+        margin: 64px 0px 12px 0;
         width: 600px;
         font-size: 38px;
+    }
+    .release-renew-ip-title-desc {
+        margin: 0 0 36px 0;
+        font-size: 16px;
     }
     .release-renew-ip-cards-cont {
         margin: 0 0 24px 0;
@@ -131,11 +135,39 @@
         font-size: 20px;
     }
 }
-
-@media only screen and (min-width: 992px) {
-
-}
-
 @media only screen and (min-width: 1200px) {
-
+    .release-renew-ip-cards-sect {
+        display: flex;
+        justify-content: flex-start;
+        width: 624px;
+        height: 100vh;
+    }
+    .release-renew-ip-cards-title {
+        margin: 164px 0px 12px 0;
+        width: 900px;
+        font-size: 46px;
+    }
+    .release-renew-ip-title-desc {
+        margin: 0 0 36px 0;
+        font-size: 16px;
+    }
+    .release-renew-ip-cards-cont {
+        margin: 0;
+        width: 1144px;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        grid-template-rows: repeat(2, 234px);
+        gap: 32px;
+    }
+    .release-renew-ip-card {
+        margin: 0 0 0px 0;
+        width: 360px;
+        height: 234px;
+        border-radius: 12px;
+    }
+    .release-renew-ip-card-title {
+        width: 220px;
+        font-size: 24px;
+    }
 }

@@ -118,11 +118,35 @@
         font-size: 20px;
     }
 }
-
-@media only screen and (min-width: 992px) {
-
-}
-
 @media only screen and (min-width: 1200px) {
-
+    .modem-flashing-white-cards-sect {
+        margin: 0 0 36px 0;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100vh;
+    }
+    .modem-flashing-white-cards-title {
+        margin: 164px 0px 48px 0;
+        width: 900px;
+        font-size: 46px;
+    }
+    .modem-flashing-white-cards-cont {
+        margin: 0;
+        width: 360px;
+        height: 234px;
+        display: grid;
+        grid-template-columns: repeat(1, 360px);
+        grid-template-rows: repeat(1, 234px);
+    }
+    .modem-flashing-white-card {
+        margin: 0 0 0px 0;
+        width: 360px;
+        height: 234px;
+        border-radius: 12px;
+    }
+    .modem-flashing-white-card-title {
+        width: 220px;
+        font-size: 24px;
+    }
 }

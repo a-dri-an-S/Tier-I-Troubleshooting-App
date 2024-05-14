@@ -4,7 +4,7 @@ import "../../styles/ProvisioningFailure/ProvisioningFailureCards.css";
 const ProvisioningFailureCards = ({ handleProvisioningFailureSelect }) => {
     return (
         <div className="provisioning-failure-cards-sect">
-            <h1 className="provisioning-failure-title">Provisioning Failure</h1>
+            <h1 className="provisioning-failure-cards-title">Provisioning Failure</h1>
             <div className="provisioning-failure-cards-cont">
                 <div
                     className="provisioning-failure-card"

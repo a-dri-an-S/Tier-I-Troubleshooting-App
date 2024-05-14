@@ -118,11 +118,35 @@
         font-size: 20px;
     }
 }
-
-@media only screen and (min-width: 992px) {
-
-}
-
 @media only screen and (min-width: 1200px) {
-
+    .network-issue-cards-sect {
+        display: flex;
+        justify-content: flex-start;
+        width: 624px;
+        height: 100vh;
+    }
+    .network-issue-cards-title {
+        margin: 164px 0px 48px 0;
+        width: 900px;
+        font-size: 46px;
+    }
+    .network-issue-cards-cont {
+        margin: 0;
+        width: 752px;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: repeat(2, 234px);
+        gap: 32px;
+    }
+    .network-issue-card {
+        margin: 0 0 0px 0;
+        width: 360px;
+        height: 234px;
+        border-radius: 12px;
+    }
+    .network-issue-card-title {
+        width: 220px;
+        font-size: 24px;
+    }
 }
