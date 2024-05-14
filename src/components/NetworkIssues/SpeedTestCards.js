@@ -1,4 +1,4 @@
-import TSCardBackButton from "../TroubleshootingCards/TSCardBackButton";
+import CardBackButton from "../CardBackButton";
 
 import "../../styles/NetworkIssues/SpeedTestCards.css";
 
@@ -30,7 +30,7 @@ const RunASpeedTest = ({ handleSpeedTestSelect, handleTSCardsBackButton }) => {
                     <h2 className="speed-test-card-title">Speed Test Return's Advertised Speeds</h2>
                 </div>
             </div>
-            <TSCardBackButton handleBackButton={handleTSCardsBackButton} />
+            <CardBackButton handleCardsBackButton={handleTSCardsBackButton}/>
         </div>
     );
 }

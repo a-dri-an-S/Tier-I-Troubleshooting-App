@@ -5,12 +5,12 @@ import "../styles/CardsBackButton.css";
 
 const CardBackButton = ({ handleCardsBackButton }) => {
     return (
-        <button
-            className="cards-back-btn"
-            onClick={() => handleCardsBackButton()}
-        >
-            <FontAwesomeIcon icon={faArrowLeft} />
-        </button>
+            <button
+                className="cards-back-btn"
+                onClick={() => handleCardsBackButton()}
+            >
+                <FontAwesomeIcon icon={faArrowLeft} />
+            </button>
     );
 }
 

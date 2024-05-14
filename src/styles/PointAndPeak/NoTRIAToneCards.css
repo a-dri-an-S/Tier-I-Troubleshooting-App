@@ -103,8 +103,8 @@
         width: 624px;
         height: 70%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(3, 195px);
         gap: 24px;
     }
     .no-tria-tone-card {

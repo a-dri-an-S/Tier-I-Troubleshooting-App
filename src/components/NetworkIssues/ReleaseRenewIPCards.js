@@ -1,4 +1,4 @@
-import TSCardBackButton from "../TroubleshootingCards/TSCardBackButton";
+import CardBackButton from "../CardBackButton";
 
 import "../../styles/NetworkIssues/ReleaseRenewIPCards.css";
 
@@ -30,7 +30,7 @@ const ReleaseRenewIPCards = ({ handleReleaseRenewIPSelect, handleTSCardsBackButt
                     <h2 className="release-renew-ip-card-title">MAC OS</h2>
                 </div>
             </div>
-            <TSCardBackButton handleBackButton={handleTSCardsBackButton} />
+            <CardBackButton handleCardsBackButton={handleTSCardsBackButton}/>
         </div>
     );
 }
