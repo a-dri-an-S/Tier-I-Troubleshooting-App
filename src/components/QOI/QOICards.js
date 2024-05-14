@@ -3,7 +3,7 @@ import "../../styles/QOI/QOICards.css";
 const QOICards = ({ handleQOISelect }) => {
     return (
         <div className="qoi-cards-sect">
-            <h1 className="qoi-title">Quality of Install(QOI)</h1>
+            <h1 className="qoi-cards-title">Quality of Install(QOI)</h1>
             <div className="qoi-cards-cont">
                 <div
                     className="qoi-card"

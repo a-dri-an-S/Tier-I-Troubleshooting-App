@@ -117,11 +117,36 @@
         font-size: 20px;
     }
 }
-
-@media only screen and (min-width: 992px) {
-
-}
-
 @media only screen and (min-width: 1200px) {
-
+    .antenna-pointing-cards-sect {
+        margin: 0 0 36px 0;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+    .antenna-pointing-cards-title {
+        margin: 164px 0px 48px 0;
+        width: 900px;
+        font-size: 46px;
+    }
+    .antenna-pointing-cards-cont {
+        margin: 0;
+        width: 1144px;
+        height: 1032px;
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        grid-template-rows: repeat(2, 234px);
+        gap: 32px;
+    }
+    .antenna-pointing-card {
+        margin: 0 0 0px 0;
+        width: 360px;
+        height: 234px;
+        border-radius: 12px;
+    }
+    .antenna-pointing-card-title {
+        width: 220px;
+        font-size: 24px;
+    }
 }
