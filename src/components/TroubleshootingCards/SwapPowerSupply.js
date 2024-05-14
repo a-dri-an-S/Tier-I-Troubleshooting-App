@@ -11,7 +11,7 @@ const SwapPowerSupply = ({ handleBackButton }) => {
                     <li className="troubleshoot-list-item">
                         Swap the power supply on the modem with a new one.
                         <ul className="troubleshoot-list-item">
-                            <li className="troubleshoot-list-item-item">Make sure it's a new power supply'.</li>
+                            <li className="troubleshoot-list-item-item">Make sure it's a new power supply.</li>
                         </ul>
                     </li>
                     <li className="troubleshoot-list-item">
@@ -25,6 +25,9 @@ const SwapPowerSupply = ({ handleBackButton }) => {
                     </li>
                     <li className="troubleshoot-list-item">
                         If modem status light continues red, please continue with 'Modem Offline' troubleshooting steps.
+                        <ul className="troubleshoot-list-item">
+                            <li className="troubleshoot-list-item-item">If modem status light continues red and all other troubleshooting steps have been done, please contact Tier II for additional support.</li>
+                        </ul>
                     </li>
                 </ul>
             </div>

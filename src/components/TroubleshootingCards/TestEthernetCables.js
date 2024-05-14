@@ -5,7 +5,7 @@ import "../../styles/TroubleshootCard.css"
 const TestEthernetCables = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
-            <h1 className="troubleshoot-title">Test ethernet ports with different ethernet cable</h1>
+            <h1 className="troubleshoot-title">Test Ethernet Ports with Different Ethernet Cable</h1>
             <div className="troubleshoot-card">
                 <ul className="troubleshoot-list">
                     <li className="troubleshoot-list-item">
@@ -29,6 +29,12 @@ const TestEthernetCables = ({ handleBackButton }) => {
                             <li className="troubleshoot-list-item-item">Username: admin</li>
                             <li className="troubleshoot-list-item-item">Password: printed on modem sticker</li>
                         </ul>
+                    </li>
+                    <li className="troubleshoot-list-item">
+                        If the does not resolve the issue, please move on to the other troubleshooting steps for 'Ethernet Ports Not Working'.
+                    </li>
+                    <li className="troubleshoot-list-item">
+                        If other troubleshooting steps have been tried without resolution, please swap the modem.
                     </li>
                 </ul>
             </div>

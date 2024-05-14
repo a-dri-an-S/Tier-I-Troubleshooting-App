@@ -5,7 +5,7 @@ import "../../styles/ModemIssues/EthernetPortCards.css";
 const EthernetPortCards = ({ handleEthernetPortSelect, handleCardsBackButton }) => {
     return (
         <div className="eth-port-cards-sect">
-            <h1 className="eth-port-cards-title">Ethernet ports not working</h1>
+            <h1 className="eth-port-cards-title">Ethernet Ports Not Working</h1>
             <div className="eth-port-cards-cont">
                 <div
                     className="eth-port-card"

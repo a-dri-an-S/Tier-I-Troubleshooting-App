@@ -23,6 +23,12 @@ const ViasatShieldPremium = ({ handleBackButton }) => {
                 <li className="troubleshoot-list-item">
                     Customer can call CARE for Viasat Shield app assistance.
                 </li>
+                <li className="troubleshoot-list-item">
+                    If the customer does not have Shield Premium, please move on to the other troubleshooting steps for 'No Wi-Fi'.
+                </li>
+                <li className="troubleshoot-list-item">
+                    If the customer has Shield Premium and contacted Customer CARE without a resolution, please move on to the other troubleshooting steps for 'No Wi-Fi'.
+                </li>
             </ul>
         </div>
         <TSCardBackButton handleBackButton={handleBackButton} />

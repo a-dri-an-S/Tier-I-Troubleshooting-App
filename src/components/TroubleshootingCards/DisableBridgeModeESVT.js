@@ -18,7 +18,7 @@ const DisableBridgeModeESVT = ({ handleBackButton }) => {
                     When disabled, modem will reboot 2 times within a 15 min window.
                 </li>
                 <li className="troubleshoot-list-item">
-                    If modem is in Bridge Mode it is not disabling in ESVT, escalate to Tier II for TAC support.
+                    If modem is in Bridge Mode and it is not disabling through ESVT, escalate to Tier II for TAC support.
                 </li>
             </ul>
         </div>

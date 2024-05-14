@@ -32,6 +32,9 @@ const CheckPowerSource = ({ handleBackButton }) => {
                     </li>
                     <li className="troubleshoot-list-item">
                         If modem status light continues red, please continue with 'Modem Offline' troubleshooting steps.
+                        <ul className="troubleshoot-list-item">
+                            <li className="troubleshoot-list-item-item">If modem status light continues red and all other troubleshooting steps have been done, please contact Tier II for additional support.</li>
+                        </ul>
                     </li>
                 </ul>
             </div>
