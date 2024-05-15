@@ -24,9 +24,11 @@ const MACOS = ({ handleBackButton }) => {
                         Click TCP/IP, then click Renew DHCP Lease. and click OK.
                     </li>
                     <li className="troubleshoot-list-item">
-                        If this fails, escalate to Tier II for TAC support.
+                        If the tech is unable to release and renew IP address, please move on to the other troubleshooting steps.
                     </li>
-
+                    <li className="troubleshoot-list-item">
+                        If the tech was able to release and renew IP address without resolution, please swap the modem.
+                    </li>
                 </ul>
             </div>
             <TSCardBackButton handleBackButton={handleBackButton} />

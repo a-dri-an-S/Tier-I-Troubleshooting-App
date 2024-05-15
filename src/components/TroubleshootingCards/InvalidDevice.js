@@ -16,7 +16,7 @@ const InvalidDevice = ({ handleBackButton }) => {
                         <ul className="troubleshoot-list-item">
                             <li className="troubleshoot-list-item-item">Check the equipment in FSM to make sure it matches with what modem type is connected.</li>
                             <li className="troubleshoot-list-item-item">If it does match, have the tech try running QOI again.</li>
-                            <li className="troubleshoot-list-item-item">If it still fails, escalate to Tier II for support.</li>
+                            <li className="troubleshoot-list-item-item">If it still fails, the modem will need to be swapped.</li>
                         </ul>
                     </li>
                     <li className="troubleshoot-list-item">

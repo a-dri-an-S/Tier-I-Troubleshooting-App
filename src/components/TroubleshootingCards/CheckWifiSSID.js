@@ -34,7 +34,7 @@ const CheckWifiSSID = ({ handleBackButton }) => {
                         If the tech doesn't have a way to access the modem GUI via ethernet, they can factory reset modem by holding 'reset' button for 60 seconds.
                     </li>
                     <li className="troubleshoot-list-item">
-                        If this does not resolve the issue or tech is unable to set SSID broadcast to 'Public', please move on to the other troubleshooting steps for 'No Wi-Fi'.
+                        If this does not resolve the issue, please move on to the other troubleshooting steps.
                     </li>
                 </ul>
             </div>

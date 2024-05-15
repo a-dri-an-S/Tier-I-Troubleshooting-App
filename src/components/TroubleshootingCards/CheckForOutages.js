@@ -23,6 +23,9 @@ const CheckForOutages = ({ handleBackButton }) => {
                             <li className="troubleshoot-list-item-item">If there are weather issues preventing the tech from achieving modem lock, have the tech wait until weather clears or reschedule.</li>
                         </ul>
                     </li>
+                    <li className="troubleshoot-list-item">
+                        If there are no outages or weather related issues on site, please move on to the other troubleshooting steps.
+                    </li>
                 </ul>
             </div>
             <TSCardBackButton handleBackButton={handleBackButton} />

@@ -9,7 +9,7 @@
 }
 .troubleshoot-link {
     color: var(--very-dark-blue);
-    text-decoration: none;
+    text-decoration: underline;
 }
 .troubleshoot-link:hover {
     font-weight: 700;
@@ -47,16 +47,16 @@
         height: 100vh;
     }
     .troubleshoot-title {
-        margin: 96px 0px 48px 0;
+        margin: 96px 0px 12px 0;
         width: 300px;
         font-size: 32px;
         text-align: center;
     }
     .troubleshoot-link {
-        margin: 0 0 48px 0;
         font-size: 14px;
     }
     .troubleshoot-card {
+        margin: 48px 0 0 0;
         padding: 24px 10px;
         width: 330px;
         height: 380px;
@@ -92,16 +92,16 @@
         height: 100vh;
     }
     .troubleshoot-title {
-        margin: 96px 0 0 0;
+        margin: 96px 0 12px 0;
         width: 300px;
         font-size: 32px;
         text-align: center;
     }
     .troubleshoot-link {
-        margin: 0 0 48px 0;
         font-size: 14px;
     }
     .troubleshoot-card {
+        margin: 48px 0 0 0;
         padding: 24px 10px;
         width: 330px;
         height: 380px;
@@ -135,7 +135,7 @@
         height: 100%vh
     }
     .troubleshoot-title {
-        margin: 96px 0 0 0;
+        margin: 96px 0 12px 0;
         width: 600px;
         font-size: 38px;
     }
@@ -178,7 +178,7 @@
         height: 100%vh;
     }
     .troubleshoot-title {
-        margin: 128px 0 0 0;
+        margin: 128px 0 12px 0;
         width: 900px;
         font-size: 46px;
     }

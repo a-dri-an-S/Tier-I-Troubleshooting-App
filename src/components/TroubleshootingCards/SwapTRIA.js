@@ -26,7 +26,7 @@ const SwapTRIA = ({ handleBackButton }) => {
                     <li className="troubleshoot-list-item">
                         If modem status light continues red, please continue with 'Modem Offline' troubleshooting steps.
                         <ul className="troubleshoot-list-item">
-                            <li className="troubleshoot-list-item-item">If modem status light continues red and all other troubleshooting steps have been done, please contact Tier II for additional support.</li>
+                            <li className="troubleshoot-list-item-item">If modem status light continues red, please continue with the other troubleshooting steps.</li>
                         </ul>
                     </li>
                 </ul>

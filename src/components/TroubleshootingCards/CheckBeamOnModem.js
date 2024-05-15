@@ -14,6 +14,9 @@ const CheckBeamOnModem = ({ handleBackButton }) => {
                             <li className="troubleshoot-list-item-item">If the modem is on the wrong beam, have the tech input the correct modem key.</li>
                             <li className="troubleshoot-list-item-item">Point and peak the TRIA to get modem on the correct beam.</li>
                         </ul>
+                        <li className="troubleshoot-list-item">
+                        If the tech is on the right beam, please move on to the other troubleshooting steps.
+                    </li>
                     </li>
                 </ul>
             </div>

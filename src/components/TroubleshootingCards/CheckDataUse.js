@@ -21,7 +21,7 @@ const CheckDataUse = ({ handleBackButton }) => {
                     </ul>
                 </li>
                 <li className="troubleshoot-list-item">
-                    If the customer is under their Data Allowance (DAP), please move on to the other troubleshooting steps for 'Slow Speeds'.
+                    If the customer is under their Data Allowance (DAP), please move on to the other troubleshooting steps.
                 </li>
             </ul>
         </div>

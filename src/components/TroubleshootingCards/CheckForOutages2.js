@@ -20,6 +20,9 @@ const CheckForOutages2 = ({ handleBackButton }) => {
                     <li className="troubleshoot-list-item">
                         If there are outages or impairments, escalate to Tier II for further assistance.
                     </li>
+                    <li className="troubleshoot-list-item">
+                        If there are no outages, please move on to the other troubleshooting steps.
+                    </li>
                 </ul>
             </div>
             <TSCardBackButton handleBackButton={handleBackButton} />

@@ -15,7 +15,7 @@ const VTTActivationOther = ({ handleBackButton }) => {
                         Uninstall/reinstall app.
                     </li>
                     <li className="troubleshoot-list-item">
-                        Escalate to Tier II for additional troubleshooting.
+                        If this does not resolve the issue, please move on to the other troubleshooting steps.
                     </li>
                 </ul>
             </div>

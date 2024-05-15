@@ -14,6 +14,9 @@ const CheckCRMErrors = ({ handleBackButton }) => {
                     <li className="troubleshoot-list-item">
                         If errors are found, escalate to Tier II to clear errors and have tech retry again.
                     </li>
+                    <li className="troubleshoot-list-item">
+                        If there are no errors found, please move on to the other troubleshooting steps.
+                    </li>
                 </ul>
             </div>
             <TSCardBackButton handleBackButton={handleBackButton} />

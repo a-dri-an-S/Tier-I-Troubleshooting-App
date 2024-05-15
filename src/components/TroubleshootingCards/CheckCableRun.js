@@ -34,7 +34,9 @@ const CheckCableRun = ({ handleBackButton }) => {
                             <li className="troubleshoot-list-item-item">Cable bypassing the ground block, directly connected between the modem and TRIA.</li>
                         </ul>
                     </li>
-
+                    <li className="troubleshoot-list-item">
+                        If this does not resolve the issue, please move on to the other troubleshooting steps.
+                    </li>
                 </ul>
             </div>
             <TSCardBackButton handleBackButton={handleBackButton} />

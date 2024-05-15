@@ -12,10 +12,7 @@ const RebootModem = ({ handleBackButton }) => {
                         Have the tech reboot the modem on site or reboot through ESVT.
                     </li>
                     <li className="troubleshoot-list-item">
-                        If the does not resolve the issue, please move on to the other troubleshooting steps for 'Ethernet Ports Not Working'.
-                    </li>
-                    <li className="troubleshoot-list-item">
-                        If other troubleshooting steps have been tried without resolution, please swap the modem.
+                        If this does not resolve the issue, please move on to the other troubleshooting steps.
                     </li>
                 </ul>
             </div>

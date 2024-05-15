@@ -34,9 +34,8 @@ const DisableBridgeModeModemGUI = ({ handleBackButton }) => {
                         </ul>
                     </li>
                     <li className="troubleshoot-list-item">
-                        If this does not get modem out of bridge mode, please move on to the other troubleshooting steps for 'No Wi-Fi'.
+                        If this does not resolve the issue, please move on to the other troubleshooting steps.
                     </li>
-
                 </ul>
             </div>
             <TSCardBackButton handleBackButton={handleBackButton} />

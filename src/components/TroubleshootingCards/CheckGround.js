@@ -28,6 +28,9 @@ const CheckGround = ({ handleBackButton }) => {
                     <li className="troubleshoot-list-item">
                         If there is no suitable grounding source, tech can use ZOP, properly secured to wall outlet and TRIA connection to modem.
                     </li>
+                    <li className="troubleshoot-list-item">
+                        If this does not resolve the issue, please move on to the other troubleshooting steps.
+                    </li>
                 </ul>
             </div>
             <TSCardBackButton handleBackButton={handleBackButton} />

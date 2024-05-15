@@ -14,6 +14,9 @@ const PowerCycleModem = ({ handleBackButton }) => {
                     <li className="troubleshoot-list-item">
                         If software loaded on modem is a version known to have issues, escalate to Tier II for TAC support", "(ex. SPOCK_3.7.4.7.88)
                     </li>
+                    <li className="troubleshoot-list-item">
+                        If this does not start the software to download, please escalate to Tier II for TAC support
+                    </li>
                 </ul>
             </div>
             <TSCardBackButton handleBackButton={handleBackButton} />

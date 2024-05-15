@@ -25,6 +25,9 @@ const CheckForCorrectBeam = ({ handleBackButton }) => {
                             <li className="troubleshoot-list-item-item">Please wait for Tier II to confirm beam reassignment before the tech activates the modem.</li>
                         </ul>
                     </li>
+                    <li className="troubleshoot-list-item">
+                        If the beam assignment is correct, please move on to the other troubleshooting steps.
+                    </li>
                 </ul>
             </div>
             <TSCardBackButton handleBackButton={handleBackButton} />

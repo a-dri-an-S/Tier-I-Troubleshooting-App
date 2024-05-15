@@ -31,7 +31,7 @@ const TestDifferentDevices = ({ handleBackButton }) => {
                         </ul>
                     </li>
                     <li className="troubleshoot-list-item">
-                        If the does not resolve the issue, please move on to the other troubleshooting steps for 'Ethernet Ports Not Working'.
+                        If this does not resolve the issue, please move on to the other troubleshooting steps.
                     </li>
                     <li className="troubleshoot-list-item">
                         If other troubleshooting steps have been tried without resolution, please swap the modem.

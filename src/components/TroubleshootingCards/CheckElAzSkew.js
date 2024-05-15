@@ -14,6 +14,9 @@ const CheckElAzSkew = ({ handleBackButton }) => {
                             <li className="troubleshoot-list-item-item">Use the Viasat Tech Tools app 'Satellite Finder' to help correct.</li>
                         </ul>
                     </li>
+                    <li className="troubleshoot-list-item">
+                        If this does not resolve the issue, please move on to the other troubleshooting steps.
+                    </li>
                 </ul>
             </div>
             <TSCardBackButton handleBackButton={handleBackButton} />

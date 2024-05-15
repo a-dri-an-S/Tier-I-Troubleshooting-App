@@ -16,6 +16,9 @@ const CheckLOS = ({ handleBackButton }) => {
                             <li className="troubleshoot-list-item-item">If its a service call work order, check the original install work order uploaded photos or have the tech upload one.</li>
                         </ul>
                     </li>
+                    <li className="troubleshoot-list-item">
+                        If there are no issues with the LOS, please move on to the other troubleshooting steps.
+                    </li>
                 </ul>
             </div>
             <TSCardBackButton handleBackButton={handleBackButton} />

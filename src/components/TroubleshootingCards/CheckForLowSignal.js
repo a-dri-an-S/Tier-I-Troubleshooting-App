@@ -25,7 +25,7 @@ const CheckForLowSignal = ({ handleBackButton }) => {
                         If tech is unable to resolve low signal with re-pointing and peaking, please move onto Antenna Pointing troubleshooting - <b>LINK</b>
                     </li>
                     <li className="troubleshoot-list-item">
-                        If their are no signal issues affecting the customers network, please move on to the other troubleshooting steps for 'Slow Speeds'.
+                        If their are no signal issues affecting the customers network, please move on to the other troubleshooting steps.
                     </li>
                 </ul>
             </div>

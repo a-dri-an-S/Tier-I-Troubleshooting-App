@@ -28,6 +28,9 @@ const CheckCableRun = ({ handleBackButton }) => {
                             <li className="troubleshoot-list-item-item">Connectors should be approved, weather sealed, RG6 compatible.</li>
                         </ul>
                     </li>
+                    <li className="troubleshoot-list-item">
+                        If this does not resolve the issue, please move on to the other troubleshooting steps.
+                    </li>
                 </ul>
             </div>
             <TSCardBackButton handleBackButton={handleBackButton} />

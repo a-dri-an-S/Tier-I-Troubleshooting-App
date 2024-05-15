@@ -6,6 +6,12 @@ const SpeedTestFails = ({ handleBackButton }) => {
     return (
         <div className="troubleshoot-sect">
         <h1 className="troubleshoot-title">Speed Test Fails to Run Assessment</h1>
+        <a 
+                className="troubleshoot-link"
+                href="https://viasatservices.statuspage.io"
+                target="_blank"
+                rel="noreferrer"
+            >Outage Board Link</a>
         <div className="troubleshoot-card">
             <ul className="troubleshoot-list">
                 <li className="troubleshoot-list-item">
