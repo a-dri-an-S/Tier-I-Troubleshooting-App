@@ -17,18 +17,25 @@ const QOICards = ({ handleQOISelect }) => {
                     id="1"
                     onClick={(e) => handleQOISelect(e)}
                 >
-                    <h2 className="qoi-card-title">Equipment (Cable and ODU)</h2>
+                    <h2 className="qoi-card-title">Antenna Pointing - Afterburner</h2>
                 </div>
                 <div
                     className="qoi-card"
                     id="2"
                     onClick={(e) => handleQOISelect(e)}
                 >
-                    <h2 className="qoi-card-title">Software</h2>
+                    <h2 className="qoi-card-title">Equipment (Cable and ODU)</h2>
                 </div>
                 <div
                     className="qoi-card"
                     id="3"
+                    onClick={(e) => handleQOISelect(e)}
+                >
+                    <h2 className="qoi-card-title">Software</h2>
+                </div>
+                <div
+                    className="qoi-card"
+                    id="4"
                     onClick={(e) => handleQOISelect(e)}
                 >
                     <h2 className="qoi-card-title">Installed Devices</h2>

@@ -6,7 +6,7 @@ import QOITSView from "./QOITSView";
 const QOIView = () => {
 
     const [issueChange, setIssueChange] = useState(false);
-    const [selectIssueCard, setSelectIssueCard] = useState([false, false, false, false]);
+    const [selectIssueCard, setSelectIssueCard] = useState([false, false, false, false, false]);
 
     function handleQOISelect(e) {
         const idx = e.target.id;
@@ -23,7 +23,7 @@ const QOIView = () => {
 
     function handleCardsBackButton () {
         setIssueChange(false);
-        setSelectIssueCard([false, false, false, false])
+        setSelectIssueCard([false, false, false, false, false])
     }
 
     return (
