@@ -1,8 +1,7 @@
-import TSCardBackButton from "./TSCardBackButton";
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import "../../styles/TroubleshootCard.css"
-
-const WindowsOS = ({ handleBackButton }) => {
+const WindowsOS = () => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Windows OS</h1>
@@ -28,7 +27,7 @@ const WindowsOS = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }
