@@ -1,8 +1,8 @@
-import TSCardBackButton from "./TSCardBackButton";
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import "../../styles/TroubleshootCard.css"
 
-const DisableBridgeModeESVT = ({ handleBackButton }) => {
+const DisableBridgeESVT = () => {
     return (
         <div className="troubleshoot-sect">
         <h1 className="troubleshoot-title">Disable Bridge Mode through ESVT</h1>
@@ -22,9 +22,9 @@ const DisableBridgeModeESVT = ({ handleBackButton }) => {
                 </li>
             </ul>
         </div>
-        <TSCardBackButton handleBackButton={handleBackButton} />
+        <TSGoBackButton />
     </div>
     );
 }
 
-export default DisableBridgeModeESVT;
+export default DisableBridgeESVT;

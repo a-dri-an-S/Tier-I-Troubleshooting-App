@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 
 import ModemOfflinePage from "../../pages/ModemIssues/ModemOfflinePage";
-import SwapPowerSupply from "../../pages/TroubleshootingPages/SwapPowerSupply";
-import CheckPowerSource1 from "../../pages/TroubleshootingPages/CheckPowerSource1";
-import SwapTRIA1 from "../../pages/TroubleshootingPages/SwapTRIA1";
-import SwapModem1 from "../../pages/TroubleshootingPages/SwapModem1";
+import SwapPowerSupply from "../../pages/TSSteps/SwapPowerSupply";
+import CheckPowerSource1 from "../../pages/TSSteps/CheckPowerSource1";
+import SwapTRIA1 from "../../pages/TSSteps/SwapTRIA1";
+import SwapModem1 from "../../pages/TSSteps/SwapModem1";
 
 const ModemOfflineRoutes = () => {
     return (

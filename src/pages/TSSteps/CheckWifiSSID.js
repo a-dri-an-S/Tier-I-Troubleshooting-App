@@ -1,8 +1,7 @@
-import TSCardBackButton from "./TSCardBackButton";
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import "../../styles/TroubleshootCard.css"
-
-const CheckWifiSSID = ({ handleBackButton }) => {
+const CheckWifiSSID = () => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check if WiFi SSID is set to Private</h1>
@@ -38,7 +37,7 @@ const CheckWifiSSID = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }

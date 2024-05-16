@@ -1,8 +1,7 @@
-import TSCardBackButton from "./TSCardBackButton";
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import "../../styles/TroubleshootCard.css"
-
-const DisableBridgeModeModemGUI = ({ handleBackButton }) => {
+const DisableBridgeMG = () => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Disable Bridge Mode (Modem GUI)</h1>
@@ -38,9 +37,9 @@ const DisableBridgeModeModemGUI = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }
 
-export default DisableBridgeModeModemGUI;
+export default DisableBridgeMG;

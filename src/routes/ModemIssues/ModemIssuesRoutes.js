@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import ModemIssuesPage from "../../pages/ModemIssues/ModemIssuesPage";
 import ModemOfflineRoutes from "./ModemOfflineRoutes";
-import NoWifiPage from "../../pages/ModemIssues/NoWifiPage";
+import NoWifiRoutes from "./NoWifiRoutes";
 import EthPortsPage from "../../pages/ModemIssues/EthPortsPage";
 
 const ModemIssuesRoutes = () => {
@@ -11,7 +11,7 @@ const ModemIssuesRoutes = () => {
             <Routes>
                 <Route path="/*" Component={ModemIssuesPage} />
                 <Route path="offline/*" Component={ModemOfflineRoutes} />
-                <Route path="nowifi/*" Component={NoWifiPage} />
+                <Route path="nowifi/*" Component={NoWifiRoutes} />
                 <Route path="ethports/*" Component={EthPortsPage} />
             </Routes>
         </div>
