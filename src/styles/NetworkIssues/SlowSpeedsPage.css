@@ -1,10 +1,10 @@
-.slow-speeds-cards-sect {
+.slow-speeds-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.slow-speeds-cards-title {
+.slow-speeds-title {
     text-align: center;
     color: var(--very-dark-blue);
 }
@@ -31,11 +31,11 @@
 }
 
 @media only screen and (max-width: 375px) {
-    .slow-speeds-cards-sect {
+    .slow-speeds-page {
         width: 350px;
         height: 100%;
     }
-    .slow-speeds-cards-title {
+    .slow-speeds-title {
         margin: 96px 0px 48px 0;
         width: 300px;
         font-size: 32px;
@@ -60,11 +60,11 @@
 }
 
 @media only screen and (min-width: 375px) {
-    .slow-speeds-cards-sect {
+    .slow-speeds-page {
         width: 350px;
         height: 100%;
     }
-    .slow-speeds-cards-title {
+    .slow-speeds-title {
         margin: 96px 0px 48px 0;
         width: 300px;
         font-size: 32px;
@@ -88,11 +88,11 @@
     }
 }
 @media only screen and (min-width: 768px) {
-    .slow-speeds-cards-sect {
+    .slow-speeds-page {
         width: 624px;
         height: 100vh;
     }
-    .slow-speeds-cards-title {
+    .slow-speeds-title {
         margin: 64px 0px 48px 0;
         width: 600px;
         font-size: 38px;
@@ -118,13 +118,13 @@
     }
 }
 @media only screen and (min-width: 1200px) {
-    .slow-speeds-cards-sect {
+    .slow-speeds-page {
         display: flex;
         justify-content: flex-start;
         width: 624px;
         height: 100vh;
     }
-    .slow-speeds-cards-title {
+    .slow-speeds-title {
         margin: 164px 0px 48px 0;
         width: 900px;
         font-size: 46px;
