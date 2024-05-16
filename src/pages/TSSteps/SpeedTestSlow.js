@@ -1,8 +1,7 @@
-import TSCardBackButton from "./TSCardBackButton";
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import "../../styles/TroubleshootCard.css"
-
-const SpeedTestSlow = ({ handleBackButton }) => {
+const SpeedTestSlow = () => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Speed Test Confirms Slow Speeds</h1>
@@ -25,7 +24,7 @@ const SpeedTestSlow = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }
