@@ -1,7 +1,7 @@
 import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css";
 
-const SwapTRIA1 = ({ handleBackButton }) => {
+const SwapTRIA1 = () => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Swap TRIA</h1>

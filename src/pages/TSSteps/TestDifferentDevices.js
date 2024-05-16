@@ -1,8 +1,7 @@
-import TSCardBackButton from "./TSCardBackButton";
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import "../../styles/TroubleshootCard.css"
-
-const TestDifferentDevices = ({ handleBackButton }) => {
+const TestDifferentDevices = () => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Test ethernet ports with different device</h1>
@@ -38,7 +37,7 @@ const TestDifferentDevices = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }
