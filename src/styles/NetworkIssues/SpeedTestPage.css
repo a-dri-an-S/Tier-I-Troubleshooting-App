@@ -1,14 +1,14 @@
-.speed-test-cards-sect {
+.speed-test-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.speed-test-cards-title {
+.speed-test-title {
     text-align: center;
     color: var(--very-dark-blue);
 }
-.speed-test-title-desc {
+.speed-test-desc {
     color: var(--very-dark-blue);
 }
 .speed-test-card {
@@ -34,16 +34,16 @@
 }
 
 @media only screen and (max-width: 375px) {
-    .speed-test-cards-sect {
+    .speed-test-page {
         width: 350px;
         height: 100%;
     }
-    .speed-test-cards-title {
+    .speed-test-title {
         margin: 96px 0px 12px 0;
         width: 300px;
         font-size: 32px;
     }
-    .speed-test-title-desc {
+    .speed-test-desc {
         margin: 0 0 24px 0;
         font-size: 14px;
         text-align: center;
@@ -68,16 +68,16 @@
 }
 
 @media only screen and (min-width: 375px) {
-    .speed-test-cards-sect {
+    .speed-test-page {
         width: 350px;
         height: 100%;
     }
-    .speed-test-cards-title {
+    .speed-test-title {
         margin: 96px 0px 12px 0;
         width: 300px;
         font-size: 32px;
     }
-    .speed-test-title-desc {
+    .speed-test-desc {
         margin: 0 0 24px 0;
         font-size: 14px;
         text-align: center;
@@ -101,16 +101,16 @@
     }
 }
 @media only screen and (min-width: 768px) {
-    .speed-test-cards-sect {
+    .speed-test-page {
         width: 624px;
         height: 100vh;
     }
-    .speed-test-cards-title {
+    .speed-test-title {
         margin: 64px 0px 12px 0;
         width: 600px;
         font-size: 38px;
     }
-    .speed-test-title-desc {
+    .speed-test-desc {
         margin: 0 0 36px 0;
         font-size: 16px;
     }
@@ -135,18 +135,18 @@
     }
 }
 @media only screen and (min-width: 1200px) {
-    .speed-test-cards-sect {
+    .speed-test-page {
         display: flex;
         justify-content: flex-start;
         width: 624px;
         height: 100vh;
     }
-    .speed-test-cards-title {
+    .speed-test-title {
         margin: 164px 0px 12px 0;
         width: 900px;
         font-size: 46px;
     }
-    .speed-test-title-desc {
+    .speed-test-desc {
         margin: 0 0 36px 0;
         font-size: 18px;
     }

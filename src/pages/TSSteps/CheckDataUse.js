@@ -1,33 +1,31 @@
-import TSCardBackButton from "./TSCardBackButton";
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import "../../styles/TroubleshootCard.css"
-
-const CheckDataUse = ({ handleBackButton }) => {
+const CheckDataUse = () => {
     return (
         <div className="troubleshoot-sect">
-        <h1 className="troubleshoot-title">Check Customer's Data Use</h1>
-        <div className="troubleshoot-card">
-            <ul className="troubleshoot-list">
-                <li className="troubleshoot-list-item">
-                    Check ESVT to see if customer has gone over their data limit.
-                </li>
-                <li className="troubleshoot-list-item">
-                    If the customer has gone over their data limit, they will have to wait until their data use resets.
-                </li>
-                <li className="troubleshoot-list-item">
-                    If the customer is on an Unleashed Plan, the current data limit is 850gb.
-                    <ul className="troubleshoot-list-item">
-                        <li className="troubleshoot-list-item-item">If on an Unleashed Plan and over the data limit, the customer will have to use less data until their data use trends below 850gb.</li>
-                    </ul>
-                </li>
-                <li className="troubleshoot-list-item">
-                    If the customer is under their Data Allowance (DAP), please move on to the other troubleshooting steps.
-                </li>
-            </ul>
+            <h1 className="troubleshoot-title">Check Customer's Data Use</h1>
+            <div className="troubleshoot-card">
+                <ul className="troubleshoot-list">
+                    <li className="troubleshoot-list-item">
+                        Check ESVT to see if customer has gone over their data limit.
+                    </li>
+                    <li className="troubleshoot-list-item">
+                        If the customer has gone over their data limit, they will have to wait until their data use resets.
+                    </li>
+                    <li className="troubleshoot-list-item">
+                        If the customer is on an Unleashed Plan, the current data limit is 850gb.
+                        <ul className="troubleshoot-list-item">
+                            <li className="troubleshoot-list-item-item">If on an Unleashed Plan and over the data limit, the customer will have to use less data until their data use trends below 850gb.</li>
+                        </ul>
+                    </li>
+                    <li className="troubleshoot-list-item">
+                        If the customer is under their Data Allowance (DAP), please move on to the other troubleshooting steps.
+                    </li>
+                </ul>
+            </div>
+            <TSGoBackButton />
         </div>
-        <TSCardBackButton handleBackButton={handleBackButton} />
-
-    </div>
     );
 }
 

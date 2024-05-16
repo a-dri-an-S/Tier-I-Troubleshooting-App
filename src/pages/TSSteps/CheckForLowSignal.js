@@ -1,8 +1,7 @@
-import TSCardBackButton from "./TSCardBackButton";
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import "../../styles/TroubleshootCard.css"
-
-const CheckForLowSignal = ({ handleBackButton }) => {
+const CheckForLowSignal = () => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check for a Low Signal</h1>
@@ -29,7 +28,7 @@ const CheckForLowSignal = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }
