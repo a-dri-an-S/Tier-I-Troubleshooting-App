@@ -1,14 +1,14 @@
-.eth-port-cards-sect {
+.eth-ports-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.eth-port-cards-title {
+.eth-ports-title {
     text-align: center;
     color: var(--very-dark-blue);
 }
-.eth-port-card {
+.eth-ports-card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,12 +18,12 @@
     border: none;
     box-shadow: 1px 1px 12px 1px var(--shadow);
 }
-.eth-port-card:hover {
+.eth-ports-card:hover {
     cursor: pointer;
     background-color: var(--very-light-gray);
     box-shadow: 1px 1px 24px 2px var(--shadow);
 }
-.eth-port-card:active {
+.eth-ports-card:active {
     cursor: pointer;
     color: var(--very-light-gray);
     background-color: var(--dark-blue);
@@ -31,73 +31,73 @@
 }
 
 @media only screen and (max-width: 375px) {
-    .eth-port-cards-sect {
+    .eth-ports-page {
         width: 350px;
         height: 100%;
     }
-    .eth-port-cards-title {
+    .eth-ports-title {
         margin: 96px 0px 48px 0;
         width: 260px;
         font-size: 32px;
     }
-    .eth-port-cards-cont {
+    .eth-ports-cards-cont {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .eth-port-card {
+    .eth-ports-card {
         margin: 0 0 24px 0;
         width: 280px;
         height: 182px;
         border-radius: 12px;
     }
-    .eth-port-card-title {
+    .eth-ports-card-title {
         width: 220px;
         font-size: 18px;
     }
 }
 
 @media only screen and (min-width: 375px) {
-    .eth-port-cards-sect {
+    .eth-ports-page {
         width: 350px;
         height: 100%;
     }
-    .eth-port-cards-title {
+    .eth-ports-title {
         margin: 96px 0px 48px 0;
         width: 260px;
         font-size: 32px;
     }
-    .eth-port-cards-cont {
+    .eth-ports-cards-cont {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .eth-port-card {
+    .eth-ports-card {
         margin: 0 0 24px 0;
         width: 280px;
         height: 182px;
         border-radius: 12px;
     }
-    .eth-port-card-title {
+    .eth-ports-card-title {
         width: 220px;
         font-size: 18px;
     }
 }
 @media only screen and (min-width: 768px) {
-    .eth-port-cards-sect {
+    .eth-ports-page {
         width: 624px;
         height: 100vh;
     }
-    .eth-port-cards-title {
+    .eth-ports-title {
         margin: 64px 0px 48px 0;
         width: 600px;
         font-size: 38px;
     }
-    .eth-port-cards-cont {
+    .eth-ports-cards-cont {
         margin: 0 0 24px 0;
         width: 624px;
         height: 70%;
@@ -106,30 +106,30 @@
         grid-template-rows: repeat(3, 195px);
         gap: 24px;
     }
-    .eth-port-card {
+    .eth-ports-card {
         margin: 0px;
         width: 300px;
         height: 195px;
         border-radius: 12px;
     }
-    .eth-port-card-title {
+    .eth-ports-card-title {
         width: 220px;
         font-size: 20px;
     }
 }
 @media only screen and (min-width: 1200px) {
-    .eth-port-cards-sect {
+    .eth-ports-page {
         display: flex;
         justify-content: flex-start;
         width: 624px;
         height: 100vh;
     }
-    .eth-port-cards-title {
+    .eth-ports-title {
         margin: 164px 0px 48px 0;
         width: 900px;
         font-size: 46px;
     }
-    .eth-port-cards-cont {
+    .eth-ports-cards-cont {
         margin: 0;
         width: 1144px;
         height: 500px;
@@ -138,13 +138,13 @@
         grid-template-rows: repeat(2, 234px);
         gap: 32px;
     }
-    .eth-port-card {
+    .eth-ports-card {
         margin: 0 0 0px 0;
         width: 360px;
         height: 234px;
         border-radius: 12px;
     }
-    .eth-port-card-title {
+    .eth-ports-card-title {
         width: 220px;
         font-size: 24px;
     }

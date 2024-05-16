@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-
 import "../styles/MainPage.css";
 
-const MainView = ({ handleSelectedMainCard }) => {
+const MainView = () => {
     return (
         <main className="main-page">
             <header className="main-header">
@@ -15,22 +14,22 @@ const MainView = ({ handleSelectedMainCard }) => {
                         <h2 className="card-title">Modem Issues</h2>
                     </div>
                 </Link>
-                <Link className="link" to="/network/">
+                <Link className="link" to="network/">
                     <div className="main-card">
                         <h2 className="card-title">Network Issues</h2>
                     </div>
                 </Link>
-                <Link className="link" to="/pnp/">
+                <Link className="link" to="pnp/">
                     <div className="main-card">
                         <h2 className="card-title">Point and Peak</h2>
                     </div>
                 </Link>
-                <Link className="link" to="/provisioning/">
+                <Link className="link" to="provisioning/">
                     <div className="main-card" >
                         <h2 className="card-title">Provisioning Failure</h2>
                     </div>
                 </Link>
-                <Link className="link" to="/qoi/">
+                <Link className="link" to="qoi/">
                     <div className="main-card" >
                         <h2 className="card-title">Quality of Install <br />(QOI)</h2>
                     </div>

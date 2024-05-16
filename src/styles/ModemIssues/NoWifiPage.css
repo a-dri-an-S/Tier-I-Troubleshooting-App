@@ -1,10 +1,10 @@
-.no-wifi-cards-sect {
+.no-wifi-page{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.no-wifi-cards-title {
+.no-wifi-title {
     text-align: center;
     color: var(--very-dark-blue);
 }
@@ -33,7 +33,7 @@
 
 
 @media only screen and (max-width: 375px) {
-    .no-wifi-cards-sect {
+    .no-wifi-page {
         width: 350px;
         height: 100%;
     }
@@ -62,11 +62,11 @@
 }
 
 @media only screen and (min-width: 375px) {
-    .no-wifi-cards-sect {
+    .no-wifi-page {
         width: 350px;
         height: 100%;
     }
-    .no-wifi-cards-title {
+    .no-wifi-title {
         margin: 96px 0px 48px 0;
         width: 300px;
         font-size: 32px;
@@ -90,11 +90,11 @@
     }
 }
 @media only screen and (min-width: 768px) {
-    .no-wifi-cards-sect {
+    .no-wifi-page {
         width: 624px;
         height: 100vh;
     }
-    .no-wifi-cards-title {
+    .no-wifi-title {
         margin: 64px 0px 48px 0;
         width: 600px;
         font-size: 38px;
@@ -120,13 +120,13 @@
     }
 }
 @media only screen and (min-width: 1200px) {
-    .no-wifi-cards-sect {
+    .no-wifi-page {
         display: flex;
         justify-content: flex-start;
         width: 624px;
         height: 100vh;
     }
-    .no-wifi-cards-title {
+    .no-wifi-title {
         margin: 164px 0px 48px 0;
         width: 900px;
         font-size: 46px;

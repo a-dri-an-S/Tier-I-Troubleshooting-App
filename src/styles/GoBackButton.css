@@ -1,44 +1,44 @@
-.cards-back-btn {
+.go-back-btn {
     color: var(--very-dark-blue);
     background-color: transparent;
     border: none;
 }
-.cards-back-btn:hover {
+.go-back-btn:hover {
     cursor: pointer;
     color: var(--very-dark-blue-light-mode-text);
 }
 
 @media only screen and (max-width: 375px) {
-    .cards-back-btn {
+    .go-back-btn {
         margin: 12px 0 24px 0;
         width: 36px;
         height: 36px;
         font-size: 24px;
     }
-    .cards-back-btn:hover {
+    .go-back-btn:hover {
         font-size: 26px;
     }
-    .cards-back-btn:active {
+    .go-back-btn:active {
         font-size: 28px;
     }
 }
 
 @media only screen and (min-width: 375px) {
-    .cards-back-btn {
+    .go-back-btn {
         margin: 12px 0 24px 0;
         width: 36px;
         height: 36px;
         font-size: 24px;
     }
-    .cards-back-btn:hover {
+    .go-back-btn:hover {
         font-size: 26px;
     }
-    .cards-back-btn:active {
+    .go-back-btn:active {
         font-size: 28px;
     }
 }
 @media only screen and (min-width: 768px) {
-    .cards-back-btn {
+    .go-back-btn {
         margin: 0px;
         position: fixed;
         bottom:24px;
@@ -47,24 +47,24 @@
         height: 36px;
         font-size: 24px;
     }
-    .cards-back-btn:hover {
+    .go-back-btn:hover {
         font-size: 26px;
     }
-    .cards-back-btn:active {
+    .go-back-btn:active {
         font-size: 28px;
     }
 }
 @media only screen and (min-width: 1200px) {
-    .cards-back-btn {
+    .go-back-btn {
         margin: 0px;
         width: 48px;
         height: 48px;
         font-size: 32px;
     }
-    .cards-back-btn:hover {
+    .go-back-btn:hover {
         font-size: 34px;
     }
-    .cards-back-btn:active {
+    .go-back-btn:active {
         font-size: 36px;
     }
 }
