@@ -1,16 +1,17 @@
-.release-renew-ip-cards-sect {
+.renew-ip-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.release-renew-ip-cards-title {
+.renew-ip-title {
     text-align: center;
     color: var(--very-dark-blue);
-}.release-renew-ip-title-desc {
+}
+.renew-ip-desc {
     color: var(--very-dark-blue);
 }
-.release-renew-ip-card {
+.renew-ip-card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,12 +21,12 @@
     border: none;
     box-shadow: 1px 1px 12px 1px var(--shadow);
 }
-.release-renew-ip-card:hover {
+.renew-ip-card:hover {
     cursor: pointer;
     background-color: var(--very-light-gray);
     box-shadow: 1px 1px 24px 2px var(--shadow);
 }
-.release-renew-ip-card:active {
+.renew-ip-card:active {
     cursor: pointer;
     color: var(--very-light-gray);
     background-color: var(--dark-blue);
@@ -33,34 +34,34 @@
 }
 
 @media only screen and (max-width: 375px) {
-    .release-renew-ip-cards-sect {
+    .renew-ip-page {
         width: 350px;
         height: 100%;
     }
-    .release-renew-ip-cards-title {
+    .renew-ip-title {
         margin: 96px 0px 12px 0;
         width: 300px;
         font-size: 32px;
     }
-    .release-renew-ip-title-desc {
+    .renew-ip-desc {
         margin: 0 0 24px 0;
         font-size: 14px;
         text-align: center;
     }
-    .release-renew-ip-cards-cont {
+    .renew-ip-cards-cont {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .release-renew-ip-card {
+    .renew-ip-card {
         margin: 0 0 24px 0;
         width: 280px;
         height: 182px;
         border-radius: 12px;
     }
-    .release-renew-ip-card-title {
+    .renew-ip-card-title {
         width: 220px;
         font-size: 18px;
     }
@@ -69,53 +70,53 @@
 
 
 @media only screen and (min-width: 375px) {
-    .release-renew-ip-cards-sect {
+    .renew-ip-page {
         width: 350px;
         height: 100%;
     }
-    .release-renew-ip-cards-title {
+    .renew-ip-title {
         margin: 96px 0px 12px 0;
         width: 300px;
         font-size: 32px;
     }
-    .release-renew-ip-title-desc {
+    .renew-ip-desc {
         margin: 0 0 24px 0;
         font-size: 14px;
         text-align: center;
     }
-    .release-renew-ip-cards-cont {
+    .renew-ip-cards-cont {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .release-renew-ip-card {
+    .renew-ip-card {
         margin: 0 0 24px 0;
         width: 280px;
         height: 182px;
         border-radius: 12px;
     }
-    .release-renew-ip-card-title {
+    .renew-ip-card-title {
         width: 220px;
         font-size: 18px;
     }
 }
 @media only screen and (min-width: 768px) {
-    .release-renew-ip-cards-sect {
+    .renew-ip-page {
         width: 624px;
         height: 100vh;
     }
-    .release-renew-ip-cards-title {
+    .renew-ip-title {
         margin: 64px 0px 12px 0;
         width: 600px;
         font-size: 38px;
     }
-    .release-renew-ip-title-desc {
+    .renew-ip-desc {
         margin: 0 0 36px 0;
         font-size: 16px;
     }
-    .release-renew-ip-cards-cont {
+    .renew-ip-cards-cont {
         margin: 0 0 24px 0;
         width: 624px;
         height: 70%;
@@ -124,34 +125,34 @@
         grid-template-rows: repeat(3, 195px);
         gap: 24px;
     }
-    .release-renew-ip-card {
+    .renew-ip-card {
         margin: 0px;
         width: 300px;
         height: 195px;
         border-radius: 12px;
     }
-    .release-renew-ip-card-title {
+    .renew-ip-card-title {
         width: 220px;
         font-size: 20px;
     }
 }
 @media only screen and (min-width: 1200px) {
-    .release-renew-ip-cards-sect {
+    .renew-ip-page {
         display: flex;
         justify-content: flex-start;
         width: 624px;
         height: 100vh;
     }
-    .release-renew-ip-cards-title {
+    .renew-ip-title {
         margin: 164px 0px 12px 0;
         width: 900px;
         font-size: 46px;
     }
-    .release-renew-ip-title-desc {
+    .renew-ip-desc {
         margin: 0 0 36px 0;
         font-size: 16px;
     }
-    .release-renew-ip-cards-cont {
+    .renew-ip-cards-cont {
         margin: 0;
         width: 1144px;
         height: 500px;
@@ -160,13 +161,13 @@
         grid-template-rows: repeat(2, 234px);
         gap: 32px;
     }
-    .release-renew-ip-card {
+    .renew-ip-card {
         margin: 0 0 0px 0;
         width: 360px;
         height: 234px;
         border-radius: 12px;
     }
-    .release-renew-ip-card-title {
+    .renew-ip-card-title {
         width: 220px;
         font-size: 24px;
     }

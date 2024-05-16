@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import NetworkIssuesPage from "../../pages/NetworkIssues/NetworkIssuesPage";
 import SlowSpeedsRoutes from "./SlowSpeedsRoutes";
-import NoInternetPage from "../../pages/NetworkIssues/NoInternetPage";
+import NoInternetRoutes from "./NoInternetRoutes";
 
 const NetworkIssuesRoutes = () => {
     return (
@@ -10,7 +10,7 @@ const NetworkIssuesRoutes = () => {
             <Routes>
                 <Route path="/*" Component={NetworkIssuesPage}/>
                 <Route path="slwspds/*" Component={SlowSpeedsRoutes}/>
-                <Route path="noint/*" Component={NoInternetPage}/>
+                <Route path="noint/*" Component={NoInternetRoutes}/>
             </Routes>
         </div>
     );
