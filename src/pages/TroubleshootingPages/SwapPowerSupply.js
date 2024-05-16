@@ -1,15 +1,18 @@
-import TSCardBackButton from "./TSCardBackButton";
+import "../../styles/TroubleshootPage.css"
 
-import "../../styles/TroubleshootCard.css"
+import TSGoBackButton from "../../components/TSGoBackButton";
 
-const SwapModem = ({ handleBackButton }) => {
+const SwapPowerSupply = () => {
     return (
         <div className="troubleshoot-sect">
-            <h1 className="troubleshoot-title">Swap Modem</h1>
+            <h1 className="troubleshoot-title">Swap Power Supply</h1>
             <div className="troubleshoot-card">
                 <ul className="troubleshoot-list">
                     <li className="troubleshoot-list-item">
-                        Swap with a new modem.
+                        Swap the power supply on the modem with a new one.
+                        <ul className="troubleshoot-list-item">
+                            <li className="troubleshoot-list-item-item">Make sure it's a new power supply.</li>
+                        </ul>
                     </li>
                     <li className="troubleshoot-list-item">
                         If modem status light is blue, please have the tech continue with activating the modem.
@@ -21,16 +24,13 @@ const SwapModem = ({ handleBackButton }) => {
                         </ul>
                     </li>
                     <li className="troubleshoot-list-item">
-                        If modem status light continues red, please continue with 'Modem Offline' troubleshooting steps.
-                        <ul className="troubleshoot-list-item">
-                            <li className="troubleshoot-list-item-item">If modem status light continues red, please continue with the other troubleshooting steps.</li>
-                        </ul>
+                        If modem status light continues red, please continue with the other troubleshooting steps.
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }
 
-export default SwapModem;
+export default SwapPowerSupply;

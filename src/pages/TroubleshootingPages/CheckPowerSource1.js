@@ -1,18 +1,24 @@
-import TSCardBackButton from "./TSCardBackButton";
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import "../../styles/TroubleshootCard.css"
-
-const SwapTRIA = ({ handleBackButton }) => {
+const CheckPowerSource = () => {
     return (
         <div className="troubleshoot-sect">
-            <h1 className="troubleshoot-title">Swap TRIA</h1>
+            <h1 className="troubleshoot-title">Check the Power Source</h1>
             <div className="troubleshoot-card">
                 <ul className="troubleshoot-list">
                     <li className="troubleshoot-list-item">
-                        Swap with a new TRIA.
+                        Check where the power supply is plugged in.
                         <ul className="troubleshoot-list-item">
-                            <li className="troubleshoot-list-item-item">Point and peak the TRIA.</li>
+                            <li className="troubleshoot-list-item-item">Have the tech confirm if its plugged into a power strip or a surge protector.</li>
+                            <li className="troubleshoot-list-item-item">If it is plugged into either, have them plug directly into a power outlet.</li>
                         </ul>
+                    </li>
+                    <li className="troubleshoot-list-item">
+                        Test a different outlet.
+                    </li>
+                    <li className="troubleshoot-list-item">
+                        Test a different power outlet on a different circuit.
                     </li>
                     <li className="troubleshoot-list-item">
                         If modem status light is blue, please have the tech continue with activating the modem.
@@ -31,9 +37,9 @@ const SwapTRIA = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }
 
-export default SwapTRIA;
+export default CheckPowerSource;

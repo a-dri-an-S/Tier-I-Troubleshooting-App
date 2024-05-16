@@ -7,9 +7,8 @@ const MainView = () => {
             <header className="main-header">
                 <h1 className="main-title">IR Troubleshooting Tool</h1>
             </header>
-
             <div className="main-cards-sect">
-                <Link className="link" to="/modem/">
+                <Link className="link" to="modem/">
                     <div className="main-card">
                         <h2 className="card-title">Modem Issues</h2>
                     </div>
