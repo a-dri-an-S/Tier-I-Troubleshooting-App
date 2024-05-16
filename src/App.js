@@ -1,44 +1,27 @@
-import { useState } from "react";
-import MainView from "./components/MainView.js";
-import IssueView from "./components/IssueView.js";
+import { Link, useLocation } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 
+import MainRoutes from "./routes/MainRoutes.js";
 import './styles/App.css';
 
 function App() {
-
-  const [viewChange, setViewChange] = useState(false);
-  const [selectMainCard, setSelectMainCard] = useState([false, false, false, false, false]);
-
-
-  function handleSelectedMainCard(e) {
-    const idx = e.target.id;
-    const updatedState = selectMainCard.map((el, i) => {
-      if (i === +idx) {
-        return true;
-      } else {
-        return false;
-      }
-    })
-    setSelectMainCard(updatedState);
-    setViewChange(true);
-    return;
-  }
-
-  function handleHomeButton() {
-    setSelectMainCard([false, false, false, false, false]);
-    setViewChange(false);
-  }
+  const location = useLocation();
+  const renderHomeBtn = location.pathname !== "/";
 
   return (
     <div className="app">
       {
-        viewChange ?
-          <IssueView
-            handleHomeButton={handleHomeButton}
-            selectMainCard={selectMainCard}
-          /> :
-          <MainView handleSelectedMainCard={handleSelectedMainCard} />
+        renderHomeBtn &&
+        <header className="header">
+          <Link to="/">
+            <button className="home-btn" >
+              <FontAwesomeIcon icon={faHome} />
+            </button>
+          </Link>
+        </header>
       }
+      <MainRoutes />
     </div>
   );
 }

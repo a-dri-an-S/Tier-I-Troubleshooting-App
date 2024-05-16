@@ -1,14 +1,14 @@
-.qoi-cards-sect {
+.provisioning-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.qoi-cards-title {
+.provisioning-title {
     text-align: center;
     color: var(--very-dark-blue);
 }
-.qoi-card {
+.provisioning-card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,12 +18,12 @@
     border: none;
     box-shadow: 1px 1px 12px 1px var(--shadow);
 }
-.qoi-card:hover {
+.provisioning-card:hover {
     cursor: pointer;
     background-color: var(--very-light-gray);
     box-shadow: 1px 1px 24px 2px var(--shadow);
 }
-.qoi-card:active {
+.provisioning-card:active {
     cursor: pointer;
     color: var(--very-light-gray);
     background-color: var(--dark-blue);
@@ -32,73 +32,73 @@
 
 
 @media only screen and (max-width: 375px) {
-    .qoi-cards-sect {
+    .provisioning-page {
         width: 350px;
         height: 100%;
     }
-    .qoi-cards-title {
+    .provisioning-title {
         margin: 96px 0px 48px 0;
         width: 300px;
         font-size: 32px;
     }
-    .qoi-cards-cont {
+    .provisioning-cards-cont {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .qoi-card {
+    .provisioning-card {
         margin: 0 0 24px 0;
         width: 280px;
         height: 182px;
         border-radius: 12px;
     }
-    .qoi-card-title {
+    .provisioning-card-title {
         width: 220px;
         font-size: 18px;
     }
 }
 
 @media only screen and (min-width: 375px) {
-    .qoi-cards-sect {
+    .provisioning-page {
         width: 350px;
         height: 100%;
     }
-    .qoi-cards-title {
+    .provisioning-title {
         margin: 96px 0px 48px 0;
         width: 300px;
         font-size: 32px;
     }
-    .qoi-cards-cont {
+    .provisioning-cards-cont {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .qoi-card {
+    .provisioning-card {
         margin: 0 0 24px 0;
         width: 280px;
         height: 182px;
         border-radius: 12px;
     }
-    .qoi-card-title {
+    .provisioning-card-title {
         width: 220px;
         font-size: 18px;
     }
 }
 @media only screen and (min-width: 768px) {
-    .qoi-cards-sect {
+    .provisioning-page {
         width: 624px;
         height: 100vh;
     }
-    .qoi-cards-title {
+    .provisioning-title {
         margin: 64px 0px 48px 0;
         width: 600px;
         font-size: 38px;
     }
-    .qoi-cards-cont {
+    .provisioning-cards-cont {
         margin: 0 0 24px 0;
         width: 624px;
         height: 70%;
@@ -107,31 +107,31 @@
         grid-template-rows: repeat(5, 195px);
         gap: 24px;
     }
-    .qoi-card {
+    .provisioning-card {
         margin: 0px;
         width: 300px;
         height: 195px;
         border-radius: 12px;
     }
-    .qoi-card-title {
+    .provisioning-card-title {
         width: 220px;
         font-size: 20px;
     }
 }
 @media only screen and (min-width: 1200px) {
-    .qoi-cards-sect {
+    .provisioning-page {
         margin: 0 0 36px 0;
         display: flex;
         justify-content: flex-start;
         width: 100%;
         height: 100vh;
     }
-    .qoi-cards-title {
+    .provisioning-title {
         margin: 164px 0px 48px 0;
         width: 900px;
         font-size: 46px;
     }
-    .qoi-cards-cont {
+    .provisioning-cards-cont {
         margin: 0;
         width: 1144px;
         height: 500px;
@@ -140,13 +140,13 @@
         grid-template-rows: repeat(2, 234px);
         gap: 32px;
     }
-    .qoi-card {
+    .provisioning-card {
         margin: 0 0 0px 0;
         width: 360px;
         height: 234px;
         border-radius: 12px;
     }
-    .qoi-card-title {
+    .provisioning-card-title {
         width: 220px;
         font-size: 24px;
     }

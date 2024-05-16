@@ -1,14 +1,14 @@
-.network-issue-cards-sect {
+.qoi-page{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.network-issue-cards-title {
+.qoi-title {
     text-align: center;
     color: var(--very-dark-blue);
 }
-.network-issue-card {
+.qoi-card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,12 +18,12 @@
     border: none;
     box-shadow: 1px 1px 12px 1px var(--shadow);
 }
-.network-issue-card:hover {
+.qoi-card:hover {
     cursor: pointer;
     background-color: var(--very-light-gray);
     box-shadow: 1px 1px 24px 2px var(--shadow);
 }
-.network-issue-card:active {
+.qoi-card:active {
     cursor: pointer;
     color: var(--very-light-gray);
     background-color: var(--dark-blue);
@@ -32,120 +32,121 @@
 
 
 @media only screen and (max-width: 375px) {
-    .network-issue-cards-sect {
+    .qoi-page {
         width: 350px;
-        height: 100vh;
+        height: 100%;
     }
-    .network-issue-cards-title {
+    .qoi-title {
         margin: 96px 0px 48px 0;
         width: 300px;
         font-size: 32px;
     }
-    .network-issue-cards-cont {
+    .qoi-cards-cont {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .network-issue-card {
+    .qoi-card {
         margin: 0 0 24px 0;
         width: 280px;
         height: 182px;
         border-radius: 12px;
     }
-    .network-issue-card-title {
+    .qoi-card-title {
         width: 220px;
         font-size: 18px;
     }
 }
 
 @media only screen and (min-width: 375px) {
-    .network-issue-cards-sect {
+    .qoi-page {
         width: 350px;
-        height: 100vh;
+        height: 100%;
     }
-    .network-issue-cards-title {
+    .qoi-title {
         margin: 96px 0px 48px 0;
         width: 300px;
         font-size: 32px;
     }
-    .network-issue-cards-cont {
+    .qoi-cards-cont {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .network-issue-card {
+    .qoi-card {
         margin: 0 0 24px 0;
         width: 280px;
         height: 182px;
         border-radius: 12px;
     }
-    .network-issue-card-title {
+    .qoi-card-title {
         width: 220px;
         font-size: 18px;
     }
 }
 @media only screen and (min-width: 768px) {
-    .network-issue-cards-sect {
+    .qoi-page {
         width: 624px;
         height: 100vh;
     }
-    .network-issue-cards-title {
+    .qoi-title {
         margin: 64px 0px 48px 0;
         width: 600px;
         font-size: 38px;
     }
-    .network-issue-cards-cont {
+    .qoi-cards-cont {
         margin: 0 0 24px 0;
         width: 624px;
         height: 70%;
         display: grid;
         grid-template-columns: repeat(2, 300px);
-        grid-template-rows: repeat(3, 195px);
+        grid-template-rows: repeat(5, 195px);
         gap: 24px;
     }
-    .network-issue-card {
+    .qoi-card {
         margin: 0px;
         width: 300px;
         height: 195px;
         border-radius: 12px;
     }
-    .network-issue-card-title {
+    .qoi-card-title {
         width: 220px;
         font-size: 20px;
     }
 }
 @media only screen and (min-width: 1200px) {
-    .network-issue-cards-sect {
+    .qoi-page {
+        margin: 0 0 36px 0;
         display: flex;
         justify-content: flex-start;
-        width: 624px;
+        width: 100%;
         height: 100vh;
     }
-    .network-issue-cards-title {
+    .qoi-title {
         margin: 164px 0px 48px 0;
         width: 900px;
         font-size: 46px;
     }
-    .network-issue-cards-cont {
+    .qoi-cards-cont {
         margin: 0;
-        width: 752px;
+        width: 1144px;
         height: 500px;
         display: grid;
-        grid-template-columns: repeat(2, 360px);
+        grid-template-columns: repeat(3, 360px);
         grid-template-rows: repeat(2, 234px);
         gap: 32px;
     }
-    .network-issue-card {
+    .qoi-card {
         margin: 0 0 0px 0;
         width: 360px;
         height: 234px;
         border-radius: 12px;
     }
-    .network-issue-card-title {
+    .qoi-card-title {
         width: 220px;
         font-size: 24px;
     }
