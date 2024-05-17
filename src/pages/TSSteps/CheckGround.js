@@ -1,6 +1,5 @@
-import TSCardBackButton from "./TSCardBackButton";
-
-import "../../styles/TroubleshootCard.css";
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
 const CheckGround = ({ handleBackButton }) => {
     return (
@@ -33,7 +32,7 @@ const CheckGround = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }

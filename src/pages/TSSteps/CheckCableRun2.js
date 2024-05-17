@@ -1,6 +1,7 @@
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-
-const CheckCableRun = ({ handleBackButton }) => {
+const CheckCableRun = () => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check the Cable Run</h1>
@@ -31,6 +32,7 @@ const CheckCableRun = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
+            <TSGoBackButton />
         </div>
     );
 }
