@@ -1,8 +1,7 @@
-import TSCardBackButton from "./TSCardBackButton";
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import "../../styles/TroubleshootCard.css"
-
-const CheckLOS = ({ handleBackButton }) => {
+const CheckLOS = () => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check Line of Sight(LOS)</h1>
@@ -21,7 +20,7 @@ const CheckLOS = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }

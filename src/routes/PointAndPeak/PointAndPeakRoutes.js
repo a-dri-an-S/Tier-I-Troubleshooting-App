@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import PointAndPeakPage from "../../pages/PointAndPeak/PointAndPeakPage";
 import NoTonesRoutes from "./NoTonesRoutes";
-import FindSatPage from "../../pages/PointAndPeak/FindSatPage";
+import FindSatRoutes from "./FindSatRoutes";
 import ModemLockPage from "../../pages/PointAndPeak/ModemLockPage";
 
 const PointAndPeakRoutes = () => {
@@ -11,7 +11,7 @@ const PointAndPeakRoutes = () => {
             <Routes>
                 <Route path="/*" Component={PointAndPeakPage}/>
                 <Route path="notone/*" Component={NoTonesRoutes}/>
-                <Route path="fndsat/*" Component={FindSatPage}/>
+                <Route path="fndsat/*" Component={FindSatRoutes}/>
                 <Route path="mdmlck/*" Component={ModemLockPage}/>
             </Routes>
         </div>

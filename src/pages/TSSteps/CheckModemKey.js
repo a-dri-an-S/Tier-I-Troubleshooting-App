@@ -1,8 +1,7 @@
-import TSCardBackButton from "./TSCardBackButton";
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import "../../styles/TroubleshootCard.css"
-
-const CheckModemKey = ({ handleBackButton }) => {
+const CheckModemKey = () => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check the Modem Key</h1>
@@ -16,7 +15,7 @@ const CheckModemKey = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }

@@ -1,8 +1,7 @@
-import TSCardBackButton from "./TSCardBackButton";
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import "../../styles/TroubleshootCard.css"
-
-const CheckElAzSkew = ({ handleBackButton }) => {
+const CheckElAzSkew = () => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check Elevation, Azimuth and Skew</h1>
@@ -19,7 +18,7 @@ const CheckElAzSkew = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }
