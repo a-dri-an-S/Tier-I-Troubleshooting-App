@@ -1,14 +1,14 @@
-.ap-afterburner-cards-sect {
+.equip-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.ap-afterburner-cards-title {
+.equip-title {
     text-align: center;
     color: var(--very-dark-blue);
 }
-.ap-afterburner-card {
+.equip-card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,12 +18,12 @@
     border: none;
     box-shadow: 1px 1px 12px 1px var(--shadow);
 }
-.ap-afterburner-card:hover {
+.equip-card:hover {
     cursor: pointer;
     background-color: var(--very-light-gray);
     box-shadow: 1px 1px 24px 2px var(--shadow);
 }
-.ap-afterburner-card:active {
+.equip-card:active {
     cursor: pointer;
     color: var(--very-light-gray);
     background-color: var(--dark-blue);
@@ -31,76 +31,73 @@
 }
 
 @media only screen and (max-width: 375px) {
-    .ap-afterburner-cards-sect {
+    .equip-cards-sect {
         width: 350px;
-        height: 100vh;
+        height: 100%;
     }
-    .ap-afterburner-cards-title {
+    .equip-title {
         margin: 96px 0px 48px 0;
         width: 300px;
         font-size: 32px;
     }
-    .ap-afterburner-cards-cont {
+    .equip-cards-cont {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .ap-afterburner-card {
+    .equip-card {
         margin: 0 0 24px 0;
         width: 280px;
         height: 182px;
         border-radius: 12px;
     }
-    .ap-afterburner-card-title {
+    .equip-card-title {
         width: 220px;
         font-size: 18px;
     }
 }
 
 @media only screen and (min-width: 375px) {
-    .ap-afterburner-cards-sect {
+    .equip-page {
         width: 350px;
-        height: 100vh;
+        height: 100%;
     }
-    .ap-afterburner-cards-title {
+    .equip-title {
         margin: 96px 0px 48px 0;
         width: 300px;
         font-size: 32px;
     }
-    .ap-afterburner-cards-cont {
+    .equip-cards-cont {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .ap-afterburner-card {
+    .equip-card {
         margin: 0 0 24px 0;
         width: 280px;
         height: 182px;
         border-radius: 12px;
     }
-    .ap-afterburner-card-title {
+    .equip-card-title {
         width: 220px;
         font-size: 18px;
     }
 }
 @media only screen and (min-width: 768px) {
-    .ap-afterburner-cards-sect {
-        margin: 0;
-        display: flex;
-        justify-content: flex-start;
+    .equip-page {
         width: 624px;
-        height: 100vh;
+        height: 100%;
     }
-    .ap-afterburner-cards-title {
-        margin: 128px 0px 48px 0;
+    .equip-title {
+        margin: 64px 0px 48px 0;
         width: 600px;
         font-size: 38px;
     }
-    .ap-afterburner-cards-cont {
+    .equip-cards-cont {
         margin: 0 0 24px 0;
         width: 624px;
         height: 70%;
@@ -109,46 +106,46 @@
         grid-template-rows: repeat(5, 195px);
         gap: 24px;
     }
-    .ap-afterburner-card {
+    .equip-card {
         margin: 0px;
         width: 300px;
         height: 195px;
         border-radius: 12px;
     }
-    .ap-afterburner-card-title {
+    .equip-card-title {
         width: 220px;
         font-size: 20px;
     }
 }
 @media only screen and (min-width: 1200px) {
-    .ap-afterburner-cards-sect {
-        margin: 0;
+    .equip-page {
+        margin: 0 0 36px 0;
         display: flex;
         justify-content: flex-start;
         width: 100%;
         height: 100vh;
     }
-    .ap-afterburner-cards-title {
+    .equip-title {
         margin: 164px 0px 48px 0;
         width: 900px;
         font-size: 46px;
     }
-    .ap-afterburner-cards-cont {
+    .equip-cards-cont {
         margin: 0;
-        width: 752px;
-        height: 234px;
+        width: 1144px;
+        height: 500px;
         display: grid;
-        grid-template-columns: repeat(2, 360px);
+        grid-template-columns: repeat(3, 360px);
         grid-template-rows: repeat(2, 234px);
         gap: 32px;
     }
-    .ap-afterburner-card {
+    .equip-card {
         margin: 0 0 0px 0;
         width: 360px;
         height: 234px;
         border-radius: 12px;
     }
-    .ap-afterburner-card-title {
+    .equip-card-title {
         width: 220px;
         font-size: 24px;
     }

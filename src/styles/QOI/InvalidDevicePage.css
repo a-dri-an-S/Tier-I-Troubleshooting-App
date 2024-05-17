@@ -1,14 +1,14 @@
-.antenna-pointing-cards-sect {
+.invalid-device-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.antenna-pointing-cards-title {
+.invalid-device-title {
     text-align: center;
     color: var(--very-dark-blue);
 }
-.antenna-pointing-card {
+.invalid-device-card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,12 +18,12 @@
     border: none;
     box-shadow: 1px 1px 12px 1px var(--shadow);
 }
-.antenna-pointing-card:hover {
+.invalid-device-card:hover {
     cursor: pointer;
     background-color: var(--very-light-gray);
     box-shadow: 1px 1px 24px 2px var(--shadow);
 }
-.antenna-pointing-card:active {
+.invalid-device-card:active {
     cursor: pointer;
     color: var(--very-light-gray);
     background-color: var(--dark-blue);
@@ -31,73 +31,73 @@
 }
 
 @media only screen and (max-width: 375px) {
-    .antenna-pointing-cards-sect {
+    .invalid-device-page {
         width: 350px;
-        height: 100%;
+        height: 100vh;
     }
-    .antenna-pointing-cards-title {
+    .invalid-device-title {
         margin: 96px 0px 48px 0;
         width: 300px;
         font-size: 32px;
     }
-    .antenna-pointing-cards-cont {
+    .invalid-device-cards-cont {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .antenna-pointing-card {
+    .invalid-device-card {
         margin: 0 0 24px 0;
         width: 280px;
         height: 182px;
         border-radius: 12px;
     }
-    .antenna-pointing-card-title {
+    .invalid-device-card-title {
         width: 220px;
         font-size: 18px;
     }
 }
 
 @media only screen and (min-width: 375px) {
-    .antenna-pointing-cards-sect {
+    .invalid-device-page {
         width: 350px;
-        height: 100%;
+        height: 100vh;
     }
-    .antenna-pointing-cards-title {
+    .invalid-device-title {
         margin: 96px 0px 48px 0;
         width: 300px;
         font-size: 32px;
     }
-    .antenna-pointing-cards-cont {
+    .invalid-device-cards-cont {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .antenna-pointing-card {
+    .invalid-device-card {
         margin: 0 0 24px 0;
         width: 280px;
         height: 182px;
         border-radius: 12px;
     }
-    .antenna-pointing-card-title {
+    .invalid-device-card-title {
         width: 220px;
         font-size: 18px;
     }
 }
 @media only screen and (min-width: 768px) {
-    .antenna-pointing-cards-sect {
+    .invalid-device-page {
         width: 624px;
-        height: 100%;
+        height: 100vh;
     }
-    .antenna-pointing-cards-title {
+    .invalid-device-title {
         margin: 64px 0px 48px 0;
         width: 600px;
         font-size: 38px;
     }
-    .antenna-pointing-cards-cont {
+    .invalid-device-cards-cont {
         margin: 0 0 24px 0;
         width: 624px;
         height: 70%;
@@ -106,46 +106,46 @@
         grid-template-rows: repeat(5, 195px);
         gap: 24px;
     }
-    .antenna-pointing-card {
+    .invalid-device-card {
         margin: 0px;
         width: 300px;
         height: 195px;
         border-radius: 12px;
     }
-    .antenna-pointing-card-title {
+    .invalid-device-card-title {
         width: 220px;
         font-size: 20px;
     }
 }
 @media only screen and (min-width: 1200px) {
-    .antenna-pointing-cards-sect {
+    .invalid-device-page {
         margin: 0 0 36px 0;
         display: flex;
         justify-content: flex-start;
         width: 100%;
-        height: 100%;
+        height: 100vh;
     }
-    .antenna-pointing-cards-title {
+    .invalid-device-title {
         margin: 164px 0px 48px 0;
         width: 900px;
         font-size: 46px;
     }
-    .antenna-pointing-cards-cont {
+    .invalid-device-cards-cont {
         margin: 0;
-        width: 1144px;
-        height: 1032px;
+        width: 360px;
+        height: 234px;
         display: grid;
-        grid-template-columns: repeat(3, 360px);
-        grid-template-rows: repeat(2, 234px);
+        grid-template-columns: repeat(1, 360px);
+        grid-template-rows: repeat(1, 234px);
         gap: 32px;
     }
-    .antenna-pointing-card {
+    .invalid-device-card {
         margin: 0 0 0px 0;
         width: 360px;
         height: 234px;
         border-radius: 12px;
     }
-    .antenna-pointing-card-title {
+    .invalid-device-card-title {
         width: 220px;
         font-size: 24px;
     }
