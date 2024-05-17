@@ -26,7 +26,7 @@ const QOIPage = () => {
                         <h2 className="qoi-card-title">Software</h2>
                     </div>
                 </Link>
-                <Link className="link" to="invdev/">
+                <Link className="link" to="instdev/">
                     <div className="qoi-card" >
                         <h2 className="qoi-card-title">Installed Devices</h2>
                     </div>

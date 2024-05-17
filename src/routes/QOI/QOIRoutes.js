@@ -5,7 +5,7 @@ import AntennaPointingRoutes from "./AntennaPointingRoutes";
 import AfterburnerRoutes from "./AfterburnerRoutes";
 import EquipmentRoutes from "./EquipmentRoutes";
 import SoftwareRoutes from "./SoftwareRoutes";
-import InstalledDevicePage from "../../pages/QOI/InstalledDevicePage";
+import InstalledDeviceRoutes from "./InstalledDeviceRoutes";
 
 const QOIRoutes = () => {
     return (
@@ -16,7 +16,7 @@ const QOIRoutes = () => {
                 <Route path="ab/*" Component={AfterburnerRoutes} />
                 <Route path="equip/*" Component={EquipmentRoutes} />
                 <Route path="sw/*" Component={SoftwareRoutes} />
-                <Route path="invdev/*" Component={InstalledDevicePage} />
+                <Route path="instdev/*" Component={InstalledDeviceRoutes} />
             </Routes>
         </div>
     );
