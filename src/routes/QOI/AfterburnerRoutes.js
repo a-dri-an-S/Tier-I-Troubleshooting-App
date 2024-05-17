@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import AfterburnerPage from "../../pages/QOI/AfterburnerPage";
-import PnPStepsPage from "../../pages/QOI/PnPStepsPage";
+import PnPStepsRoutes from "./PnPStepsRoutes";
 import PeakExitPAge from "../../pages/QOI/PeakExitPage";
 
 const AfterburnerRoutes = () => {
@@ -9,7 +9,7 @@ const AfterburnerRoutes = () => {
         <div className="ab-routes">
             <Routes>
                 <Route path="/*" Component={AfterburnerPage} />
-                <Route path="pnpstps/*" Component={PnPStepsPage} />
+                <Route path="pnpstps/*" Component={PnPStepsRoutes} />
                 <Route path="pkext/*" Component={PeakExitPAge} />
             </Routes>
         </div>
