@@ -39,6 +39,14 @@
     cursor: pointer;
     color: var(--very-dark-blue-light-mode-text);
 }
+.ts-link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+.ts-link:hover {
+    font-weight: 700
+}
 
 @media only screen and (max-width: 375px) {
     .troubleshoot-sect {
