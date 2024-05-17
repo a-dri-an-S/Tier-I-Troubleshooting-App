@@ -1,8 +1,7 @@
-import TSCardBackButton from "./TSCardBackButton";
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import "../../styles/TroubleshootCard.css";
-
-const CheckForOutages2 = ({ handleBackButton }) => {
+const CheckForOutages2 = () => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check for Outages</h1>
@@ -25,7 +24,7 @@ const CheckForOutages2 = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }

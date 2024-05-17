@@ -1,7 +1,7 @@
 import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css";
 
-const CheckForOutages = ({ handleBackButton }) => {
+const CheckForOutages = () => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check for Outages</h1>

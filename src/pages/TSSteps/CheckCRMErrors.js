@@ -1,8 +1,7 @@
-import "../../styles/TroubleshootCard.css"
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import TSCardBackButton from "./TSCardBackButton";
-
-const CheckCRMErrors = ({ handleBackButton }) => {
+const CheckCRMErrors = () => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">Check CRM for Account Errors</h1>
@@ -19,7 +18,7 @@ const CheckCRMErrors = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }

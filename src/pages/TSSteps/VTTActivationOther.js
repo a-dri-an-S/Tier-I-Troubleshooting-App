@@ -1,8 +1,7 @@
-import "../../styles/TroubleshootCard.css"
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import TSCardBackButton from "./TSCardBackButton";
-
-const VTTActivationOther = ({ handleBackButton }) => {
+const VTTActivationOther = () => {
     return (
         <div className="troubleshoot-sect">
             <h1 className="troubleshoot-title">VTT activation - Other Issues</h1>
@@ -19,7 +18,7 @@ const VTTActivationOther = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }
