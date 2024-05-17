@@ -4,7 +4,7 @@ import MainPage from "../pages/MainPage";
 import ModemIssuesRoutes from "./ModemIssues/ModemIssuesRoutes";
 import NetworkIssuesRoutes from "./NetworkIssues/NetworkIssuesRoutes";
 import PointAndPeakRoutes from "./PointAndPeak/PointAndPeakRoutes";
-import ProvisioningPage from "../pages/ProvisioningFailure/ProvisioningPage";
+import ProvisioningRoutes from "./Provisioning/ProvisioningRoutes";
 import QOIPage from "../pages/QOI/QOIPage";
 
 const MainRoutes = () => {
@@ -15,7 +15,7 @@ const MainRoutes = () => {
                 <Route path="modem/*" Component={ModemIssuesRoutes} />
                 <Route path="network/*" Component={NetworkIssuesRoutes} />
                 <Route path="pnp/*" Component={PointAndPeakRoutes} />
-                <Route path="provisioning/*" Component={ProvisioningPage} />
+                <Route path="provisioning/*" Component={ProvisioningRoutes} />
                 <Route path="qoi/*" Component={QOIPage} />
             </Routes>
         </div>
