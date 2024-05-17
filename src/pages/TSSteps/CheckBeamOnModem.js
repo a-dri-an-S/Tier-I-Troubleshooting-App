@@ -1,15 +1,14 @@
-import TSCardBackButton from "./TSCardBackButton";
+import TSGoBackButton from "../../components/TSGoBackButton";
+import "../../styles/TroubleshootPage.css";
 
-import "../../styles/TroubleshootCard.css";
-
-const CheckBeamOnModem = ({ handleBackButton }) => {
+const CheckBeamOnModem = () => {
     return (
         <div className="troubleshoot-sect">
-            <h1 className="troubleshoot-title">Check for Correct Beam Assignment</h1>
+            <h1 className="troubleshoot-title">Check if Modem is Locked on Assigned Beam</h1>
             <div className="troubleshoot-card">
                 <ul className="troubleshoot-list">
                     <li className="troubleshoot-list-item">
-                        If the tech is on the wrong beam.
+                        If the tech is on the wrong beam, the tech will need to correct it.
                         <ul className="troubleshoot-list-item">
                             <li className="troubleshoot-list-item-item">If the modem is on the wrong beam, have the tech input the correct modem key.</li>
                             <li className="troubleshoot-list-item-item">Point and peak the TRIA to get modem on the correct beam.</li>
@@ -20,7 +19,7 @@ const CheckBeamOnModem = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSCardBackButton handleBackButton={handleBackButton} />
+            <TSGoBackButton />
         </div>
     );
 }

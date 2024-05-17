@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import QOIPage from "../../pages/QOI/QOIPage";
-import AntennaPointingPage from "../../pages/QOI/AntennaPointingPage";
+import AntennaPointingRoutes from "./AntennaPointingRoutes";
 import AfterburnerPage from "../../pages/QOI/AfterburnerPage";
 import EquipmentPage from "../../pages/QOI/EquipmentPage";
 import SoftwarePage from "../../pages/QOI/SoftwarePage";
@@ -12,7 +12,7 @@ const QOIRoutes = () => {
         <div className="qoi-routes">
             <Routes>
                 <Route path="/*" Component={QOIPage} />
-                <Route path="ap/*" Component={AntennaPointingPage} />
+                <Route path="ap/*" Component={AntennaPointingRoutes} />
                 <Route path="ab/*" Component={AfterburnerPage} />
                 <Route path="equip/*" Component={EquipmentPage} />
                 <Route path="sw/*" Component={SoftwarePage} />

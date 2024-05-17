@@ -3,7 +3,7 @@ import "../../styles/QOI/InvalidDevicePage.css";
 
 const InstalledDevicePage = () => {
     return (
-        <div className="invalid-device-page">
+        <section className="invalid-device-page">
             <h1 className="invalid-device-title">Installed Devices</h1>
             <div className="invalid-device-cards-cont">
                 <div className="invalid-device-card" >
@@ -11,7 +11,7 @@ const InstalledDevicePage = () => {
                 </div>
             </div>
             <GoBackButton />
-        </div>
+        </section>
     );
 }
 

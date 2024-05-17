@@ -3,7 +3,7 @@ import "../../styles/QOI/EquipmentPage.css";
 
 const EquipmentPage = () => {
     return (
-        <div className="equip-page">
+        <section className="equip-page">
             <h1 className="equip-title">Equipment (Cable and ODU)</h1>
             <div className="equip-cards-cont">
                 <div className="equip-card" >
@@ -20,7 +20,7 @@ const EquipmentPage = () => {
                 </div>
             </div>
             <GoBackButton />
-        </div>
+        </section>
     );
 }
 

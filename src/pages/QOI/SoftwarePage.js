@@ -3,7 +3,7 @@ import "../../styles/QOI/SoftwarePage.css";
 
 const SoftwareCards = () => {
     return (
-        <div className="software-page">
+        <section className="software-page">
             <h1 className="software-title">Software</h1>
             <div className="software-cards-cont">
                 <div className="software-card" >
@@ -11,7 +11,7 @@ const SoftwareCards = () => {
                 </div>
             </div>
             <GoBackButton />
-        </div>
+        </section>
     );
 }
 
