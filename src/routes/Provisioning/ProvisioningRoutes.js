@@ -5,14 +5,26 @@ import ModemOfflineRoutes from "../ModemIssues/ModemOfflineRoutes";
 import ModemWhiteRoutes from "./ModemWhiteRoutes";
 import ModemBlueRoutes from "./ModemBlueRoutes";
 
-const ProvisioningRoutes = () => {
+const ProvisioningRoutes = ({ toggleDark }) => {
     return (
         <div className="provisioning-page">
             <Routes>
-                <Route path="/*" Component={ProvisioningPage} />
-                <Route path="mdmred/*" Component={ModemOfflineRoutes} />
-                <Route path="mdmwht/*" Component={ModemWhiteRoutes} />
-                <Route path="mdmblu/*" Component={ModemBlueRoutes} />
+                <Route 
+                    path="/*" 
+                    element={<ProvisioningPage toggleDark={toggleDark}/>} 
+                />
+                <Route 
+                    path="mdmred/*" 
+                    element={<ModemOfflineRoutes toggleDark={toggleDark}/>} 
+                />
+                <Route 
+                    path="mdmwht/*" 
+                    element={<ModemWhiteRoutes toggleDark={toggleDark}/>} 
+                />
+                <Route 
+                    path="mdmblu/*" 
+                    element={<ModemBlueRoutes toggleDark={toggleDark}/>} 
+                />
             </Routes>
         </div>
     );

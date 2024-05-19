@@ -5,14 +5,27 @@ import SpeedTestFails from "../../pages/TSSteps/SpeedTestFails";
 import SpeedTestSlow from "../../pages/TSSteps/SpeedTestSlow";
 import SpeedTestAdvertised from "../../pages/TSSteps/SpeedTestAdvertised";
 
-const SpeedTestRoutes = () => {
+const SpeedTestRoutes = ({ toggleDark }) => {
+
     return (
         <div className="speed-test-routes">
             <Routes>
-                <Route path="/*" Component={SpeedTestPage}/>
-                <Route path="spdfl/*" Component={SpeedTestFails}/>
-                <Route path="spdslw/*" Component={SpeedTestSlow}/>
-                <Route path="spdadv/*" Component={SpeedTestAdvertised}/>
+                <Route
+                    path="/*"
+                    element={<SpeedTestPage toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="spdfl/*"
+                    element={<SpeedTestFails toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="spdslw/*"
+                    element={<SpeedTestSlow toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="spdadv/*"
+                    element={<SpeedTestAdvertised toggleDark={toggleDark} />}
+                />
             </Routes>
         </div>
     );

@@ -3,18 +3,22 @@ import GoBackButton from "../../components/GoBackButton";
 import "../../styles/ProvisioningFailure/ModemWhitePage.css";
 
 
-const ModemWhitePage = () => {
+const ModemWhitePage = ({ toggleDark }) => {
+
+    const toggleTitle = `modem-white-title ${toggleDark ? 'dark-title' : 'light-title'}`
+    const toggleCard = `modem-white-card ${toggleDark ? 'dark-card' : 'light-card'}`;
+
     return (
         <section className="modem-white-page">
-            <h1 className="modem-white-title">Modem Status Light: Flashing White</h1>
+            <h1 className={toggleTitle}>Modem Status Light: Flashing White</h1>
             <div className="modem-white-cards-cont">
                 <Link className="link" to="pnp/">
-                    <div className="modem-white-card" >
+                    <div className={toggleCard} >
                         <h2 className="modem-white-card-title">Point And Peak</h2>
                     </div>
                 </Link>
             </div>
-            <GoBackButton />
+            <GoBackButton toggleDark={toggleDark}/>
         </section>
     );
 }

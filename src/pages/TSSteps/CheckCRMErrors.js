@@ -1,11 +1,15 @@
 import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css";
 
-const CheckCRMErrors = () => {
+const CheckCRMErrors = ({ toggleDark }) => {
+
+    const toggleTitle = `troubleshoot-title ${toggleDark ? 'dark-ts-title' : 'light-ts-title'}`
+    const toggleCard = `troubleshoot-card ${toggleDark ? 'dark-ts-card' : 'light-ts-card'}`;
+
     return (
         <div className="troubleshoot-sect">
-            <h1 className="troubleshoot-title">Check CRM for Account Errors</h1>
-            <div className="troubleshoot-card">
+            <h1 className={toggleTitle}>Check CRM for Account Errors</h1>
+            <div className={toggleCard}>
                 <ul className="troubleshoot-list">
                     <li className="troubleshoot-list-item">
                         Check under Sales {'>'} Order Items to check for any errors that could be preventing tech from activating modem.
@@ -18,7 +22,7 @@ const CheckCRMErrors = () => {
                     </li>
                 </ul>
             </div>
-            <TSGoBackButton />
+            <TSGoBackButton toggleDark={toggleDark}/>
         </div>
     );
 }

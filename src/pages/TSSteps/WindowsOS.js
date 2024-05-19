@@ -1,11 +1,14 @@
 import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css";
 
-const WindowsOS = () => {
+const WindowsOS = ({ toggleDark }) => {
+    const toggleTitle = `troubleshoot-title ${toggleDark ? 'dark-ts-title' : 'light-ts-title'}`
+    const toggleCard = `troubleshoot-card ${toggleDark ? 'dark-ts-card' : 'light-ts-card'}`;
+
     return (
         <div className="troubleshoot-sect">
-            <h1 className="troubleshoot-title">Windows OS</h1>
-            <div className="troubleshoot-card">
+            <h1 className={toggleTitle}>Windows OS</h1>
+            <div className={toggleCard}>
                 <ul className="troubleshoot-list">
                     <li className="troubleshoot-list-item">
                         If tech has access to a Windows PC, they can release/renew IP address through terminal/command prompt.
@@ -27,7 +30,7 @@ const WindowsOS = () => {
                     </li>
                 </ul>
             </div>
-            <TSGoBackButton />
+            <TSGoBackButton toggleDark={toggleDark}/>
         </div>
     );
 }

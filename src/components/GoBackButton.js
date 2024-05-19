@@ -3,7 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import "../styles/GoBackButton.css"
 
-const GoBackButton = () => {
+const GoBackButton = ({ toggleDark }) => {
+
+    const toggleBackBtn = `go-back-btn ? ${toggleDark ? 'dark-back-btn' : 'light-back-btn'}`;
+
     const navigate = useNavigate();
     function handleGoBack() {
         navigate(-1);
@@ -11,7 +14,7 @@ const GoBackButton = () => {
     return (
         <div>
             <button
-                className="go-back-btn"
+                className={toggleBackBtn}
                 onClick={() => handleGoBack()}
             >
                 <FontAwesomeIcon icon={faArrowLeft} />

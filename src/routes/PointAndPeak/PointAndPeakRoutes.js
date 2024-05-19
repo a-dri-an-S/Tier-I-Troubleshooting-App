@@ -5,14 +5,26 @@ import NoTonesRoutes from "./NoTonesRoutes";
 import FindSatRoutes from "./FindSatRoutes";
 import ModemLockRoutes from "./ModemLockRoutes";
 
-const PointAndPeakRoutes = () => {
+const PointAndPeakRoutes = ({ toggleDark }) => {
     return (
         <div className="pnp-routes">
             <Routes>
-                <Route path="/*" Component={PointAndPeakPage}/>
-                <Route path="notone/*" Component={NoTonesRoutes}/>
-                <Route path="fndsat/*" Component={FindSatRoutes}/>
-                <Route path="mdmlck/*" Component={ModemLockRoutes}/>
+                <Route
+                    path="/*"
+                    element={<PointAndPeakPage toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="notone/*"
+                    element={<NoTonesRoutes toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="fndsat/*"
+                    element={<FindSatRoutes toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="mdmlck/*"
+                    element={<ModemLockRoutes toggleDark={toggleDark} />}
+                />
             </Routes>
         </div>
     );

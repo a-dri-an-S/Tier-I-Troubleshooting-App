@@ -6,31 +6,57 @@
 }
 .speed-test-title {
     text-align: center;
-    color: var(--very-dark-blue);
-}
-.speed-test-desc {
-    color: var(--very-dark-blue);
 }
 .speed-test-card {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: var(--dark-blue);
-    background-color: var(--white);
     border: none;
     box-shadow: 1px 1px 12px 1px var(--shadow);
 }
 .speed-test-card:hover {
     cursor: pointer;
-    background-color: var(--very-light-gray);
     box-shadow: 1px 1px 24px 2px var(--shadow);
 }
 .speed-test-card:active {
-    cursor: pointer;
+    box-shadow: 1px 1px 36px 8px var(--shadow);
+}
+
+/* LIGHT AND DARK MODE */
+.dark-title {
+    color: var(--very-light-gray);
+}
+.light-title {
+    color: var(--very-dark-blue);
+}
+.dark-desc {
+    color: var(--very-light-gray);
+}
+.light-desc {
+    color: var(--very-dark-blue);
+}
+.dark-card {
     color: var(--very-light-gray);
     background-color: var(--dark-blue);
-    box-shadow: 1px 1px 36px 8px var(--shadow);
+}
+.light-card {
+    color: var(--dark-blue);
+    background-color: var(--white);
+}
+.dark-card:hover {
+    background-color: var(--very-dark-blue-light-mode-text);
+}
+.light-card:hover {
+    background-color: var(--very-light-gray);
+}
+.dark-card:active {
+    color: var(--dark-blue);
+    background-color: var(--very-light-gray);
+}
+.light-card:active {
+    color: var(--very-light-gray);
+    background-color: var(--dark-blue);
 }
 
 @media only screen and (max-width: 375px) {

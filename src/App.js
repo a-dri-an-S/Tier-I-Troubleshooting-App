@@ -1,27 +1,44 @@
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 import MainRoutes from "./routes/MainRoutes.js";
 import './styles/App.css';
 
 function App() {
+  const [toggleDark, setToggleDark] = useState(false);
+
   const location = useLocation();
   const renderHomeBtn = location.pathname !== "/";
 
+  const toggleApp = `app ${toggleDark ? 'dark-app' : 'light-app'}`
+  const toggleBtn = `toggle-btn ${toggleDark ? 'dark-tgl' : 'light-tgl'}`
+  const toggleHomeBtn = `home-btn ${toggleDark ? 'dark-home-btn' : 'light-home-btn'}`
+
   return (
-    <div className="app">
-      {
-        renderHomeBtn &&
-        <header className="header">
+    <div className={toggleApp}>
+      <header className="header">
+        <button
+          className={toggleBtn}
+          onClick={() => setToggleDark(!toggleDark)}
+        >
+          {
+            toggleDark ?
+              <FontAwesomeIcon icon={faSun} /> :
+              <FontAwesomeIcon icon={faMoon} />
+          }
+        </button>
+        {
+          renderHomeBtn &&
           <Link to="/">
-            <button className="home-btn" >
+            <button className={toggleHomeBtn} >
               <FontAwesomeIcon icon={faHome} />
             </button>
           </Link>
-        </header>
-      }
-      <MainRoutes />
+        }
+      </header>
+      <MainRoutes toggleDark={toggleDark}/>
     </div>
   );
 }

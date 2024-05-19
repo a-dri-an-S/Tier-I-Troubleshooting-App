@@ -1,11 +1,15 @@
 import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css";
 
-const CheckForLowSignal = () => {
+const CheckForLowSignal = ({ toggleDark }) => {
+
+    const toggleTitle = `troubleshoot-title ${toggleDark ? 'dark-ts-title' : 'light-ts-title'}`
+    const toggleCard = `troubleshoot-card ${toggleDark ? 'dark-ts-card' : 'light-ts-card'}`;
+
     return (
         <div className="troubleshoot-sect">
-            <h1 className="troubleshoot-title">Check for a Low Signal</h1>
-            <div className="troubleshoot-card">
+            <h1 className={toggleTitle}>Check for a Low Signal</h1>
+            <div className={toggleCard}>
                 <ul className="troubleshoot-list">
                     <li className="troubleshoot-list-item">
                         Check ESVT for Antenna Pointing failure.
@@ -28,7 +32,7 @@ const CheckForLowSignal = () => {
                     </li>
                 </ul>
             </div>
-            <TSGoBackButton />
+            <TSGoBackButton toggleDark={toggleDark}/>
         </div>
     );
 }

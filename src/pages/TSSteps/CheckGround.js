@@ -1,11 +1,15 @@
 import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css";
 
-const CheckGround = ({ handleBackButton }) => {
+const CheckGround = ({ toggleDark }) => {
+
+    const toggleTitle = `troubleshoot-title ${toggleDark ? 'dark-ts-title' : 'light-ts-title'}`
+    const toggleCard = `troubleshoot-card ${toggleDark ? 'dark-ts-card' : 'light-ts-card'}`;
+
     return (
         <div className="troubleshoot-sect">
-            <h1 className="troubleshoot-title">Check the Ground</h1>
-            <div className="troubleshoot-card">
+            <h1 className={toggleTitle}>Check the Ground</h1>
+            <div className={toggleCard}>
                 <ul className="troubleshoot-list">
                     <li className="troubleshoot-list-item">
                         Check for approved grounding sources.
@@ -32,7 +36,7 @@ const CheckGround = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSGoBackButton />
+            <TSGoBackButton toggleDark={toggleDark}/>
         </div>
     );
 }

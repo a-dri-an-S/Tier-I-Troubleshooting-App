@@ -2,11 +2,14 @@ import { Link } from "react-router-dom";
 import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css";
 
-const SwapModem1 = ({ handleBackButton }) => {
+const SwapModem1 = ({ toggleDark }) => {
+
+    const toggleTitle = `troubleshoot-title ${toggleDark ? 'dark-ts-title' : 'light-ts-title'}`
+    const toggleCard = `troubleshoot-card ${toggleDark ? 'dark-ts-card' : 'light-ts-card'}`;
     return (
         <div className="troubleshoot-sect">
-            <h1 className="troubleshoot-title">Swap Modem</h1>
-            <div className="troubleshoot-card">
+            <h1 className={toggleTitle}>Swap Modem</h1>
+            <div className={toggleCard}>
                 <ul className="troubleshoot-list">
                     <li className="troubleshoot-list-item">
                         Swap with a new modem.
@@ -32,7 +35,7 @@ const SwapModem1 = ({ handleBackButton }) => {
                     </li>
                 </ul>
             </div>
-            <TSGoBackButton />
+            <TSGoBackButton toggleDark={toggleDark}/>
         </div>
     );
 }

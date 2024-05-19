@@ -6,15 +6,30 @@ import CheckGround from "../../pages/TSSteps/CheckGround";
 import ShortCableTest from "../../pages/TSSteps/ShortCableTest";
 import ReplaceCable from "../../pages/TSSteps/ReplaceCable";
 
-const EquipmentRoutes = () => {
+const EquipmentRoutes = ({ toggleDark }) => {
     return (
         <div className="equip-routes">
             <Routes>
-                <Route path="/*" Component={EquipmentPage} />
-                <Route path="chkcbl/*" Component={CheckCableRun2} />
-                <Route path="chkgrnd/*" Component={CheckGround} />
-                <Route path="shrtcbl/*" Component={ShortCableTest} />
-                <Route path="rplcbl/*" Component={ReplaceCable} />
+                <Route 
+                    path="/*" 
+                    element={<EquipmentPage toggleDark={toggleDark}/>} 
+                />
+                <Route 
+                    path="chkcbl/*" 
+                    element={<CheckCableRun2 toggleDark={toggleDark}/>} 
+                />
+                <Route 
+                    path="chkgrnd/*" 
+                    element={<CheckGround toggleDark={toggleDark}/>} 
+                />
+                <Route 
+                    path="shrtcbl/*" 
+                    element={<ShortCableTest toggleDark={toggleDark}/>} 
+                />
+                <Route 
+                    path="rplcbl/*" 
+                    element={<ReplaceCable toggleDark={toggleDark}/>} 
+                />
             </Routes>
         </div>
     );

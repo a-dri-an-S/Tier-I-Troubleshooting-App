@@ -6,15 +6,30 @@ import ViasatShieldPremium from "../../pages/TSSteps/ViasatSheildPremium"
 import CheckWifiSSID from "../../pages/TSSteps/CheckWifiSSID";
 import DisableBridgeESVT from "../../pages/TSSteps/DisableBridgeESVT";
 
-const NoWifiRoutes = () => {
+const NoWifiRoutes = ({ toggleDark }) => {
     return (
         <div className="no-wifi-routes">
             <Routes>
-                <Route path="/*" Component={NoWifiPage} />
-                <Route path="dsbbrgmg/*" Component={DisableBridgeMG} />
-                <Route path="shdprm/*" Component={ViasatShieldPremium} />
-                <Route path="ssid/*" Component={CheckWifiSSID} />
-                <Route path="dsbbrgesvt/*" Component={DisableBridgeESVT} />
+                <Route
+                    path="/*"
+                    element={<NoWifiPage toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="dsbbrgmg/*"
+                    element={<DisableBridgeMG toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="shdprm/*"
+                    element={<ViasatShieldPremium toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="ssid/*"
+                    element={<CheckWifiSSID toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="dsbbrgesvt/*"
+                    element={<DisableBridgeESVT toggleDark={toggleDark} />}
+                />
             </Routes>
         </div>
     );

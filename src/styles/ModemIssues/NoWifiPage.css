@@ -30,6 +30,34 @@
     box-shadow: 1px 1px 36px 8px var(--shadow);
 }
 
+.dark-title {
+    color: var(--very-light-gray);
+}
+.light-title {
+    color: var(--very-dark-blue);
+}
+.dark-card {
+    color: var(--very-light-gray);
+    background-color: var(--dark-blue);
+}
+.light-card {
+    color: var(--dark-blue);
+    background-color: var(--white);
+}
+.dark-card:hover {
+    background-color: var(--very-dark-blue-light-mode-text);
+}
+.light-card:hover {
+    background-color: var(--very-light-gray);
+}
+.dark-card:active {
+    color: var(--dark-blue);
+    background-color: var(--very-light-gray);
+}
+.light-card:active {
+    color: var(--very-light-gray);
+    background-color: var(--dark-blue);
+}
 
 
 @media only screen and (max-width: 375px) {
@@ -37,7 +65,7 @@
         width: 350px;
         height: 100%;
     }
-    .no-wifi-cards-title {
+    .no-wifi-title {
         margin: 96px 0px 48px 0;
         width: 300px;
         font-size: 32px;

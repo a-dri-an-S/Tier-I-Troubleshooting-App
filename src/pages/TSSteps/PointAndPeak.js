@@ -1,11 +1,15 @@
 import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css";
 
-const PointAndPeak = () => {
+const PointAndPeak = ({ toggleDark }) => {
+
+    const toggleTitle = `troubleshoot-title ${toggleDark ? 'dark-ts-title' : 'light-ts-title'}`
+    const toggleCard = `troubleshoot-card ${toggleDark ? 'dark-ts-card' : 'light-ts-card'}`;
+
     return (
         <div className="troubleshoot-sect">
-        <h1 className="troubleshoot-title">Point and Peak</h1>
-        <div className="troubleshoot-card">
+        <h1 className={toggleTitle}>Point and Peak</h1>
+        <div className={toggleCard}>
             <ul className="troubleshoot-list">
                 <li className="troubleshoot-list-item">
                 If the beam the modem is locked to is correct, have the tech re-point and peak the TRIA.
@@ -15,7 +19,7 @@ const PointAndPeak = () => {
                     </li>
             </ul>
         </div>
-        <TSGoBackButton />
+        <TSGoBackButton toggleDark={toggleDark}/>
     </div>
     );
 }

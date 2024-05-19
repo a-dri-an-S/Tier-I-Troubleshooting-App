@@ -5,14 +5,26 @@ import ModemGUI from "../../pages/TSSteps/ModemGUI";
 import WindowsOS from "../../pages/TSSteps/WindowsOS";
 import MACOS from "../../pages/TSSteps/MACOS";
 
-const RenewIPRoutes = () => {
+const RenewIPRoutes = ({ toggleDark }) => {
     return (
         <div className="renew-ip-routes">
             <Routes>
-                <Route path="/*" Component={RenewIPPage}/>
-                <Route path="gui/*" Component={ModemGUI}/>
-                <Route path="wnds/*" Component={WindowsOS}/>
-                <Route path="mac/*" Component={MACOS}/>
+                <Route 
+                    path="/*" 
+                    element={<RenewIPPage toggleDark={toggleDark}/>}
+                />
+                <Route 
+                    path="gui/*" 
+                    element={<ModemGUI toggleDark={toggleDark}/>}
+                />
+                <Route 
+                    path="wnds/*" 
+                    element={<WindowsOS toggleDark={toggleDark}/>}
+                />
+                <Route 
+                    path="mac/*" 
+                    element={<MACOS toggleDark={toggleDark}/>}
+                />
             </Routes>
         </div>
     );

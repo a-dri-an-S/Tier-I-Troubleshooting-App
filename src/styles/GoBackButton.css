@@ -1,11 +1,16 @@
 .go-back-btn {
-    color: var(--very-dark-blue);
     background-color: transparent;
     border: none;
 }
 .go-back-btn:hover {
     cursor: pointer;
-    color: var(--very-dark-blue-light-mode-text);
+}
+
+.dark-back-btn {
+    color: var(--very-light-gray);
+}
+.light-back-btn {
+    color: var(--very-dark-blue);
 }
 
 @media only screen and (max-width: 375px) {

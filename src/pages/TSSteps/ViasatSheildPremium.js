@@ -1,11 +1,15 @@
 import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css";
 
-const ViasatShieldPremium = () => {
+const ViasatShieldPremium = ({ toggleDark }) => {
+
+    const toggleTitle = `troubleshoot-title ${toggleDark ? 'dark-ts-title' : 'light-ts-title'}`
+    const toggleCard = `troubleshoot-card ${toggleDark ? 'dark-ts-card' : 'light-ts-card'}`;
+
     return (
         <div className="troubleshoot-sect">
-        <h1 className="troubleshoot-title">Check for Viasat Shield Premium</h1>
-        <div className="troubleshoot-card">
+        <h1 className={toggleTitle}>Check for Viasat Shield Premium</h1>
+        <div className={toggleCard}>
             <ul className="troubleshoot-list">
                 <li className="troubleshoot-list-item">
                     Viasat Shield Premium only applies to Viasat 2 accounts with an active modem.
@@ -30,7 +34,7 @@ const ViasatShieldPremium = () => {
                 </li>
             </ul>
         </div>
-        <TSGoBackButton />
+        <TSGoBackButton toggleDark={toggleDark}/>
     </div>
     );
 }

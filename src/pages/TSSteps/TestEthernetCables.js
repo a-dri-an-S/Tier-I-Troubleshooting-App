@@ -1,11 +1,15 @@
 import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css";
 
-const TestEthernetCables = () => {
+const TestEthernetCables = ({ toggleDark }) => {
+
+    const toggleTitle = `troubleshoot-title ${toggleDark ? 'dark-ts-title' : 'light-ts-title'}`
+    const toggleCard = `troubleshoot-card ${toggleDark ? 'dark-ts-card' : 'light-ts-card'}`;
+
     return (
         <div className="troubleshoot-sect">
-            <h1 className="troubleshoot-title">Test Ethernet Ports with Different Ethernet Cable</h1>
-            <div className="troubleshoot-card">
+            <h1 className={toggleTitle}>Test Ethernet Ports with Different Ethernet Cable</h1>
+            <div className={toggleCard}>
                 <ul className="troubleshoot-list">
                     <li className="troubleshoot-list-item">
                         Have the tech use a different ethernet cable, but same device to not introduce more variables when troubleshooting port connectivity.
@@ -37,7 +41,7 @@ const TestEthernetCables = () => {
                     </li>
                 </ul>
             </div>
-            <TSGoBackButton />
+            <TSGoBackButton toggleDark={toggleDark}/>
         </div>
     );
 }

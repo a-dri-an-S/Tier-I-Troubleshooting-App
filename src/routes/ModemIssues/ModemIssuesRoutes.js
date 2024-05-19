@@ -5,14 +5,26 @@ import ModemOfflineRoutes from "./ModemOfflineRoutes";
 import NoWifiRoutes from "./NoWifiRoutes";
 import EthPortsRoutes from "./EthPortsRoutes";
 
-const ModemIssuesRoutes = () => {
+const ModemIssuesRoutes = ({ toggleDark }) => {
     return (
         <div className="modem-issues-routes">
             <Routes>
-                <Route path="/*" Component={ModemIssuesPage} />
-                <Route path="offline/*" Component={ModemOfflineRoutes} />
-                <Route path="nowifi/*" Component={NoWifiRoutes} />
-                <Route path="ethports/*" Component={EthPortsRoutes} />
+                <Route
+                    path="/*"
+                    element={<ModemIssuesPage toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="offline/*"
+                    element={<ModemOfflineRoutes toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="nowifi/*"
+                    element={<NoWifiRoutes toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="ethports/*"
+                    element={<EthPortsRoutes toggleDark={toggleDark} />}
+                />
             </Routes>
         </div>
     );

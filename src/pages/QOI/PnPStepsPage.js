@@ -2,28 +2,32 @@ import { Link } from "react-router-dom";
 import GoBackButton from "../../components/GoBackButton";
 import "../../styles/QOI/PnPStepsPage.css";
 
-const PnPStepsPage = () => {
+const PnPStepsPage = ({ toggleDark }) => {
+
+    const toggleTitle = `pnp-steps-title ${toggleDark ? 'dark-title' : 'light-title'}`
+    const toggleCard = `pnp-steps-card ${toggleDark ? 'dark-card' : 'light-card'}`;
+
     return (
         <section className="pnp-steps-page">
-            <h1 className="pnp-steps-title">Point and Peak Steps</h1>
+            <h1 className={toggleTitle}>Point and Peak Steps</h1>
             <div className="pnp-steps-cards-cont">
                 <Link className="link" to="pnp/">
-                    <div className="pnp-steps-card" >
+                    <div className={toggleCard} >
                         <h2 className="pnp-steps-card-title">Point and Peak</h2>
                     </div>
                 </Link>
                 <Link className="link" to="swptria/">
-                    <div className="pnp-steps-card" >
+                    <div className={toggleCard} >
                         <h2 className="pnp-steps-card-title">Swap TRIA</h2>
                     </div>
                 </Link>
                 <Link className="link" to="swpmdm/">
-                    <div className="pnp-steps-card" >
+                    <div className={toggleCard} >
                         <h2 className="pnp-steps-card-title">Swap Modem</h2>
                     </div>
                 </Link>
             </div>
-            <GoBackButton />
+            <GoBackButton toggleDark={toggleDark}/>
         </section>
     );
 }

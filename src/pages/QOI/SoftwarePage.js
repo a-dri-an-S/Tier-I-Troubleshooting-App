@@ -2,18 +2,22 @@ import { Link } from "react-router-dom";
 import GoBackButton from "../../components/GoBackButton";
 import "../../styles/QOI/SoftwarePage.css";
 
-const SoftwareCards = () => {
+const SoftwareCards = ({ toggleDark }) => {
+
+    const toggleTitle = `software-title ${toggleDark ? 'dark-title' : 'light-title'}`
+    const toggleCard = `software-card ${toggleDark ? 'dark-card' : 'light-card'}`;
+
     return (
         <section className="software-page">
-            <h1 className="software-title">Software</h1>
+            <h1 className={toggleTitle}>Software</h1>
             <div className="software-cards-cont">
                 <Link className="link" to="pwrcycl/">
-                    <div className="software-card" >
+                    <div className={toggleCard} >
                         <h2 className="software-card-title">Power Cycle Modem</h2>
                     </div>
                 </Link>
             </div>
-            <GoBackButton />
+            <GoBackButton toggleDark={toggleDark}/>
         </section>
     );
 }

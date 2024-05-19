@@ -1,17 +1,23 @@
 import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css";
 
-const CheckSANOutages = () => {
+const CheckSANOutages = ({ toggleDark }) => {
+
+    const toggleTitle = `troubleshoot-title ${toggleDark ? 'dark-ts-title' : 'light-ts-title'}`
+    const toggleLink = `troubleshoot-link ${toggleDark ? 'dark-ts-link' : 'light-ts-link'}`
+    const toggleCard = `troubleshoot-card ${toggleDark ? 'dark-ts-card' : 'light-ts-card'}`;
+
+
     return (
         <div className="troubleshoot-sect">
-            <h1 className="troubleshoot-title">Check for SAN Outages</h1>
+            <h1 className={toggleTitle}>Check for SAN Outages</h1>
             <a 
-                className="troubleshoot-link"
+                className={toggleLink}
                 href="https://viasatservices.statuspage.io"
                 target="_blank"
                 rel="noreferrer"
             >Outage Board Link</a>
-            <div className="troubleshoot-card">
+            <div className={toggleCard}>
                 <ul className="troubleshoot-list">
                     <li className="troubleshoot-list-item">
                         In ESVT, load the MAC address and check the for SAN's associated to the beam
@@ -27,7 +33,7 @@ const CheckSANOutages = () => {
                     </li>
                 </ul>
             </div>
-            <TSGoBackButton />
+            <TSGoBackButton toggleDark={toggleDark}/>
         </div>
     );
 }

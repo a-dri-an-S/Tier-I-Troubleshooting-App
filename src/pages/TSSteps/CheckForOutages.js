@@ -1,17 +1,22 @@
 import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css";
 
-const CheckForOutages = () => {
+const CheckForOutages = ({ toggleDark }) => {
+
+    const toggleTitle = `troubleshoot-title ${toggleDark ? 'dark-ts-title' : 'light-ts-title'}`
+    const toggleLink = `troubleshoot-link ${toggleDark ? 'dark-ts-link' : 'light-ts-link'}`
+    const toggleCard = `troubleshoot-card ${toggleDark ? 'dark-ts-card' : 'light-ts-card'}`;
+
     return (
         <div className="troubleshoot-sect">
-            <h1 className="troubleshoot-title">Check for Outages</h1>
-            <a 
-                className="troubleshoot-link"
+            <h1 className={toggleTitle}>Check for Outages</h1>
+            <a
+                className={toggleLink}
                 href="https://viasatservices.statuspage.io"
                 target="_blank"
                 rel="noreferrer"
             >Outage Board Link</a>
-            <div className="troubleshoot-card">
+            <div className={toggleCard}>
                 <ul className="troubleshoot-list">
                     <li className="troubleshoot-list-item">
                         Check the outage board for any outages posted for the assigned beam.
@@ -27,7 +32,7 @@ const CheckForOutages = () => {
                     </li>
                 </ul>
             </div>
-            <TSGoBackButton />
+            <TSGoBackButton toggleDark={toggleDark} />
         </div>
     );
 }

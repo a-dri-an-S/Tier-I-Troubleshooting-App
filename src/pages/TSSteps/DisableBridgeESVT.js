@@ -2,11 +2,15 @@ import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css";
 
 
-const DisableBridgeESVT = () => {
+const DisableBridgeESVT = ({ toggleDark }) => {
+
+    const toggleTitle = `troubleshoot-title ${toggleDark ? 'dark-ts-title' : 'light-ts-title'}`
+    const toggleCard = `troubleshoot-card ${toggleDark ? 'dark-ts-card' : 'light-ts-card'}`;
+
     return (
         <div className="troubleshoot-sect">
-        <h1 className="troubleshoot-title">Disable Bridge Mode through ESVT</h1>
-        <div className="troubleshoot-card">
+        <h1 className={toggleTitle}>Disable Bridge Mode through ESVT</h1>
+        <div className={toggleCard}>
             <ul className="troubleshoot-list">
                 <li className="troubleshoot-list-item">
                     Modem must be active on the account to disable through ESVT.
@@ -22,7 +26,7 @@ const DisableBridgeESVT = () => {
                 </li>
             </ul>
         </div>
-        <TSGoBackButton />
+        <TSGoBackButton toggleDark={toggleDark}/>
     </div>
     );
 }

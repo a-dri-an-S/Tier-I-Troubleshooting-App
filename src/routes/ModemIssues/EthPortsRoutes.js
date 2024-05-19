@@ -6,15 +6,30 @@ import TestEthernetPorts from "../../pages/TSSteps/TestEthernetPorts";
 import TestEthernetCables from "../../pages/TSSteps/TestEthernetCables";
 import TestDifferentDevices from "../../pages/TSSteps/TestDifferentDevices";
 
-const EthPortsRoutes = () => {
+const EthPortsRoutes = ({ toggleDark }) => {
     return (
         <div className="eth-ports-routes">
             <Routes>
-                <Route path="/*" Component={EthPortsPage}/>
-                <Route path="rbtmdm/*" Component={RebootModem}/>
-                <Route path="ethprts/*" Component={TestEthernetPorts}/>
-                <Route path="ethcbl/*" Component={TestEthernetCables}/>
-                <Route path="difdvc/*" Component={TestDifferentDevices}/>
+                <Route
+                    path="/*"
+                    element={<EthPortsPage toggleDark={toggleDark}/>}
+                />
+                <Route
+                    path="rbtmdm/*"
+                    element={<RebootModem toggleDark={toggleDark}/>}
+                />
+                <Route
+                    path="ethprts/*"
+                    element={<TestEthernetPorts toggleDark={toggleDark}/>}
+                />
+                <Route
+                    path="ethcbl/*"
+                    element={<TestEthernetCables toggleDark={toggleDark}/>}
+                />
+                <Route
+                    path="difdvc/*"
+                    element={<TestDifferentDevices toggleDark={toggleDark}/>}
+                />
             </Routes>
         </div>
     );

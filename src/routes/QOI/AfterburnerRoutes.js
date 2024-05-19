@@ -4,13 +4,22 @@ import AfterburnerPage from "../../pages/QOI/AfterburnerPage";
 import PnPStepsRoutes from "./PnPStepsRoutes";
 import PeakExitRoutes from "./PeakExitRoutes";
 
-const AfterburnerRoutes = () => {
+const AfterburnerRoutes = ({ toggleDark }) => {
     return (
         <div className="ab-routes">
             <Routes>
-                <Route path="/*" Component={AfterburnerPage} />
-                <Route path="pnpstps/*" Component={PnPStepsRoutes} />
-                <Route path="pkext/*" Component={PeakExitRoutes} />
+                <Route
+                    path="/*"
+                    element={<AfterburnerPage toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="pnpstps/*"
+                    element={<PnPStepsRoutes toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="pkext/*"
+                    element={<PeakExitRoutes toggleDark={toggleDark} />}
+                />
             </Routes>
         </div>
     );

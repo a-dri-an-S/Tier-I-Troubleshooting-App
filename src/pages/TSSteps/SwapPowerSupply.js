@@ -3,11 +3,15 @@ import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css"
 
 
-const SwapPowerSupply = () => {
+const SwapPowerSupply = ({ toggleDark }) => {
+
+    const toggleTitle = `troubleshoot-title ${toggleDark ? 'dark-ts-title' : 'light-ts-title'}`
+    const toggleCard = `troubleshoot-card ${toggleDark ? 'dark-ts-card' : 'light-ts-card'}`;
+
     return (
         <div className="troubleshoot-sect">
-            <h1 className="troubleshoot-title">Swap Power Supply</h1>
-            <div className="troubleshoot-card">
+            <h1 className={toggleTitle}>Swap Power Supply</h1>
+            <div className={toggleCard}>
                 <ul className="troubleshoot-list">
                     <li className="troubleshoot-list-item">
                         Swap the power supply on the modem with a new one.
@@ -33,7 +37,7 @@ const SwapPowerSupply = () => {
                     </li>
                 </ul>
             </div>
-            <TSGoBackButton />
+            <TSGoBackButton toggleDark={toggleDark}/>
         </div>
     );
 }

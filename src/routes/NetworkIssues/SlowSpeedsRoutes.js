@@ -5,14 +5,26 @@ import CheckDataUse from "../../pages/TSSteps/CheckDataUse";
 import CheckForLowSignal from "../../pages/TSSteps/CheckForLowSignal";
 import SpeedTestRoutes from "./SpeedTestRoutes";
 
-const SlowSpeedsRoutes = () => {
+const SlowSpeedsRoutes = ({ toggleDark }) => {
     return (
         <div className="slow-speed-routes">
             <Routes>
-                <Route path="/*" Component={SlowSpeedsPage}/>
-                <Route path="datause/*" Component={CheckDataUse}/>
-                <Route path="lowsgnl/*" Component={CheckForLowSignal}/>
-                <Route path="spdtst/*" Component={SpeedTestRoutes}/>
+                <Route 
+                    path="/*" 
+                    element={<SlowSpeedsPage toggleDark={toggleDark}/>}
+                />
+                <Route 
+                    path="datause/*" 
+                    element={<CheckDataUse toggleDark={toggleDark}/>}
+                />
+                <Route 
+                    path="lowsgnl/*" 
+                    element={<CheckForLowSignal toggleDark={toggleDark}/>}
+                />
+                <Route 
+                    path="spdtst/*" 
+                    element={<SpeedTestRoutes toggleDark={toggleDark}/>}
+                />
             </Routes>
         </div>
     );

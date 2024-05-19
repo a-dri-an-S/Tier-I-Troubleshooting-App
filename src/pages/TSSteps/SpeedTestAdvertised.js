@@ -1,11 +1,15 @@
 import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css";
 
-const SpeedTestAdvertised = () => {
+const SpeedTestAdvertised = ({ toggleDark }) => {
+
+    const toggleTitle = `troubleshoot-title ${toggleDark ? 'dark-ts-title' : 'light-ts-title'}`
+    const toggleCard = `troubleshoot-card ${toggleDark ? 'dark-ts-card' : 'light-ts-card'}`;
+    
     return (
         <div className="troubleshoot-sect">
-            <h1 className="troubleshoot-title">Speed Test Return's Advertised Speeds</h1>
-            <div className="troubleshoot-card">
+            <h1 className={toggleTitle}>Speed Test Return's Advertised Speeds</h1>
+            <div className={toggleCard}>
                 <ul className="troubleshoot-list">
                     <li className="troubleshoot-list-item">
                         If speed test returns advertised speeds, check if the slow speeds are over Wi-Fi or ethernet connection.
@@ -24,7 +28,7 @@ const SpeedTestAdvertised = () => {
                     </li>
                 </ul>
             </div>
-            <TSGoBackButton />
+            <TSGoBackButton toggleDark={toggleDark}/>
         </div>
     );
 }

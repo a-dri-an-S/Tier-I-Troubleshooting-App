@@ -4,13 +4,22 @@ import NoInternetPage from "../../pages/NetworkIssues/NoInternetPage";
 import RebootFactoryResetModem from "../../pages/TSSteps/RebootFactoryResetModem";
 import RenewIPRoutes from "./RenewIPRoutes";
 
-const NoInternetRoutes = () => {
+const NoInternetRoutes = ({ toggleDark }) => {
     return (
         <div className="no-internet-routes">
             <Routes>
-                <Route path="/*" Component={NoInternetPage}/>
-                <Route path="fctrstmdm/*" Component={RebootFactoryResetModem}/>
-                <Route path="rnwip/*" Component={RenewIPRoutes}/>
+                <Route
+                    path="/*"
+                    element={<NoInternetPage toggleDark={toggleDark} />} 
+                />
+                <Route
+                    path="fctrstmdm/*"
+                    element={<RebootFactoryResetModem toggleDark={toggleDark} />} 
+                />
+                <Route
+                    path="rnwip/*"
+                    element={<RenewIPRoutes toggleDark={toggleDark} />} 
+                />
             </Routes>
         </div>
     );

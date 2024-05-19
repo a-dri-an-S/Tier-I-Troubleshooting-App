@@ -13,22 +13,58 @@ import CheckReflector from "../../pages/TSSteps/CheckReflector";
 import CheckForCorrectBeam from "../../pages/TSSteps/CheckForCorrectBeam";
 import CheckCableRun from "../../pages/TSSteps/CheckCableRun";
 
-const ModemLockRoutes = () => {
+const ModemLockRoutes = ({ toggleDark }) => {
     return (
         <div className="find-sat-routes">
             <Routes>
-                <Route path="/*" Component={ModemLockPage} />
-                <Route path="chkoutg/*" Component={CheckForOutages} />
-                <Route path="mdmkey/*" Component={CheckModemKey} />
-                <Route path="chkpwr/*" Component={CheckPowerSource2} />
-                <Route path="elazskw/*" Component={CheckElAzSkew} />
-                <Route path="los/*" Component={CheckLOS} />
-                <Route path="plmmst/*" Component={CheckForPlumbMast} />
-                <Route path="swptria/*" Component={SwapTRIA2} />
-                <Route path="swpmdm/*" Component={SwapModem2} />
-                <Route path="chkrfl/*" Component={CheckReflector} />
-                <Route path="beam/*" Component={CheckForCorrectBeam} />
-                <Route path="chkcbl/*" Component={CheckCableRun} />
+                <Route
+                    path="/*"
+                    element={<ModemLockPage toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="chkoutg/*"
+                    element={<CheckForOutages toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="mdmkey/*"
+                    element={<CheckModemKey toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="chkpwr/*"
+                    element={<CheckPowerSource2 toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="elazskw/*"
+                    element={<CheckElAzSkew toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="los/*"
+                    element={<CheckLOS toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="plmmst/*"
+                    element={<CheckForPlumbMast toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="swptria/*"
+                    element={<SwapTRIA2 toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="swpmdm/*"
+                    element={<SwapModem2 toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="chkrfl/*"
+                    element={<CheckReflector toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="beam/*"
+                    element={<CheckForCorrectBeam toggleDark={toggleDark} />}
+                />
+                <Route
+                    path="chkcbl/*"
+                    element={<CheckCableRun toggleDark={toggleDark} />}
+                />
             </Routes>
         </div>
     );
