@@ -113,21 +113,24 @@
 }
 @media only screen and (min-width: 768px) {
     .qoi-page {
-        width: 624px;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
         height: 100vh;
     }
     .qoi-title {
-        margin: 64px 0px 48px 0;
+        margin: 128px 0px 48px 0;
         width: 600px;
         font-size: 38px;
     }
     .qoi-cards-cont {
         margin: 0 0 24px 0;
         width: 624px;
-        height: 70%;
+        height: 633px;
         display: grid;
         grid-template-columns: repeat(2, 300px);
-        grid-template-rows: repeat(5, 195px);
+        grid-template-rows: repeat(3, 195px);
         gap: 24px;
     }
     .qoi-card {

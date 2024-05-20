@@ -57,7 +57,7 @@
 @media only screen and (max-width: 375px) {
     .pnp-page {
         width: 350px;
-        height: 100%;
+        height: 100vh;
     }
     .pnp-title {
         margin: 96px 0px 48px 0;
@@ -86,7 +86,7 @@
 @media only screen and (min-width: 375px) {
     .pnp-page {
         width: 350px;
-        height: 100%;
+        height: 100vh;
     }
     .pnp-title {
         margin: 96px 0px 48px 0;
@@ -113,11 +113,14 @@
 }
 @media only screen and (min-width: 768px) {
     .pnp-page {
-        width: 624px;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
         height: 100vh;
     }
     .pnp-title {
-        margin: 64px 0px 48px 0;
+        margin: 128px 0px 48px 0;
         width: 600px;
         font-size: 38px;
     }
@@ -142,12 +145,6 @@
     }
 }
 @media only screen and (min-width: 1200px) {
-    .pnp-page {
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-        height: 100vh;
-    }
     .pnp-title {
         margin: 164px 0px 48px 0;
         width: 900px;

@@ -119,11 +119,14 @@
 }
 @media only screen and (min-width: 768px) {
     .no-wifi-page {
-        width: 624px;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
         height: 100vh;
     }
     .no-wifi-title {
-        margin: 64px 0px 48px 0;
+        margin: 128px 0px 48px 0;
         width: 600px;
         font-size: 38px;
     }
@@ -148,12 +151,6 @@
     }
 }
 @media only screen and (min-width: 1200px) {
-    .no-wifi-page {
-        display: flex;
-        justify-content: flex-start;
-        width: 624px;
-        height: 100vh;
-    }
     .no-wifi-title {
         margin: 164px 0px 48px 0;
         width: 900px;

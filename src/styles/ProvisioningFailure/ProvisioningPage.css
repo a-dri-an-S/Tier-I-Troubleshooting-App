@@ -113,11 +113,14 @@
 }
 @media only screen and (min-width: 768px) {
     .provisioning-page {
-        width: 624px;
+        margin: 00;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
         height: 100vh;
     }
     .provisioning-title {
-        margin: 64px 0px 48px 0;
+        margin: 128px 0px 48px 0;
         width: 600px;
         font-size: 38px;
     }
@@ -142,13 +145,6 @@
     }
 }
 @media only screen and (min-width: 1200px) {
-    .provisioning-page {
-        margin: 0 0 36px 0;
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-        height: 100vh;
-    }
     .provisioning-title {
         margin: 164px 0px 48px 0;
         width: 900px;

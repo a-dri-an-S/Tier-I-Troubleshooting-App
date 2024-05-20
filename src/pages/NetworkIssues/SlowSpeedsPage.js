@@ -4,8 +4,8 @@ import "../../styles/NetworkIssues/SlowSpeedsPage.css";
 
 const SlowSpeedsCards = ({ toggleDark }) => {
 
-    const toggleTitle = `modem-offline-title ${toggleDark ? 'dark-title' : 'light-title'}`
-    const toggleCard = `modem-offline-card ${toggleDark ? 'dark-card' : 'light-card'}`;
+    const toggleTitle = `slow-speeds-title ${toggleDark ? 'dark-title' : 'light-title'}`
+    const toggleCard = `slow-speeds-card ${toggleDark ? 'dark-card' : 'light-card'}`;
 
     return (
         <section className="slow-speeds-page">
