@@ -7,7 +7,7 @@ import ModemBlueRoutes from "./ModemBlueRoutes";
 
 const ProvisioningRoutes = ({ toggleDark }) => {
     return (
-        <div className="provisioning-page">
+        <div className="provisioning-routes">
             <Routes>
                 <Route 
                     path="/*" 

@@ -10,7 +10,6 @@ const ProvisioningPage = ({ toggleDark }) => {
         <section className="provisioning-page">
             <h1 className={toggleTitle}>Provisioning Failure</h1>
             <div className="provisioning-cards-cont">
-
                 <Link className="link" to="mdmred/">
                     <div className={toggleCard} >
                         <h2 className="provisioning-card-title">Modem Status Light: Red</h2>
