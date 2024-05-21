@@ -25,7 +25,7 @@ const SwapTRIA1 = ({ toggleDark }) => {
                         <ul className="troubleshoot-list-item">
                             <li className="troubleshoot-list-item-item">
                                 <Link className="ts-link" to="/pnp/mdmlck/">
-                                    Go To🠮Point and Peak: Modem Lock
+                                    Go To 🠮 Modem Lock
                                 </Link>
                             </li>
                         </ul>
@@ -38,7 +38,7 @@ const SwapTRIA1 = ({ toggleDark }) => {
                     </li>
                 </ul>
             </div>
-            <TSGoBackButton toggleDark={toggleDark}/>
+            <TSGoBackButton toggleDark={toggleDark} />
         </div>
     );
 }

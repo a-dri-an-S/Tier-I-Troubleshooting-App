@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import TSGoBackButton from "../../components/TSGoBackButton";
 import "../../styles/TroubleshootPage.css";
 
@@ -25,7 +26,14 @@ const CheckForLowSignal = ({ toggleDark }) => {
                         If either is failing, have the tech point and peak the TRIA.
                     </li>
                     <li className="troubleshoot-list-item">
-                        If tech is unable to resolve low signal with re-pointing and peaking, please move onto Antenna Pointing troubleshooting - <b>LINK</b>
+                        If tech is unable to resolve low signal with re-pointing and peaking, please move onto Antenna Pointing troubleshooting
+                        <ul className="troubleshoot-list-item">
+                            <li className="troubleshoot-list-item-item">
+                                <Link className="ts-link" to="/qoi/ap/">
+                                    Go To 🠮 Antenna Pointing
+                                </Link>
+                            </li>
+                        </ul>
                     </li>
                     <li className="troubleshoot-list-item">
                         If their are no signal issues affecting the customers network, please move on to the other troubleshooting steps.

@@ -33,7 +33,7 @@ const CheckPowerSource = ({ toggleDark }) => {
                         <ul className="troubleshoot-list-item">
                             <li className="troubleshoot-list-item-item">
                                 <Link className="ts-link" to="/pnp/mdmlck/">
-                                    Go To🠮Point and Peak: Modem Lock
+                                    Go To 🠮 Modem Lock
                                 </Link>
                             </li>
                         </ul>
@@ -46,7 +46,7 @@ const CheckPowerSource = ({ toggleDark }) => {
                     </li>
                 </ul>
             </div>
-            <TSGoBackButton toggleDark={toggleDark}/>
+            <TSGoBackButton toggleDark={toggleDark} />
         </div>
     );
 }
