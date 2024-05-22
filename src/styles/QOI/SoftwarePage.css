@@ -85,7 +85,6 @@
 @media only screen and (min-width: 375px) {
     .software-page {
         width: 350px;
-        height: 100vh;
     }
     .software-title {
         margin: 96px 0px 48px 0;
@@ -110,13 +109,23 @@
         font-size: 18px;
     }
 }
+@media only screen and (min-width: 375px) and (orientation: portrait) {
+    .software-page {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 375px) and (orientation: landscape) {
+    .software-page {
+        height: 100%;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .software-page {
-        margin: 0 0 36px 0;
+        margin: 0;
         display: flex;
         justify-content: flex-start;
         width: 100%;
-        height: 100vh;
     }
     .software-title {
         margin: 128px 0px 48px 0;
@@ -143,6 +152,23 @@
         font-size: 20px;
     }
 }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .software-page {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .software-page {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    .software-page {
+        height: 100vh;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .software-title {
         margin: 164px 0px 48px 0;

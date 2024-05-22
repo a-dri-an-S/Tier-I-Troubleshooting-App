@@ -123,7 +123,6 @@
         display: flex;
         justify-content: flex-start;
         width: 100%;
-        height: 100vh;
     }
     .no-wifi-title {
         margin: 128px 0px 48px 0;
@@ -133,10 +132,10 @@
     .no-wifi-cards-cont {
         margin: 0 0 24px 0;
         width: 624px;
-        height: 70%;
+        height: 414px;
         display: grid;
         grid-template-columns: repeat(2, 300px);
-        grid-template-rows: repeat(3, 195px);
+        grid-template-rows: repeat(2, 195px);
         gap: 24px;
     }
     .no-wifi-card {
@@ -150,6 +149,23 @@
         font-size: 20px;
     }
 }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .no-wifi-page {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .no-wifi-page {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    .no-wifi-page {
+        height: 100vh;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .no-wifi-title {
         margin: 164px 0px 48px 0;

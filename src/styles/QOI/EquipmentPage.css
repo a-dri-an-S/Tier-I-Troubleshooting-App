@@ -143,6 +143,24 @@
         font-size: 20px;
     }
 }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .equip-page {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .equip-page {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    .equip-page {
+        height: 100vh;
+    }
+}
+
+
 @media only screen and (min-width: 1200px) {
 
     .equip-title {

@@ -81,11 +81,20 @@
         font-size: 18px;
     }
 }
+@media only screen and (max-width: 375px) and (orientation: portrait) {
+    .network-issues-page {
+        height: 100vh;
+    }
+}
+@media only screen and (max-width: 375px) and (orientation: landscape) {
+    .network-issues-page {
+        height: 100%;
+    }
+}
 
 @media only screen and (min-width: 375px) {
     .network-issues-page {
         width: 350px;
-        height: 100vh;
     }
     .network-issues-title {
         margin: 96px 0px 48px 0;
@@ -110,6 +119,17 @@
         font-size: 18px;
     }
 }
+@media only screen and (min-width: 375px) and (orientation: portrait) {
+    .network-issues-page {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 375px) and (orientation: landscape) {
+    .network-issues-page {
+        height: 100%;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .network-issues-page {
         margin: 0;
@@ -143,6 +163,23 @@
         font-size: 20px;
     }
 }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .network-issues-page {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .network-issues-page {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    .network-issues-page {
+        height: 100vh;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .network-issues-page {
         display: flex;

@@ -150,9 +150,26 @@
         font-size: 20px;
     }
 }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .modem-blue-page {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .modem-blue-page {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    .modem-blue-page {
+        height: 100vh;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .modem-blue-page {
-        margin: 0 0 36px 0;
+        margin: 0;
         display: flex;
         justify-content: flex-start;
         width: 100%;

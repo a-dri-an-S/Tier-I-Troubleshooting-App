@@ -62,7 +62,7 @@
 @media only screen and (max-width: 375px) {
     .speed-test-page {
         width: 350px;
-        height: 100vh;
+        height: 100%;
     }
     .speed-test-title {
         margin: 96px 0px 12px 0;
@@ -96,7 +96,7 @@
 @media only screen and (min-width: 375px) {
     .speed-test-page {
         width: 350px;
-        height: 100vh;
+        height: 100%;
     }
     .speed-test-title {
         margin: 96px 0px 12px 0;
@@ -126,13 +126,13 @@
         font-size: 18px;
     }
 }
+
 @media only screen and (min-width: 768px) {
     .speed-test-page {
         margin: 0;
         display: flex;
         justify-content: flex-start;
         width: 100%;
-        height: 100vh;
     }
     .speed-test-title {
         margin: 128px 0px 12px 0;
@@ -163,6 +163,22 @@
         font-size: 20px;
     }
 }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .speed-test-page {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .speed-test-page {
+        height: 100%;
+    }
+}
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    .speed-test-page {
+        height: 100vh;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .speed-test-title {
         margin: 164px 0px 12px 0;

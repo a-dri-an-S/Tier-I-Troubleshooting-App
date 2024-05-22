@@ -63,7 +63,7 @@
 @media only screen and (max-width: 375px) {
     .peak-exit-page {
         width: 350px;
-        height: 100vh;
+        height: 100%;
     }
     .peak-exit-title {
         margin: 96px 0px 48px 0;
@@ -92,7 +92,7 @@
 @media only screen and (min-width: 375px) {
     .peak-exit-page {
         width: 350px;
-        height: 100vh;
+        height: 100%;
     }
     .peak-exit-title {
         margin: 96px 0px 48px 0;
@@ -150,6 +150,23 @@
         font-size: 20px;
     }
 }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .peak-exit-page {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .peak-exit-page {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    .peak-exit-page {
+        height: 100vh;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .peak-exit-page {
         margin: 0;

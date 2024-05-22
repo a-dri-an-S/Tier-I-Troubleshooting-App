@@ -81,11 +81,17 @@
         font-size: 18px;
     }
 }
+@media only screen and (max-width: 375px) and (orientation: portrait) {
+    .modem-issues-page {
+        margin: 0;
+        height: 100%;
+    }
+}
 
 @media only screen and (min-width: 375px) {
     .modem-issues-page {
         width: 350px;
-        height: 100vh;
+        height: 100%;
     }
     .modem-issues-title {
         margin: 96px 0px 48px 0;
@@ -110,13 +116,13 @@
         font-size: 18px;
     }
 }
+
 @media only screen and (min-width: 768px) {
     .modem-issues-page {
         margin: 0;
         display: flex;
         justify-content: flex-start;
         width: 100vw;
-        height: 100vh;
     }
     .modem-issues-title {
         margin: 128px 0px 48px 0;
@@ -143,6 +149,17 @@
         font-size: 20px;
     }
 }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .modem-issues-page {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .modem-issues-page {
+        height: 100%;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .modem-issues-page {
         display: flex;

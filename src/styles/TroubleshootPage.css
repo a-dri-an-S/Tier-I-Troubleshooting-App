@@ -157,10 +157,21 @@
         font-size:28px;
     }
 }
+@media only screen and (min-width: 375px) and (orientation: portrait) {
+    .troubleshoot-sect {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 375px) and (orientation: landscape) {
+    .troubleshoot-sect {
+        height: 100%;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .troubleshoot-sect {
         width: 100%;
-        height: 100%vh
+        height: 100%;
     }
     .troubleshoot-title {
         margin: 96px 0 12px 0;
@@ -198,12 +209,29 @@
         font-size:32px;
     }
 }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .troubleshoot-sect {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .troubleshoot-sect {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    .troubleshoot-sect {
+        height: 100vh;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .troubleshoot-sect {
         display: flex;
         justify-content: flex-start;
         width: 100%;
-        height: 100%vh;
+        height: 100vh;
     }
     .troubleshoot-title {
         margin: 128px 0 12px 0;

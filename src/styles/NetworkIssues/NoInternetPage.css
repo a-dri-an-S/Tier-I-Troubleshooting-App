@@ -56,7 +56,7 @@
 @media only screen and (max-width: 375px) {
     .no-internet-page {
         width: 350px;
-        height: 100vh;
+        height: 100%;
     }
     .no-internet-title {
         margin: 96px 0px 48px 0;
@@ -85,7 +85,6 @@
 @media only screen and (min-width: 375px) {
     .no-internet-page {
         width: 350px;
-        height: 100vh;
     }
     .no-internet-title {
         margin: 96px 0px 48px 0;
@@ -110,6 +109,17 @@
         font-size: 18px;
     }
 }
+@media only screen and (min-width: 375px) and (orientation: portrait) {
+    .no-internet-page {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 375px) and (orientation: landscape) {
+    .no-internet-page {
+        height: 100%;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .no-internet-page {
         margin: 0;
@@ -143,6 +153,23 @@
         font-size: 20px;
     }
 }
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .no-internet-page {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .no-internet-page {
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    .no-internet-page {
+        height: 100vh;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .no-internet-title {
         margin: 164px 0px 48px 0;
